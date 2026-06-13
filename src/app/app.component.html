@@ -1,28 +1,99 @@
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'><g opacity='0.75' filter='url(#filter0_f_39_143)'><circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/></g><g opacity='0.65' filter='url(#filter1_f_39_143)'><circle cx='1720' cy='264' r='379' fill='url(#paint1_linear_39_143)'/></g><defs><filter id='filter0_f_39_143' x='-485' y='515' width='970' height='970' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><filter id='filter1_f_39_143' x='1120' y='-336' width='1200' height='1200' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><linearGradient id='paint0_linear_39_143' x1='196.5' y1='902' x2='-2.55853e-05' y2='1264' gradientUnits='userSpaceOnUse'><stop stop-color="var(--bttm-left-blur-1)"/><stop offset='1' stop-color="var(--bttm-left-blur-2)"/></linearGradient><linearGradient id='paint1_linear_39_143' x1='1720' y1='-115' x2='1720' y2='643' gradientUnits='userSpaceOnUse'><stop stop-color="var(--top-right-blur-1)"/><stop offset='1' stop-color="var(--top-right-blur-2)" /></linearGradient></defs></svg>     
-<div id="content">
-  <div class="header">
-    <h1>Quickstart Template</h1>
-    <div class="logo">
-      <img src="https://user-images.githubusercontent.com/43764894/223549637-2715c89d-a44e-42e0-8f6c-fa6246279658.png">
-    </div>
-    <h2>
-      This is a bare-bones Angular project that has everything you need to quickly deploy it to Netlify
-    </h2>
-    <div class="bttns">
-      <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/angular-quickstart" class="bttn primary">Deploy to Netlify</a>
-      <a href="https://github.com/netlify-templates/angular-quickstart" class="bttn secondary">View Repo</a>
-    </div>
-  </div>
-  <div class="resource-list">
-    <ul>
-      <li>
-        <a href="https://www.netlify.com/tags/angular/">Netlify Blog: Angular posts</a>
-      <li>
-        <a href="https://docs.netlify.com/">Netlify Docs</a>
-      </li>
-      <li>
-        <a href="https://angular.io/">Angular Docs</a>
-      </li>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="nav-brand" href="#">MyWebsite</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Welcome to MyWebsite</h1>
+    <p>A clean, modern website built with Angular. Fast, responsive, and ready to deploy.</p>
+    <div class="hero-buttons">
+      <a href="#features" class="btn btn-primary">Get Started</a>
+      <a href="#about" class="btn btn-secondary">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+  <div class="section-container">
+    <h2 class="section-title">Features</h2>
+    <p class="section-subtitle">Everything you need to get up and running quickly</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Fast</h3>
+        <p>Optimized for performance with Angular's powerful build system and ahead-of-time compilation.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Responsive</h3>
+        <p>Looks great on every device — desktop, tablet, or mobile. Built mobile-first.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Deploy Ready</h3>
+        <p>Pre-configured for Netlify with continuous deployment from your GitHub repository.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Customizable</h3>
+        <p>Clean, well-structured code makes it easy to extend and adapt to your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="section-container about-grid">
+    <div class="about-text">
+      <h2>About This Project</h2>
+      <p>This is a bare-bones Angular project designed to be your starting point. It includes all the essentials — routing, styling, and deployment configuration — so you can focus on building your product.</p>
+      <p>Fork it, clone it, or deploy it directly to Netlify with one click. The code is clean and the structure is simple enough to understand at a glance.</p>
+      <a href="https://github.com/netlify-templates/angular-quickstart" class="btn btn-primary" target="_blank">View on GitHub</a>
+    </div>
+    <div class="about-image">
+      <div class="image-placeholder">
+        <span>Angular + Netlify</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="section-container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Have questions? We'd love to hear from you.</p>
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" class="form-input" />
+        <input type="email" placeholder="Your Email" class="form-input" />
+      </div>
+      <textarea placeholder="Your Message" class="form-input form-textarea"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2026 MyWebsite. Built with Angular and deployed on Netlify.</p>
+    <div class="footer-links">
+      <a href="https://angular.io/" target="_blank">Angular</a>
+      <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+      <a href="https://github.com/netlify-templates/angular-quickstart" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
