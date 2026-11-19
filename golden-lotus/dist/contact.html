@@ -96,7 +96,7 @@ p{margin:0}
 /* ---------- home hero ---------- */
 .home-hero{position:relative;background:var(--ink)}
 .home-hero .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,8,7,.55),rgba(12,8,7,.2) 45%,rgba(12,8,7,0) 62%),url("img/home-hero.jpg") 62% 50%/cover no-repeat}
-.home-hero .hero-in{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:clamp(120px,12vw,170px) clamp(16px,6vw,76px) clamp(110px,11vw,160px);min-height:max(520px,calc(100vh - var(--hh)));min-height:max(520px,calc(100svh - var(--hh)));display:flex;flex-direction:column;justify-content:center}
+.home-hero .hero-in{position:relative;z-index:1;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(120px,12vw,170px) clamp(16px,4vw,40px) clamp(110px,11vw,160px);min-height:max(520px,calc(100vh - var(--hh)));min-height:max(520px,calc(100svh - var(--hh)));display:flex;flex-direction:column;justify-content:center}
 .home-hero .wave{z-index:1}
 .eyebrow-wide{font:500 clamp(16px,1.7vw,22px)/1 var(--f-label);letter-spacing:.55em;color:var(--gold-2);text-transform:uppercase;padding-left:.3em}
 .hh1{font:italic 500 clamp(54px,6.4vw,88px)/1.02 var(--f-display);margin:10px 0 14px;background:linear-gradient(180deg,#fbe9bb 15%,#d7ad5f 85%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 24px rgba(0,0,0,.25)}
@@ -120,7 +120,9 @@ p{margin:0}
 .signature{overflow-x:clip}
 .sig-bamboo{position:absolute;right:0;top:clamp(8px,1.5vw,24px);width:clamp(150px,17vw,260px);height:auto;pointer-events:none;opacity:.95;z-index:1}
 @media (max-width:900px){.sig-bamboo{width:120px;opacity:.6}}
-.sig-in{position:relative;z-index:2;max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,40px);padding-right:clamp(16px,5vw,60px)}
+.sig-in{position:relative;z-index:2;max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:minmax(0,42%) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,40px);padding:0 clamp(16px,4vw,40px)}
+@media (max-width:1100px) and (min-width:901px){.sig-in{align-items:stretch}.signature .sig-photo,.signature .sig-photo img{height:100%}.signature .sig-photo img{object-fit:cover;object-position:40% 50%}}
+@media (max-width:1100px){.sig-in{grid-template-columns:minmax(0,38%) minmax(0,1fr)}.sig-row{flex-direction:column;gap:18px}.brush-badge{width:170px;height:160px}}
 .sig-photo{margin:0;position:relative}
 .sig-photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}
 .sig-head{text-align:center;margin-bottom:26px}
@@ -283,6 +285,14 @@ mark{background:rgba(240,216,152,.22);color:inherit;padding:0 .2em;border-radius
 
 .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
 .values.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.values,.steps,.combos,.packages{--cols:3;grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child){--cols:4}
+.values:has(> :nth-child(2):last-child){--cols:2}
+@media (max-width:1100px){.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child){--cols:2}}
+@media (max-width:860px){.values,.steps,.combos,.packages{--cols:1}.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child),.values.three{--cols:2}}
+@media (max-width:560px){.values,.steps,.combos,.packages,.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child),.values.three{--cols:1}}
+.values.three{grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.mt-s{margin-top:10px}.mt-m{margin-top:22px}.mt-l{margin-top:30px}.count-line{margin:-20px 0 22px}
 @media (max-width:900px){.values.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.values.three{grid-template-columns:1fr}}
 .value,.combo,.pkg,.steps li,.info-card,.hours-card,.short div,.contact-card,.form-card,.faq details,.aside-card{border-radius:24px 12px}
@@ -427,6 +437,9 @@ table.hours.full tr.today{background:linear-gradient(90deg,rgba(176,20,28,.18),t
   .form-grid{grid-template-columns:1fr}
   .mi-name{font-size:19px}
 }
+
+/* card grids follow the item count (placed last so it wins over the component defaults above) */
+.combos,.packages{grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
 /* ---------- legal pages ---------- */
 .legal-wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
 .short{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:48px}
@@ -587,7 +600,7 @@ table.hours.full tr.today{background:linear-gradient(90deg,rgba(176,20,28,.18),t
           <tr data-days="0" data-open="12:00" data-close="21:00"><th scope="row">Sunday</th><td>12:00 PM – 9:00 PM</td></tr>
         </table>
         <span class="open-status" data-open-status hidden></span>
-        <p class="note" style="margin-top:10px">Eastern time. Holiday hours may vary.</p>
+        <p class="note mt-s">Eastern time. Holiday hours may vary.</p>
       </div>
     </div>
   </div>
@@ -599,7 +612,7 @@ table.hours.full tr.today{background:linear-gradient(90deg,rgba(176,20,28,.18),t
       <p class="eyebrow">Write to Us</p>
       <h2 class="h2" id="msg-h">Send a Message</h2>
       <p class="lead">Questions, feedback or a gift card request. For same-day takeout, calling is fastest.</p>
-      <div id="follow" style="margin-top:30px">
+      <div id="follow" class="mt-l">
         <p class="eyebrow">Follow Us</p>
         <p>Look for Golden Lotus Chinese Restaurant in Wellington for photos, specials and reviews.</p>
         <div class="socials-inline"><span class="pill-ic"><svg class="ico solid" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</span><span class="pill-ic"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</span><span class="pill-ic"><svg class="ico solid" aria-hidden="true"><use href="#i-yelp"/></svg>Yelp</span></div>

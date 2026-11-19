@@ -128,3 +128,6 @@ Fonts from Google don't load in an offline sandbox, so the audits block them and
 | CJK text tofu or slow pages | Traditional vs Simplified font mismatch, or no `&text=` subset |
 | Stretched hero on wide screens | the photo is a low-res mockup crop; list it in PHOTOGRAPHY.md as a priority replacement |
 | Inline `style=""` beats your media query | move it to a class |
+| A generic grid rule (`--cols`) is ignored on some components | a component's own `grid-template-columns` declared later in the file wins; re-assert the generic rule at the end of the stylesheet |
+| Card count changes per page | set columns from the count with `:has(> :nth-child(4):last-child)` (4 → 4/2/1, 3 → 3/1, 6 → 3/2/1) instead of `auto-fit` |
+| Photo column much shorter than its text column at tablet widths | stretch the row (`align-items:stretch`) and give the image `height:100%; object-fit:cover` for that range only |

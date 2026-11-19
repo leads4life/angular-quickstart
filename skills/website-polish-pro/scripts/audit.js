@@ -135,7 +135,7 @@ const PLACE = () => {  // visible placeholders read as unfinished: brackets, <ma
     await ctx.close(); return res;
   };
   const plan = [
-    [1536, 800, { SEAM, SHAPE, ALIGN, BLANK, PLACE }], [1024, 800, { SEAM, BLANK }], [768, 1024, { SEAM }], [390, 844, { SEAM, SHAPE, BLANK }],
+    [1536, 800, { SEAM, SHAPE, ALIGN, BLANK, PLACE }], [1024, 800, { SEAM, BLANK }], [768, 1024, { SEAM, BLANK }], [390, 844, { SEAM, SHAPE, BLANK }],
     [1536, 696, { FIRST }], [1920, 969, { FIRST }], [1440, 789, { FIRST }], [1366, 657, { FIRST }], [1280, 720, { FIRST }], [768, 1024, { FIRST }], [390, 844, { FIRST }], [390, 664, { FIRST }],
   ];
   const tot = {};

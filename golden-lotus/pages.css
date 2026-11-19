@@ -60,6 +60,14 @@ mark{background:rgba(240,216,152,.22);color:inherit;padding:0 .2em;border-radius
 
 .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
 .values.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.values,.steps,.combos,.packages{--cols:3;grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child){--cols:4}
+.values:has(> :nth-child(2):last-child){--cols:2}
+@media (max-width:1100px){.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child){--cols:2}}
+@media (max-width:860px){.values,.steps,.combos,.packages{--cols:1}.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child),.values.three{--cols:2}}
+@media (max-width:560px){.values,.steps,.combos,.packages,.values:has(> :nth-child(4):last-child),.steps:has(> :nth-child(4):last-child),.values.three{--cols:1}}
+.values.three{grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.mt-s{margin-top:10px}.mt-m{margin-top:22px}.mt-l{margin-top:30px}.count-line{margin:-20px 0 22px}
 @media (max-width:900px){.values.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.values.three{grid-template-columns:1fr}}
 .value,.combo,.pkg,.steps li,.info-card,.hours-card,.short div,.contact-card,.form-card,.faq details,.aside-card{border-radius:24px 12px}
@@ -204,3 +212,6 @@ table.hours.full tr.today{background:linear-gradient(90deg,rgba(176,20,28,.18),t
   .form-grid{grid-template-columns:1fr}
   .mi-name{font-size:19px}
 }
+
+/* card grids follow the item count (placed last so it wins over the component defaults above) */
+.combos,.packages{grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
