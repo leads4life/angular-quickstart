@@ -15,7 +15,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
         <div class="hero-actions"><ng-content></ng-content></div>
       </div>
     </section>
-    <app-wave></app-wave>`,
+    <app-wave *ngIf="wave"></app-wave>`,
 })
 export class PageHeroComponent {
   @Input() eyebrow = '';
@@ -25,4 +25,6 @@ export class PageHeroComponent {
   @Input() image = '';
   @Input() large = false;
   @Input() blossom = false;
+  /** Off when the footer follows directly (its own wave carries that seam). */
+  @Input() wave = true;
 }

@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact.component';
 import { GalleryComponent } from './pages/gallery.component';
 import { HomeComponent } from './pages/home.component';
 import { MenuComponent } from './pages/menu.component';
+import { NotFoundComponent } from './pages/not-found.component';
 import { OrderOnlineComponent } from './pages/order-online.component';
 import { PrivateEventsComponent } from './pages/private-events.component';
 import { IconComponent } from './shared/icon.component';
@@ -38,6 +39,7 @@ import { WaveComponent } from './shared/wave.component';
     CateringComponent,
     GalleryComponent,
     ContactComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   bootstrap: [AppComponent],

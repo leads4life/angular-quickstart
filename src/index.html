@@ -8,9 +8,34 @@
   <meta name="description" content="Golden Wok Chinese Restaurant: authentic Chinese cuisine, takeout, catering and private events.">
   <meta name="theme-color" content="#1c110d">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <!-- Built only from facts shown on the site (placeholders until verified). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "name": "Golden Wok Chinese Restaurant",
+        "servesCuisine": "Chinese",
+        "telephone": "+1-561-555-6888",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12345 Forest Hill Blvd",
+          "addressLocality": "Wellington",
+          "addressRegion": "FL",
+          "postalCode": "33414",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "21:30" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:00", "closes": "22:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:00" }
+        ]
+      },
+      { "@type": "WebSite", "name": "Golden Wok Chinese Restaurant" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <app-root></app-root>

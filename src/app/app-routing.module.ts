@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { environment } from '../environments/environment';
 import { AboutComponent } from './pages/about.component';
 import { CateringComponent } from './pages/catering.component';
 import { ContactComponent } from './pages/contact.component';
 import { GalleryComponent } from './pages/gallery.component';
 import { HomeComponent } from './pages/home.component';
 import { MenuComponent } from './pages/menu.component';
+import { NotFoundComponent } from './pages/not-found.component';
 import { OrderOnlineComponent } from './pages/order-online.component';
 import { PrivateEventsComponent } from './pages/private-events.component';
 
@@ -18,7 +20,7 @@ const routes: Routes = [
   { path: 'catering', component: CateringComponent, data: { title: 'Catering' } },
   { path: 'gallery', component: GalleryComponent, data: { title: 'Gallery' } },
   { path: 'contact', component: ContactComponent, data: { title: 'Contact Us' } },
-  { path: '**', redirectTo: '' },
+  { path: '**', component: NotFoundComponent, data: { title: 'Page Not Found', noindex: true } },
 ];
 
 @NgModule({
@@ -26,6 +28,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
+      useHash: environment.useHash,
     }),
   ],
   exports: [RouterModule],

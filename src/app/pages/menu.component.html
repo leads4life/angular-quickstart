@@ -10,8 +10,10 @@
     </a>
   </nav>
 
-  <section class="menu-sec" *ngFor="let s of menu; let odd = odd" [id]="s.id" [class.menu-sec--rev]="odd">
-    <div class="menu-sec-img" *ngIf="s.image"><img [src]="s.image" [alt]="s.imageAlt" loading="lazy"></div>
+  <section class="menu-sec" *ngFor="let s of menu; let odd = odd; let i = index" [id]="s.id" [class.menu-sec--rev]="odd">
+    <div class="menu-sec-img" *ngIf="s.image">
+      <div class="blob" [attr.data-shape]="shapes[(i + 2) % 3]"><img [src]="s.image" [alt]="s.imageAlt" loading="lazy" width="1000" height="750"></div>
+    </div>
     <div class="menu-sec-body">
       <h2 class="script-title script-title--rule">{{ s.title }}</h2>
       <ul class="menu-list">

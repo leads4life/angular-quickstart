@@ -5,4 +5,6 @@ import { MENU, SITE } from '../site.data';
 export class MenuComponent {
   readonly menu = MENU;
   readonly site = SITE;
+  /** Organic photo shapes, cycled down the page (offset so pages open on different shapes). */
+  readonly shapes = ['a', 'b', 'c'];
 }

@@ -3,6 +3,7 @@ import { ViewportScroller } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { SeoService } from './shared/seo.service';
 import { SITE } from './site.data';
 
 @Component({
@@ -16,17 +17,18 @@ import { SITE } from './site.data';
 export class AppComponent {
   title = 'golden-wok';
 
-  constructor(router: Router, route: ActivatedRoute, titles: Title, scroller: ViewportScroller) {
+  constructor(router: Router, route: ActivatedRoute, titles: Title, scroller: ViewportScroller, seo: SeoService) {
     // Keep anchored sections clear of the fixed header.
     scroller.setOffset([0, 96]);
 
-    router.events.pipe(filter((e) => e instanceof NavigationEnd)).subscribe(() => {
+    router.events.pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd)).subscribe((e) => {
       let r = route;
       while (r.firstChild) {
         r = r.firstChild;
       }
       const page = r.snapshot.data['title'] as string | undefined;
       titles.setTitle(page ? `${page} | ${SITE.name} ${SITE.tagline}` : `${SITE.name} ${SITE.tagline}`);
+      seo.update(e.urlAfterRedirects, !!r.snapshot.data['noindex']);
     });
   }
 
