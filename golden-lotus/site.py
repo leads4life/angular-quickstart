@@ -3,6 +3,9 @@
 import re, sys, os, shutil
 ROOT=os.path.dirname(os.path.abspath(__file__))
 OUT=sys.argv[1] if len(sys.argv)>1 else os.path.join(ROOT,'dist')
+# ---- one place to switch the online ordering link: paste the URL between the quotes ----
+ORDER_URL=''   # e.g. 'https://order.example.com/golden-lotus'  (empty = buttons go to Takeout > How to order)
+ZH_EYEBROW={'menu':'菜單','takeout':'外賣','events':'宴會','about':'關於我們','contact':'聯絡我們','privacy':'隱私政策','accessibility':'無障礙'}
 PAGES={ # key: (filename, body_file, title)
  'home':('index.html',None,'Golden Lotus Chinese Restaurant | Wellington, FL'),
  'menu':('menu.html','pages/menu.html','Menu | Golden Lotus Chinese Restaurant'),
@@ -41,17 +44,22 @@ def esc(s): return s.replace('&','&amp;')
 def build(key):
     fn,body,title=PAGES[key]
     main=home if body is None else shapes(hero_wave(include(rd(body))),key)+'\n'+band
+    if key in ZH_EYEBROW: main=main.replace('<p class="eyebrow">',f'<p class="eyebrow"><span class="zh-e" lang="zh-Hant">{ZH_EYEBROW[key]}</span>',1)
     hdr,ftr=header,footer
     hdr=hdr.replace(f'href="@@{key}@@"',f'href="@@{key}@@" aria-current="page"')
     ftr=ftr.replace(f'href="@@{key}@@"',f'href="@@{key}@@" aria-current="page"')
     doc=f'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>{esc(title)}</title>\n{head.strip()}\n</head>\n<body>\n{defs}\n{hdr}\n<main id="top">\n{main}\n</main>\n{ftr}\n{script}\n{js}\n</body>\n</html>\n'
+    doc=doc.replace('@@order@@',ORDER_URL or '@@takeout@@#order')
     doc=re.sub(r'@@(\w+)@@',lambda m: PAGES[m.group(1)][0],doc)
     assert '@@' not in doc, key
     return fn,doc
 os.makedirs(OUT,exist_ok=True)
-for k in PAGES:
-    fn,doc=build(k)
-    open(os.path.join(OUT,fn),'w',encoding='utf-8').write(doc)
+import urllib.parse
+docs=[build(k) for k in PAGES]
+cjk=''.join(sorted({c for _,d in docs for c in d if '\u2e80'<=c<='\u9fff' or '\uf900'<=c<='\ufaff' or c in '・《》（）'}))
+for fn,doc in docs:
+    open(os.path.join(OUT,fn),'w',encoding='utf-8').write(doc.replace('%%CJK%%',urllib.parse.quote(cjk)))
+print('CJK subset:',len(cjk),'characters')
 if os.path.isdir(os.path.join(OUT,'img')): shutil.rmtree(os.path.join(OUT,'img'))
 shutil.copytree(os.path.join(ROOT,'img'),os.path.join(OUT,'img'))
 print('built',len(PAGES),'pages ->',OUT)

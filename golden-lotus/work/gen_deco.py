@@ -54,3 +54,6 @@ print(len(css))
 top='<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="60" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 34C260 8 520 6 780 30C1040 54 1250 50 1440 22V60H0Z"/></svg>'
 stroke='<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="60" viewBox="0 0 1440 60" preserveAspectRatio="none"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#9c7535"/><stop offset=".45" stop-color="#f3d991"/><stop offset="1" stop-color="#b48a41"/></linearGradient></defs><path d="M0 36C260 10 520 8 780 32C1040 56 1250 52 1440 24" fill="none" stroke="url(#g)" stroke-width="3.5" vector-effect="non-scaling-stroke"/></svg>'
 open('seams.css','a').write(f":root{{--band-top:{uri(top)};--band-stroke:{uri(stroke)}}}\n")
+# 回紋 key-fret field (Chinese meander), very quiet
+fret='<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M2 26V2H26V22H6V6H22V18H10V10H18V14H14" fill="none" stroke="#d8b468" stroke-width="1.1" stroke-opacity=".07" stroke-linecap="square"/></svg>'
+open('seams.css','a').write(f":root{{--fret:{uri(fret)}}}\n")
