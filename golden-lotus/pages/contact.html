@@ -1,8 +1,8 @@
 <section class="hero page-hero" style="background-image:url('img/hero-contact.jpg')">
   <div class="hero-in"><div class="hero-copy">
     <p class="eyebrow">Visit · Call · Write</p>
-    <h1><span class="a">Contact</span><span class="b">Golden Lotus</span></h1>
-    <p class="hero-sub">Find us on Wellington Green Drive. Call ahead for takeout, or send a note about events and catering.</p>
+    <h1><span class="a">Contact</span><span class="b">%%NAME%%</span></h1>
+    <p class="hero-sub">Find us at %%STREET%% in %%CITY%%. Call ahead for takeout, or send a note about events and catering.</p>
   </div></div>
 </section>
 
@@ -14,27 +14,19 @@
       <div class="info-card">
         <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
         <h3>Address</h3>
-        <p>1236 Wellington Green Dr.<br>Wellington, FL 33414</p>
-        <p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=1236+Wellington+Green+Dr+Wellington+FL+33414">Get directions</a></p>
+        <p>%%STREET%%<br>%%CITYLINE%%</p>
+        <p><a class="link" href="%%MAPS_URL%%">Get directions</a></p>
       </div>
       <div class="info-card">
         <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
         <h3>Phone</h3>
-        <p><a class="big" href="tel:+15615552688">(561) 555-2688</a></p>
+        <p><a class="big" href="tel:%%TEL%%">%%PHONE%%</a></p>
         <p>Call for takeout, reservations for larger groups and event questions.</p>
       </div>
       </div>
       <div class="hours-card" id="hours">
         <h3><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Hours</h3>
-        <table class="hours full">
-          <tr data-days="1" data-open="11:00" data-close="21:30"><th scope="row">Monday</th><td>11:00 AM – 9:30 PM</td></tr>
-          <tr data-days="2" data-open="11:00" data-close="21:30"><th scope="row">Tuesday</th><td>11:00 AM – 9:30 PM</td></tr>
-          <tr data-days="3" data-open="11:00" data-close="21:30"><th scope="row">Wednesday</th><td>11:00 AM – 9:30 PM</td></tr>
-          <tr data-days="4" data-open="11:00" data-close="21:30"><th scope="row">Thursday</th><td>11:00 AM – 9:30 PM</td></tr>
-          <tr data-days="5" data-open="11:00" data-close="22:00"><th scope="row">Friday</th><td>11:00 AM – 10:00 PM</td></tr>
-          <tr data-days="6" data-open="11:00" data-close="22:00"><th scope="row">Saturday</th><td>11:00 AM – 10:00 PM</td></tr>
-          <tr data-days="0" data-open="12:00" data-close="21:00"><th scope="row">Sunday</th><td>12:00 PM – 9:00 PM</td></tr>
-        </table>
+        <table class="hours full">%%HOURS_FULL%%</table>
         <span class="open-status" data-open-status hidden></span>
         <p class="note mt-s">Eastern time. Holiday hours may vary.</p>
       </div>
@@ -50,7 +42,7 @@
       <p class="lead">Questions, feedback or a gift card request. For same-day takeout, calling is fastest.</p>
       <div id="follow" class="mt-l">
         <p class="eyebrow">Follow Us</p>
-        <p>Look for Golden Lotus Chinese Restaurant in Wellington for photos, specials and reviews.</p>
+        <p>Look for %%NAME%% Chinese Restaurant in %%CITY%% for photos, specials and reviews.</p>
         <div class="socials-inline"><span class="pill-ic"><svg class="ico solid" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</span><span class="pill-ic"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</span><span class="pill-ic"><svg class="ico solid" aria-hidden="true"><use href="#i-yelp"/></svg>Yelp</span></div>
       </div>
       <div class="aside-card">
@@ -60,7 +52,7 @@
     </div>
     <div class="form-card">
       <h3>Your message</h3>
-      <form data-demo-form novalidate data-done="Thank you. This form is not connected yet, so your message was not sent. Please call (561) 555-2688.">
+      <form data-demo-form novalidate data-done="Thank you. This form is not connected yet, so your message was not sent. Please call %%PHONE%%.">
         <div class="form-grid">
           <div class="field"><label for="c-name">Name *</label><input id="c-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>

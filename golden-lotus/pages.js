@@ -38,12 +38,12 @@
     });
   });
 
-  /* Hours: Wellington, FL keeps Eastern time */
+  /* Hours: %%CITY%%, FL keeps Eastern time */
   var rows=document.querySelectorAll('tr[data-days]');
   if(rows.length){
     var now=new Date(),day,mins;
     try{
-      var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(now);
+      var parts=new Intl.DateTimeFormat('en-US',{timeZone:'%%TZ%%',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(now);
       var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value;};
       day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
       mins=parseInt(get('hour'),10)*60+parseInt(get('minute'),10);

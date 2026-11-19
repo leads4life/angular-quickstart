@@ -1,0 +1,11 @@
+{
+  "_comment": "Your studio's details. Change these, run: python3 build.py",
+  "studio": "Red Seal Studio",
+  "seal": "印",
+  "tagline": "Websites for Chinese restaurants",
+  "price_starter": "Quote on request",
+  "price_standard": "Quote on request",
+  "price_premium": "Quote on request",
+  "form_endpoint": "",
+  "contact_email": ""
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>%%STUDIO%% | %%TAGLINE%%</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="%%STUDIO%% designs and builds websites for Chinese restaurants: bilingual menus with Chinese names and pinyin, takeout and catering, banquets, and hours that know when you're open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=LXGW+WenKai+TC&text=%%CJK%%&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a studio's rice-paper portfolio. Ink type, one cinnabar seal accent, gold key-line rules; the dark demo pops off the paper inside device frames. */
+:root{
+  color-scheme: light;
+  --paper:#f7f1e6; --paper-2:#efe5d2; --paper-3:#e6d8bd;
+  --ink:#1c1412; --ink-2:#3a2c25; --muted:#6b5a4c;
+  --cinnabar:#b0141c; --cinnabar-deep:#7c0d12; --gold:#a8823c; --gold-2:#d8b468;
+  --line:rgba(28,20,18,.14);
+  --f-display:"Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --f-cjk:"Noto Serif TC", "Songti TC", "WenQuanYi Zen Hei", serif;
+  --f-brush:"LXGW WenKai TC", "Kaiti TC", "KaiTi", "WenQuanYi Zen Hei", serif;
+  --wrap:1180px;
+}
+[hidden]{display:none!important}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:99}.skip:focus{left:8px}
+.ico{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.zh{font-family:var(--f-brush);font-weight:400}
+
+/* header */
+.head{position:sticky;top:0;z-index:50;background:rgba(247,241,230,.94);backdrop-filter:blur(8px)}
+.head::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:14px;background:var(--rule-sm) 0 0/var(--rule-sm-w) var(--rule-sm-h) round;opacity:.9;pointer-events:none}
+.head-in{max-width:var(--wrap);margin:0 auto;padding:12px clamp(16px,4vw,40px);display:flex;align-items:center;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.seal{display:inline-grid;place-items:center;width:38px;height:38px;background:radial-gradient(circle at 30% 25%,#c7202a,#9b111a);color:#fbeedd;font:900 22px/1 var(--f-cjk);border-radius:3px;box-shadow:inset 0 0 0 2px #a3121a,inset 0 0 0 3px rgba(251,238,221,.85)}
+.brand b{font:600 24px/1 var(--f-display);letter-spacing:.01em}
+.nav{display:flex;gap:22px}
+.nav a{text-decoration:none;font-size:15.5px;color:var(--ink-2)}
+.nav a:hover{color:var(--cinnabar)}
+.btn{display:inline-flex;align-items:center;gap:9px;font:600 16.5px/1 var(--f-body);text-decoration:none;padding:14px 22px;border-radius:8px;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:linear-gradient(180deg,#c3161f,#8c0e14);color:#fff;box-shadow:0 8px 20px rgba(140,14,20,.25)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:rgba(28,20,18,.05)}
+.btn .ico{font-size:15px}
+.head .btn{padding:10px 16px;font-size:15px}
+@media (max-width:900px){.nav{display:none}}
+
+/* sections + seams (gilt rule with lotus / coin / cloud, shared with the demo) */
+.sec{position:relative;padding:clamp(64px,8vw,104px) 0;overflow-x:clip}
+.sec+.sec::before,.hero+.sec::before,.foot::before{content:"";position:absolute;left:-10px;right:-10px;top:calc(var(--rule-h)/-2);height:var(--rule-h);background:var(--rule) 0 0/var(--rule-w) var(--rule-h) round;pointer-events:none;z-index:2}
+.sec.alt{background:var(--fret-ink) 0 0/28px 28px,var(--paper-2)}
+.sec.dark{background:#140d0b;color:#efe4d0}
+.eyebrow{font:600 13px/1.2 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--cinnabar);display:flex;align-items:center;gap:12px}
+.eyebrow .zh{font-size:20px;letter-spacing:.12em;text-transform:none}
+.h2{font:600 clamp(36px,4.2vw,54px)/1.08 var(--f-display);margin:10px 0 14px}
+.h2 em{font-style:italic;color:var(--cinnabar-deep)}
+.lead{font-size:clamp(18px,1.5vw,20px);color:var(--ink-2);max-width:40em}
+.sec-head{max-width:760px;margin-bottom:clamp(30px,4vw,52px)}
+.center{text-align:center}.center .sec-head,.sec-head.center{margin-left:auto;margin-right:auto}.sec-head.center .eyebrow{justify-content:center}
+
+/* hero */
+.hero{position:relative;padding:clamp(28px,4vh,64px) 0 clamp(36px,6vh,80px);min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(28px,4vw,60px);align-items:center}
+.hero h1{font:600 clamp(42px,min(5.2vw,8.4vh),78px)/1.02 var(--f-display);margin:12px 0 14px;letter-spacing:-.01em}
+.hero .lead{font-size:clamp(17px,min(1.4vw,2.7vh),20px)}
+.hero h1 em{font-style:italic;color:var(--cinnabar-deep)}
+.hero .lead{margin-bottom:clamp(18px,3vh,28px)}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.fineprint{margin-top:18px;font-size:14.5px;color:var(--muted)}
+.devices{display:block;position:relative;padding:0 0 40px}
+.laptop{position:relative;margin-right:8%}
+.laptop .screen{background:#141414;border-radius:14px 14px 4px 4px;padding:10px 10px 12px;box-shadow:0 30px 60px rgba(28,20,18,.28)}
+.laptop .screen img{height:auto;border-radius:3px;aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%}
+.laptop .base{height:14px;margin:0 -6%;background:linear-gradient(180deg,#d9d4cc,#a9a29a);border-radius:0 0 14px 14px;box-shadow:0 10px 20px rgba(28,20,18,.18)}
+.phone{position:absolute;right:0;bottom:0;width:27%;background:#141414;border-radius:30px;padding:8px;box-shadow:0 26px 50px rgba(28,20,18,.35)}
+.phone img{height:auto;border-radius:23px;aspect-ratio:390/844;object-fit:cover;object-position:top;width:100%}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* demo page cards */
+.pages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pages a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;background:#fffaf1;border:1px solid var(--line);border-radius:18px 10px;text-decoration:none;transition:border-color .15s,transform .15s}
+.pages a:nth-child(even){border-radius:10px 18px}
+.pages a:hover{border-color:var(--cinnabar);transform:translateY(-2px)}
+.pages b{font:600 22px/1.2 var(--f-display)}
+.pages span{display:block;font-size:14.5px;color:var(--muted)}
+.pages .ico{color:var(--cinnabar);font-size:18px}
+@media (max-width:860px){.pages{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.pages{grid-template-columns:1fr}}
+
+/* features */
+.features{display:grid;gap:clamp(48px,6vw,80px)}
+.feat{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:center}
+.feat:nth-child(even) .shot{order:2}
+.shot{background:#140d0b;border-radius:22px 12px;padding:clamp(10px,1.4vw,16px);box-shadow:0 22px 44px rgba(28,20,18,.22)}
+.feat:nth-child(even) .shot{border-radius:12px 22px}
+.shot img{width:100%;height:auto;border-radius:12px 6px}
+.shot.phone-shot{max-width:300px;margin:0 auto;border-radius:30px;padding:8px}
+.shot.phone-shot img{border-radius:23px}
+.feat h3{font:600 clamp(28px,3vw,38px)/1.12 var(--f-display);margin:8px 0 12px}
+.feat p{color:var(--ink-2)}
+.feat ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px;color:var(--ink-2)}
+.feat li{padding-left:26px;position:relative}
+.feat li::before{content:"";position:absolute;left:3px;top:.45em;width:11px;height:6px;border-left:2px solid var(--cinnabar);border-bottom:2px solid var(--cinnabar);transform:rotate(-45deg)}
+@media (max-width:860px){.feat{grid-template-columns:1fr}.feat:nth-child(even) .shot{order:0}}
+
+/* authenticity cards */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{padding:28px 26px;background:#fffaf1;border:1px solid var(--line);border-radius:24px 12px}
+.card:nth-child(even){border-radius:12px 24px}
+.card .zh-big{font:400 34px/1 var(--f-brush);color:var(--cinnabar);margin-bottom:12px;letter-spacing:.08em}
+.card h3{font:600 25px/1.2 var(--f-display);margin-bottom:6px}
+.card p{color:var(--ink-2);font-size:17px}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+
+/* checklist band */
+.dark .h2{color:#f6ead2}
+.dark .lead{color:#d9ccb6}
+.dark .eyebrow{color:var(--gold-2)}
+.checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 34px;list-style:none;margin:0;padding:0}
+.checks li{padding-left:30px;position:relative;color:#e6d9c3}
+.checks li b{display:block;color:#fbf1dd;font-weight:600}
+.checks li::before{content:"";position:absolute;left:4px;top:.5em;width:12px;height:7px;border-left:2px solid var(--gold-2);border-bottom:2px solid var(--gold-2);transform:rotate(-45deg)}
+@media (max-width:900px){.checks{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.checks{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;padding:26px 22px;background:#fffaf1;border:1px solid var(--line);border-radius:24px 12px}
+.steps li:nth-child(even){border-radius:12px 24px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--cinnabar);color:#fff;font:600 18px/1 var(--f-display);margin-bottom:14px}
+.steps h3{font:600 23px/1.2 var(--f-display);margin-bottom:6px}
+.steps p{font-size:16.5px;color:var(--ink-2)}
+@media (max-width:1000px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* packages */
+.pkgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.pkg{display:flex;flex-direction:column;padding:32px 28px;background:#fffaf1;border:1px solid var(--line);border-radius:24px 12px;position:relative}
+.pkg:nth-child(even){border-radius:12px 24px}
+.pkg h3{font:600 30px/1.1 var(--f-display)}
+.pkg .for{color:var(--muted);font-size:15.5px;margin:6px 0 14px}
+.pkg .price{font:600 22px/1.2 var(--f-display);color:var(--cinnabar-deep);margin-bottom:16px}
+.pkg ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:9px;flex:1;font-size:16.5px;color:var(--ink-2)}
+.pkg li{padding-left:24px;position:relative}
+.pkg li::before{content:"";position:absolute;left:2px;top:.45em;width:10px;height:6px;border-left:2px solid var(--cinnabar);border-bottom:2px solid var(--cinnabar);transform:rotate(-45deg)}
+.pkg.featured{background:#140d0b;color:#efe4d0;border-color:var(--gold-2);box-shadow:0 22px 44px rgba(28,20,18,.25)}
+.pkg.featured .for,.pkg.featured ul{color:#d9ccb6}
+.pkg.featured .price{color:var(--gold-2)}
+.pkg.featured li::before{border-color:var(--gold-2)}
+.badge{position:absolute;top:-13px;left:28px;background:var(--gold-2);color:#2a1a10;font:600 11.5px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.pkg .btn{align-self:flex-start}
+.pkg.featured .btn-ghost{border-color:var(--gold-2);color:var(--gold-2)}
+@media (max-width:900px){.pkgs{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:840px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fffaf1;border:1px solid var(--line);border-radius:18px 10px}
+.faq details:nth-child(even){border-radius:10px 18px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 22px;font:600 21px/1.3 var(--f-display);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:26px;color:var(--cinnabar)}
+.faq details[open] summary::after{content:"–"}
+.faq details>div{padding:0 22px 20px;color:var(--ink-2)}
+
+/* quote form */
+.quote{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+.form-card{background:#fffaf1;border:1px solid var(--line);border-radius:24px 12px;padding:clamp(22px,3vw,36px);box-shadow:0 18px 40px rgba(28,20,18,.12)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+.field label{font:600 13px/1.2 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.field input,.field select,.field textarea{font:400 17px/1.4 var(--f-body);color:var(--ink);background:#fff;border:1px solid #cdb68a;border-radius:6px;padding:11px 12px;width:100%}
+.field textarea{min-height:120px;resize:vertical}
+.field [aria-invalid="true"]{border-color:var(--cinnabar);background:#fff4f2}
+.form-card .btn{margin-top:20px}
+.form-status{margin-top:14px;padding:12px 14px;border-radius:6px;background:#f8e7c4;border-left:3px solid var(--gold)}
+.form-status.err{background:#fbe1dd;border-color:var(--cinnabar)}
+.quote .points{margin-top:22px;display:grid;gap:10px;list-style:none;padding:0}
+.quote .points li{padding-left:28px;position:relative;color:var(--ink-2)}
+.quote .points li::before{content:"";position:absolute;left:3px;top:.45em;width:11px;height:6px;border-left:2px solid var(--cinnabar);border-bottom:2px solid var(--cinnabar);transform:rotate(-45deg)}
+@media (max-width:900px){.quote{grid-template-columns:1fr}}
+@media (max-width:560px){.form-grid{grid-template-columns:1fr}}
+
+/* footer */
+.foot{position:relative;overflow-x:clip;background:#140d0b;color:#d9ccb6;padding:48px 0 34px;font-size:15.5px}
+.foot-in{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-start}
+.foot .brand b{color:#fbf1dd}
+.foot p{max-width:44em}
+.foot a{color:var(--gold-2)}
+</style>
+<style>%%SEAMS%%</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+</svg>
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#top"><span class="seal" lang="zh-Hant" aria-hidden="true">%%SEAL%%</span><b>%%STUDIO%%</b></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#demo">Live demo</a><a href="#features">Features</a><a href="#process">Process</a><a href="#packages">Packages</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-red" href="#quote">Get a quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">餐館網站</span> %%TAGLINE%%</p>
+        <h1 id="h1">A website as good as <em>your kitchen.</em></h1>
+        <p class="lead">We design and build restaurant websites that feel like the dining room: bilingual menus with Chinese names and pinyin, takeout and catering, banquets, and opening hours that know when you're open.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="demo/golden-lotus/index.html">Open the live demo <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#quote">Get a quote</a>
+        </div>
+        <p class="fineprint">Golden Lotus is a fictional restaurant we built to show our work. Click through all of its pages.</p>
+      </div>
+      <a class="devices" href="demo/golden-lotus/index.html" aria-label="Open the Golden Lotus demo">
+        <div class="laptop"><div class="screen"><img src="assets/demo-home.jpg" width="1440" height="900" alt="Golden Lotus demo homepage on a laptop: a glazed chicken dish beside the headline Authentic Chinese Cuisine"></div><div class="base"></div></div>
+        <div class="phone"><img src="assets/phone-menu.jpg" width="780" height="1688" alt="Golden Lotus menu on a phone, showing numbered lunch specials with Chinese names and pinyin"></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec alt" id="demo" aria-labelledby="demo-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">示範</span> Live demo</p>
+        <h2 class="h2" id="demo-h">Click through <em>every page</em></h2>
+        <p class="lead">Open it on your phone too. Everything works: the menu filters, the open-now hours, the forms and the mobile menu.</p>
+      </div>
+      <div class="pages">
+        <a href="demo/golden-lotus/index.html"><div><b>Home</b><span>Hero, signature dishes, private events</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="demo/golden-lotus/menu.html"><div><b>Menu</b><span>55 dishes, Chinese names and pinyin, filters</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="demo/golden-lotus/takeout-delivery.html"><div><b>Takeout &amp; Delivery</b><span>How to order, family meals, catering trays</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="demo/golden-lotus/private-events.html"><div><b>Private Events</b><span>Banquet menus, booking steps, inquiry form</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="demo/golden-lotus/about.html"><div><b>About</b><span>The story and the Chinese name</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="demo/golden-lotus/contact.html"><div><b>Contact</b><span>Map link, full week of hours, message form</span></div><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="features" aria-labelledby="feat-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">功能</span> What your site does</p>
+        <h2 class="h2" id="feat-h">Built for how Chinese restaurants <em>actually work</em></h2>
+      </div>
+      <div class="features">
+        <article class="feat">
+          <div class="shot"><img src="assets/feat-menu.jpg" alt="Lunch specials section of the demo menu: numbered L1 to L6, each with Chinese name, pinyin and price" loading="lazy"></div>
+          <div><p class="eyebrow">Menu</p><h3>A menu your regulars recognise</h3>
+            <p>Every dish carries its Chinese name and pinyin, numbered the way customers order by phone.</p>
+            <ul><li>Lunch specials, combination plates and chef's specials</li><li>Filters for house favourites, spicy and vegetarian</li><li>Traditional or Simplified characters, matched to your sign</li></ul></div>
+        </article>
+        <article class="feat">
+          <div class="shot"><img src="assets/feat-order.jpg" alt="Family meal cards from the demo takeout page: dinner for two, family feast and party for six" loading="lazy"></div>
+          <div><p class="eyebrow">Takeout · Delivery · Catering</p><h3>Orders go where you already take them</h3>
+            <p>Every "Order Online" button links to the ordering or delivery service you choose. Change it once and every button on the site updates.</p>
+            <ul><li>Family meals and catering trays by half and full tray</li><li>Clear pickup steps and delivery questions answered</li></ul></div>
+        </article>
+        <article class="feat">
+          <div class="shot"><img src="assets/feat-banquets.jpg" alt="Three banquet menus from the demo, the middle one highlighted as most booked" loading="lazy"></div>
+          <div><p class="eyebrow">Private events</p><h3>Banquets sell themselves</h3>
+            <p>Course-by-course banquet menus, the occasions you host (from full-month parties to Lunar New Year reunion dinners) and an inquiry form that asks the right questions.</p></div>
+        </article>
+        <article class="feat">
+          <div class="shot"><img src="assets/feat-hours.jpg" alt="Demo contact page: address and phone cards beside a full week of opening hours with today highlighted" loading="lazy"></div>
+          <div><p class="eyebrow">Hours</p><h3>Hours that know when you're open</h3>
+            <p>Today's row is highlighted and an "Open now" or "Closed now" tag updates in your own time zone, wherever the visitor is.</p></div>
+        </article>
+        <article class="feat">
+          <div class="shot phone-shot"><img src="assets/phone-home.jpg" alt="The demo homepage on a phone" loading="lazy"></div>
+          <div><p class="eyebrow">Phones first</p><h3>Most of your customers are on a phone</h3>
+            <p>Tap-to-call in the header, a menu that's easy to scan with a thumb, and pages that fit any screen without sideways scrolling.</p></div>
+        </article>
+        <article class="feat">
+          <div class="shot"><img src="assets/feat-name.jpg" alt="Demo About section explaining the Chinese name 金荷 and the lotus, beside a lotus photo" loading="lazy"></div>
+          <div><p class="eyebrow">Identity</p><h3>Your name, in your language</h3>
+            <p>We set your Chinese name in a carved-style red seal and tell its story, after checking every translation for unwanted meanings.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" aria-labelledby="auth-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">道地</span> Authentic, not a template</p>
+        <h2 class="h2" id="auth-h">The details other designers <em>get wrong</em></h2>
+        <p class="lead">Red and gold is easy. These are the checks we run on every site so it reads as yours, not as a theme.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><p class="zh-big" lang="zh-Hant">金荷</p><h3>Names checked for meaning</h3><p>"Golden Lotus" translated literally is 金蓮, which is also an old term for bound feet. We used 金荷 instead. Every name gets that check.</p></div>
+        <div class="card"><p class="zh-big" lang="zh-Hant">梅花</p><h3>Chinese motifs, not "Asian" ones</h3><p>Plum blossom rather than cherry blossom, key-fret borders rather than Japanese wave patterns, real brush lettering instead of novelty fonts.</p></div>
+        <div class="card"><p class="zh-big" lang="zh-Hant">菜單</p><h3>Real menu conventions</h3><p>Numbered dishes, lunch specials with fried rice and an egg roll, pint and quart soups, Chinese names with pinyin.</p></div>
+        <div class="card"><p class="zh-big" lang="zh-Hant">滿月</p><h3>Customs stated correctly</h3><p>Red eggs and ginger for a baby's full month, uncut longevity noodles at birthdays, a whole fish at New Year. Small things your guests notice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" aria-labelledby="built-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Built right</p>
+        <h2 class="h2" id="built-h">Checked page by page before launch</h2>
+        <p class="lead">Every page is tested on laptop, tablet and phone sizes with automated checks, then reviewed by eye.</p>
+      </div>
+      <ul class="checks">
+        <li><b>Fast static pages</b>No heavy page builder; pages load quickly on a phone signal.</li>
+        <li><b>Google-ready details</b>Name, address, phone and hours in the format search engines read.</li>
+        <li><b>Accessible</b>Keyboard friendly, readable contrast, descriptions on every photo.</li>
+        <li><b>No dead ends</b>Every link, image and button checked on every page.</li>
+        <li><b>Nothing unfinished</b>No placeholder text, no empty gaps, no misaligned sections.</li>
+        <li><b>Photo plan included</b>A named shot list, so new photos drop straight into place.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="process" aria-labelledby="proc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">流程</span> Process</p>
+        <h2 class="h2" id="proc-h">From your menu to a <em>live site</em></h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Talk and gather</h3><p>You send your menu, hours, Chinese name and any photos. We ask about your kitchen's roots and your regulars.</p></li>
+        <li><h3>Design</h3><p>We mock up your homepage in your colours and get your approval before building.</p></li>
+        <li><h3>Build and check</h3><p>Every page is built, filled with your real details and checked on every screen size.</p></li>
+        <li><h3>Launch</h3><p>We connect your domain and ordering links and walk you through updating the menu.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec alt" id="packages" aria-labelledby="pk-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">方案</span> Packages</p>
+        <h2 class="h2" id="pk-h">Pick a starting point</h2>
+        <p class="lead">Every package is a custom design for your restaurant. Tell us what you need and we'll send a quote.</p>
+      </div>
+      <div class="pkgs">
+        <div class="pkg"><h3>Starter</h3><p class="for">Menu, hours and a way to reach you</p><p class="price">%%PRICE_STARTER%%</p>
+          <ul><li>Home, Menu and Contact pages</li><li>Bilingual menu with pinyin</li><li>Open-now hours and tap-to-call</li><li>Phone-first design</li></ul>
+          <a class="btn btn-ghost" href="#quote">Ask about Starter</a></div>
+        <div class="pkg featured"><span class="badge">Like the demo</span><h3>Standard</h3><p class="for">The full restaurant site</p><p class="price">%%PRICE_STANDARD%%</p>
+          <ul><li>Everything in Starter</li><li>Takeout, delivery and catering page</li><li>About page with your story</li><li>Online ordering links</li><li>Photo shot list</li></ul>
+          <a class="btn btn-ghost" href="#quote">Ask about Standard</a></div>
+        <div class="pkg"><h3>Premium</h3><p class="for">Banquets, identity and photography</p><p class="price">%%PRICE_PREMIUM%%</p>
+          <ul><li>Everything in Standard</li><li>Private events and banquet menus</li><li>Chinese name seal and logo refresh</li><li>Photography direction</li></ul>
+          <a class="btn btn-ghost" href="#quote">Ask about Premium</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head center"><p class="eyebrow">Questions</p><h2 class="h2" id="faq-h">Good to know</h2></div>
+      <div class="faq">
+        <details><summary>Is Golden Lotus a real restaurant?</summary><div>No. It's a fictional restaurant we created to show what we build. The menu, prices, address and photos are illustrative.</div></details>
+        <details><summary>Can my site look different from the demo?</summary><div>Yes. The demo is one design. Yours gets your colours, your name, your dishes and your photos.</div></details>
+        <details><summary>Can you connect online ordering?</summary><div>Yes. We link every order button to the ordering or delivery service you choose.</div></details>
+        <details><summary>Do I need professional photos?</summary><div>Real photos of your food and dining room work best. We give you a named shot list; if you don't have photos yet, we can plan illustrative images until you do.</div></details>
+        <details><summary>Traditional or Simplified Chinese?</summary><div>Whichever matches your sign and your customers. We keep the whole site in one system.</div></details>
+        <details><summary>Can I change the menu later?</summary><div>Yes. All your dishes and prices live in one place, so updates are quick.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="quote" aria-labelledby="q-h">
+    <div class="wrap quote">
+      <div>
+        <p class="eyebrow"><span class="zh" lang="zh-Hant">報價</span> Get a quote</p>
+        <h2 class="h2" id="q-h">Tell us about <em>your restaurant</em></h2>
+        <p class="lead">A few details are enough to start. We'll reply with questions and a quote.</p>
+        <ul class="points"><li>Your restaurant's name (and Chinese name, if you have one)</li><li>Your current website, if any</li><li>Which pages matter most: menu, takeout, banquets</li></ul>
+      </div>
+      <div class="form-card">
+        <form %%FORM_ATTRS%% novalidate data-done="Thank you. This form isn't connected yet, so your details were not sent.">
+          <div class="form-grid">
+            <div class="field"><label for="q-name">Your name *</label><input id="q-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="q-rest">Restaurant *</label><input id="q-rest" name="restaurant" required></div>
+            <div class="field"><label for="q-email">Email *</label><input id="q-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="q-city">City</label><input id="q-city" name="city" autocomplete="address-level2"></div>
+            <div class="field"><label for="q-site">Current website</label><input id="q-site" name="website" type="url" placeholder="https://"></div>
+            <div class="field full"><label for="q-pkg">Package</label><select id="q-pkg" name="package"><option>Not sure yet</option><option>Starter</option><option>Standard</option><option>Premium</option></select></div>
+            <div class="field full"><label for="q-msg">Anything else?</label><textarea id="q-msg" name="message"></textarea></div>
+          </div>
+          <button class="btn btn-red" type="submit">Request a quote</button>
+          <p class="form-status" role="status" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top"><span class="seal" lang="zh-Hant" aria-hidden="true">%%SEAL%%</span><b>%%STUDIO%%</b></a>
+    <p>%%TAGLINE%%. Golden Lotus is a fictional restaurant created to demonstrate our work; its menu, prices, address and photos are illustrative. %%CONTACT%%</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var f=document.querySelector('form[data-demo-form]');
+  if(!f) return;
+  var st=f.querySelector('.form-status');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); var bad=null;
+    f.querySelectorAll('[required]').forEach(function(x){var ok=x.value.trim()!==''&&x.checkValidity();x.setAttribute('aria-invalid',ok?'false':'true');if(!ok&&!bad)bad=x;});
+    st.hidden=false;
+    if(bad){st.classList.add('err');var l=f.querySelector('label[for="'+bad.id+'"]');st.textContent='Please check '+(l?l.textContent.replace('*','').trim():'the highlighted field')+'.';bad.focus();return;}
+    st.classList.remove('err'); st.textContent=f.getAttribute('data-done');
+  });
+})();
+</script>
+</body>
+</html>

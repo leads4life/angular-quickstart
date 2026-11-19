@@ -1,0 +1,27 @@
+{
+  "_comment": "Every business fact lives here. Change this file, add photos under the same names, run: python3 site.py",
+  "name": "Golden Lotus",
+  "name_upper": "GOLDEN LOTUS",
+  "name_zh": "金荷",
+  "name_pinyin": "jīn hé",
+  "cuisine_label": "Chinese Restaurant",
+  "street": "88 Lotus Lane",
+  "city": "Wellington",
+  "region": "FL",
+  "postal": "33414",
+  "phone": "(555) 555-0188",
+  "tel": "+15555550188",
+  "timezone": "America/New_York",
+  "hours": [
+    {"days": [1, 2, 3, 4], "label": "Mon – Thu", "open": "11:00", "close": "21:30"},
+    {"days": [5, 6], "label": "Fri – Sat", "open": "11:00", "close": "22:00"},
+    {"days": [0], "label": "Sun", "open": "12:00", "close": "21:00"}
+  ],
+  "order_url": "",
+  "demo": {
+    "enabled": true,
+    "studio": "Red Seal Studio",
+    "studio_url": "../../index.html",
+    "note": "Fictional restaurant: menu, prices, address and photos are illustrative."
+  }
+}

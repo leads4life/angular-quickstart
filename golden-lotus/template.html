@@ -1,6 +1,6 @@
-<title>Golden Lotus Chinese Restaurant</title>
+<title>%%NAME%% Chinese Restaurant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Golden Lotus Chinese Restaurant in Wellington, FL: traditional Chinese favorites, takeout and delivery, and a private dining room for celebrations.">
+<meta name="description" content="%%NAME%% Chinese Restaurant in %%CITY%%, FL: traditional Chinese favorites, takeout and delivery, and a private dining room for celebrations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -266,10 +266,10 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
 <a class="skip" href="#top">Skip to content</a>
 <header class="site-head" id="siteHead">
   <div class="head-in">
-    <a class="brand" href="@@home@@" aria-label="Golden Lotus Chinese Restaurant, home">
+    <a class="brand" href="@@home@@" aria-label="%%NAME%% Chinese Restaurant, home">
       <svg class="lotus" aria-hidden="true"><use href="#i-mark"/></svg>
-      <span class="brand-txt" aria-hidden="true"><span class="bt-1">GOLDEN LOTUS</span><span class="bt-2">CHINESE RESTAURANT</span></span>
-      <span class="seal" lang="zh-Hant" aria-hidden="true"><span>金</span><span>荷</span></span>
+      <span class="brand-txt" aria-hidden="true"><span class="bt-1">%%NAME_UPPER%%</span><span class="bt-2">CHINESE RESTAURANT</span></span>
+      <span class="seal" lang="zh-Hant" aria-hidden="true">%%SEAL%%</span>
     </a>
     <nav class="nav" id="mainNav" aria-label="Main">
       <a href="@@home@@">Home</a>
@@ -279,7 +279,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
       <a href="@@about@@">About</a>
       <a href="@@contact@@">Contact</a>
     </nav>
-    <a class="phone-pill" href="tel:+15615552688" aria-label="Call (561) 555-2688"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="pp-txt">(561) 555-2688</span></a>
+    <a class="phone-pill" href="tel:%%TEL%%" aria-label="Call %%PHONE%%"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="pp-txt">%%PHONE%%</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
   </div>
 </header>
@@ -362,20 +362,16 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
   <div class="foot-grid">
     <div class="f-brand">
       <svg class="lotus" aria-hidden="true"><use href="#i-mark"/></svg>
-      <div class="brand-txt"><span class="bt-1">GOLDEN LOTUS</span><span class="bt-2">CHINESE RESTAURANT</span></div>
-      <span class="seal" lang="zh-Hant" aria-hidden="true"><span>金</span><span>荷</span></span>
+      <div class="brand-txt"><span class="bt-1">%%NAME_UPPER%%</span><span class="bt-2">CHINESE RESTAURANT</span></div>
+      <span class="seal" lang="zh-Hant" aria-hidden="true">%%SEAL%%</span>
     </div>
     <div class="f-contact">
-      <p class="f-line"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>1236 Wellington Green Dr.<br>Wellington, FL 33414</span></p>
-      <p class="f-line big"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+15615552688">(561) 555-2688</a></p>
+      <p class="f-line"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>%%STREET%%<br>%%CITYLINE%%</span></p>
+      <p class="f-line big"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:%%TEL%%">%%PHONE%%</a></p>
     </div>
     <div class="f-hours">
       <h2 class="f-h"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Hours</h2>
-      <table class="hours mini">
-        <tr data-days="1 2 3 4" data-open="11:00" data-close="21:30"><th scope="row">Mon – Thu</th><td>11:00 AM – 9:30 PM</td></tr>
-        <tr data-days="5 6" data-open="11:00" data-close="22:00"><th scope="row">Fri – Sat</th><td>11:00 AM – 10:00 PM</td></tr>
-        <tr data-days="0" data-open="12:00" data-close="21:00"><th scope="row">Sun</th><td>12:00 PM – 9:00 PM</td></tr>
-      </table>
+      <table class="hours mini">%%HOURS_MINI%%</table>
       <span class="open-status" data-open-status hidden></span>
     </div>
     <div class="f-order">
@@ -396,7 +392,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
     <a href="@@about@@">About</a>
     <a href="@@contact@@">Contact</a>
   </nav>
-  <p class="legal-row">© <span data-year>2026</span> Golden Lotus Chinese Restaurant · <a href="@@privacy@@">Privacy</a> · <a href="@@accessibility@@">Accessibility</a></p>
+  <p class="legal-row">© <span data-year>2026</span> %%NAME%% Chinese Restaurant · <a href="@@privacy@@">Privacy</a> · <a href="@@accessibility@@">Accessibility</a></p>
   <div class="foot-glow" aria-hidden="true"></div>
 </footer>
 <!--/FOOTER-->
