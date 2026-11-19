@@ -19,8 +19,20 @@ def block(name):
     m=re.search(r'<!--%s-->(.*?)<!--/%s-->'%(name,name),T,re.S); assert m,name; return m.group(1).strip()
 head=T[:T.index('<!--DEFS-->')]
 head=re.sub(r'<title>.*?</title>\s*','',head,flags=re.S)
-head=head.replace('</style>','</style>\n<style>\n'+rd('pages.css')+rd('legal.css')+'</style>')
+head=head.replace('</style>','</style>\n<style>\n'+rd('pages.css')+rd('legal.css')+rd('seams.css')+'</style>')
+WAVE=re.search(r'<!--WAVE-->(.*?)<!--/WAVE-->',T,re.S).group(1)
+import json, itertools
+LD=json.dumps({'@context':'https://schema.org','@type':'Restaurant','name':'Golden Lotus Chinese Restaurant','servesCuisine':'Chinese','telephone':'+1-561-555-2688','address':{'@type':'PostalAddress','streetAddress':'1236 Wellington Green Dr.','addressLocality':'Wellington','addressRegion':'FL','postalCode':'33414','addressCountry':'US'},'openingHoursSpecification':[{'@type':'OpeningHoursSpecification','dayOfWeek':d,'opens':o,'closes':c} for d,o,c in ((['Monday','Tuesday','Wednesday','Thursday'],'11:00','21:30'),(['Friday','Saturday'],'11:00','22:00'),(['Sunday'],'12:00','21:00'))]},ensure_ascii=False)
+head=head.replace('<!--JSONLD-->','<script type="application/ld+json">'+LD+'</script>')
 defs,header,home,footer,script=(block(n) for n in ('DEFS','HEADER','HOME','FOOTER','SCRIPT'))
+home=home.replace('<!--WAVE-->','').replace('<!--/WAVE-->','')
+ORDER=list(PAGES)
+def shapes(html,key):
+    cyc=itertools.islice(itertools.cycle('abc'),ORDER.index(key),None)
+    return re.sub(r'<figure class="frame">(<img[^>]*>)',lambda m:f'<figure class="frame"><div class="blob" data-shape="{next(cyc)}">{m.group(1)}</div>',html)
+def hero_wave(html):
+    i=html.find('</section>'); assert 'page-hero' in html[:i]
+    return html[:i]+WAVE+'\n'+html[i:]
 band=rd('pages/_band.html')
 js='<script>\n'+rd('pages.js')+'</script>'
 def include(s):
@@ -28,7 +40,7 @@ def include(s):
 def esc(s): return s.replace('&','&amp;')
 def build(key):
     fn,body,title=PAGES[key]
-    main=home if body is None else include(rd(body))+'\n'+band
+    main=home if body is None else shapes(hero_wave(include(rd(body))),key)+'\n'+band
     hdr,ftr=header,footer
     hdr=hdr.replace(f'href="@@{key}@@"',f'href="@@{key}@@" aria-current="page"')
     ftr=ftr.replace(f'href="@@{key}@@"',f'href="@@{key}@@" aria-current="page"')

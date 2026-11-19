@@ -24,6 +24,7 @@
   --f-script:"Great Vibes", "Snell Roundhand", "Brush Script MT", cursive;
   --f-cjk:"Noto Serif SC", "Songti SC", "SimSun", serif;
   --wrap:1180px;
+  --hh:65px; /* sticky header height: the first screen is 100svh minus this */
 }
 [hidden]{display:none!important}
 *,*::before,*::after{box-sizing:border-box}
@@ -90,7 +91,8 @@ p{margin:0}
 /* ---------- home hero ---------- */
 .home-hero{position:relative;background:var(--ink)}
 .home-hero .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,8,7,.55),rgba(12,8,7,.2) 45%,rgba(12,8,7,0) 62%),url("img/hero-general-tso.jpg") 62% 50%/cover no-repeat}
-.home-hero .hero-in{position:relative;max-width:1320px;margin:0 auto;padding:clamp(150px,15vw,200px) clamp(16px,6vw,76px) clamp(120px,12vw,170px);min-height:clamp(470px,40vw,600px)}
+.home-hero .hero-in{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:clamp(120px,12vw,170px) clamp(16px,6vw,76px) clamp(110px,11vw,160px);min-height:max(520px,calc(100vh - var(--hh)));min-height:max(520px,calc(100svh - var(--hh)));display:flex;flex-direction:column;justify-content:center}
+.home-hero .wave{z-index:1}
 .eyebrow-wide{font:500 clamp(16px,1.7vw,22px)/1 var(--f-label);letter-spacing:.55em;color:var(--gold-2);text-transform:uppercase;padding-left:.3em}
 .hh1{font:italic 500 clamp(54px,6.4vw,88px)/1.02 var(--f-display);margin:10px 0 14px;background:linear-gradient(180deg,#fbe9bb 15%,#d7ad5f 85%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 24px rgba(0,0,0,.25)}
 .hh-sub{font:italic 500 clamp(20px,2.1vw,27px)/1.25 var(--f-display);color:#fbf3e3}
@@ -98,19 +100,22 @@ p{margin:0}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:20px}
 @media (max-width:700px){
   .home-hero .hero-bg{background:linear-gradient(180deg,rgba(12,8,7,.3),rgba(12,8,7,.75) 55%,rgba(12,8,7,.9)),url("img/hero-general-tso.jpg") 78% 0/auto 100% no-repeat}
-  .home-hero .hero-in{padding-top:200px}
+  .home-hero .hero-in{padding-top:150px;padding-bottom:80px;justify-content:flex-end}
   .brush{margin-left:60px}
 }
 
 /* ---------- waves ---------- */
 .wave{position:absolute;left:0;right:0;width:100%;display:block;pointer-events:none}
-.wave-cream{bottom:-1px;height:clamp(60px,9vw,130px)}
+.wave-cream{bottom:-1px;height:clamp(70px,11vw,160px)}
 .wave-top{top:-1px;height:clamp(40px,6vw,90px);z-index:2}
 .wave-bottom{bottom:-1px;height:clamp(40px,6vw,90px);z-index:2}
 
 /* ---------- signature ---------- */
-.signature{position:relative;background:radial-gradient(ellipse at 15% 20%,rgba(176,20,28,.18),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(216,180,104,.08),transparent 40%),var(--ink-2);padding:clamp(30px,4vw,48px) 0 clamp(60px,6vw,80px)}
-.sig-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,40px);padding-right:clamp(16px,5vw,60px)}
+.signature{position:relative;background:radial-gradient(ellipse at 15% 20%,rgba(176,20,28,.18),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(216,180,104,.08),transparent 40%),var(--ink-2);padding:clamp(30px,4vw,48px) 0 clamp(16px,2vw,28px)}
+.signature{overflow-x:clip}
+.sig-bamboo{position:absolute;right:0;top:clamp(8px,1.5vw,24px);width:clamp(150px,17vw,260px);height:auto;pointer-events:none;opacity:.95;z-index:1}
+@media (max-width:900px){.sig-bamboo{width:120px;opacity:.6}}
+.sig-in{position:relative;z-index:2;max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,40px);padding-right:clamp(16px,5vw,60px)}
 .sig-photo{margin:0;position:relative}
 .sig-photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}
 .sig-head{text-align:center;margin-bottom:26px}
@@ -202,6 +207,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
   .foot-nav a{padding:0 10px}
 }
 </style>
+<!--JSONLD-->
 <!--DEFS-->
 <svg class="sprite" aria-hidden="true" focusable="false">
   <defs>
@@ -215,6 +221,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
     <linearGradient id="creamfill" x1="0" x2="1">
       <stop offset="0" stop-color="#efdcb6"/><stop offset=".5" stop-color="#f8eedb"/><stop offset="1" stop-color="#ead2a2"/>
     </linearGradient>
+    <clipPath id="bandclip"><path d="M0 44C300 6 620 118 960 74C1150 50 1300 6 1440 4L1440 118C1330 112 1200 146 1000 150C640 158 320 76 0 96Z"/></clipPath>
     <linearGradient id="goldstroke" x1="0" x2="1">
       <stop offset="0" stop-color="#9c7535"/><stop offset=".45" stop-color="#f3d991"/><stop offset="1" stop-color="#b48a41"/>
     </linearGradient>
@@ -280,15 +287,17 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
         </div>
       </div>
     </div>
-    <svg class="wave wave-cream" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-      <path fill="url(#creamfill)" d="M0 30C300 0 600 100 960 70C1150 55 1300 0 1440 10L1440 50C1320 40 1180 92 980 105C620 130 320 50 0 70Z"/>
-      <path fill="#17100e" d="M0 70C320 50 620 130 980 105C1180 92 1320 40 1440 50L1440 121L0 121Z"/>
-      <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 70C320 50 620 130 980 105C1180 92 1320 40 1440 50"/>
-      <path fill="none" stroke="url(#goldstroke)" stroke-width="2" d="M0 30C300 0 600 100 960 70C1150 55 1300 0 1440 10"/>
-    </svg>
+    <!--WAVE--><svg class="wave wave-cream" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="url(#creamfill)" d="M0 44C300 6 620 118 960 74C1150 50 1300 6 1440 4L1440 118C1330 112 1200 146 1000 150C640 158 320 76 0 96Z"/>
+      <g clip-path="url(#bandclip)" opacity=".5"><path fill="#9c8a70" d="M900 152C960 130 990 112 1030 104C1060 98 1080 118 1110 104C1150 84 1180 62 1215 66C1250 70 1270 92 1300 84C1340 72 1370 52 1440 58V160H900Z" opacity=".55"/><path fill="#6f5f4a" d="M1010 152C1060 138 1100 128 1140 116C1180 104 1200 112 1240 100C1290 86 1320 96 1360 90C1400 84 1420 92 1440 96V160H1010Z" opacity=".5"/></g>
+      <path fill="#17100e" d="M0 96C320 76 640 158 1000 150C1200 146 1330 112 1440 118L1440 161L0 161Z"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 96C320 76 640 158 1000 150C1200 146 1330 112 1440 118"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="2" d="M0 44C300 6 620 118 960 74C1150 50 1300 6 1440 4"/>
+    </svg><!--/WAVE-->
   </section>
 
   <section class="signature" aria-labelledby="sigh">
+    <img class="sig-bamboo" src="img/bamboo.png" width="362" height="280" alt="" aria-hidden="true">
     <div class="sig-in">
       <figure class="sig-photo">
         <img src="img/signature-plate.jpg" width="960" height="544" alt="General Tso's chicken with a sesame glaze and fresh scallions on a dark stoneware plate">
@@ -320,7 +329,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
       <path fill="#17100e" d="M0 0H1440V22C1150 18 950 78 640 70C380 64 170 30 0 52Z"/>
       <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 52C170 30 380 64 640 70C950 78 1150 18 1440 22"/>
     </svg>
-    <div class="ev-photo"><img src="img/private-dining-room.jpg" width="1224" height="468" alt="Private dining room with a round banquet table, red napkins, orchids and a cherry-blossom moon window" loading="lazy"></div>
+    <div class="ev-photo photo-band"><img src="img/private-dining-room.jpg" width="1224" height="468" alt="Private dining room with a round banquet table, red napkins, orchids and a cherry-blossom moon window" loading="lazy"></div>
     <div class="ev-copy">
       <h2 class="ev-h" id="evh">Private <span class="script">Events</span></h2>
       <p>The perfect setting for family gatherings, celebrations and special occasions.</p>
