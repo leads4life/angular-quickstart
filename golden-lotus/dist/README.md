@@ -17,7 +17,7 @@ The source lives in the repo folder `golden-lotus/`: `template.html` (header, fo
 Open `site.py`, paste the URL into `ORDER_URL = ''` and rebuild. Every "Order Online" button switches to it.
 
 ## Photos
-Each photo position has its own file in `img/`. See **PHOTOGRAPHY.md** for the slot map and ChatGPT prompts.
+All 13 slots are filled with the supplied images (graded copies; originals in `photo-originals/` in the source repo). Each photo position has its own file in `img/`. See **PHOTOGRAPHY.md** for the slot map and ChatGPT prompts.
 
 ## Facts to confirm (copied from the mockup)
 - Address 1236 Wellington Green Dr., Wellington, FL 33414; phone (561) 555-2688 (555 numbers are usually fictional)

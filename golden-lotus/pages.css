@@ -1,7 +1,12 @@
 /* ---------- inner pages: shared components (built on tokens) ---------- */
 .page-hero{position:relative;background-color:var(--green-deep);background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;min-height:max(460px,calc(100vh - var(--hh)));min-height:max(460px,calc(100svh - var(--hh)))}
 .page-hero .wave{z-index:1}
-.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,8,7,.92) 0%,rgba(12,8,7,.72) 45%,rgba(12,8,7,.25) 100%)}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0 34%,rgba(15,10,9,.84) 44%,rgba(15,10,9,.3) 62%,rgba(15,10,9,.08) 80%)}
+/* photo heroes: the photo keeps its full height on the right, the headline sits on ink at the left */
+.page-hero{background-size:auto 100%;background-position:right center;background-repeat:no-repeat}
+.page-hero.texture{background-size:cover;background-position:center}
+.page-hero.texture::before{background:linear-gradient(90deg,rgba(15,10,9,.88),rgba(15,10,9,.55) 55%,rgba(15,10,9,.35))}
+@media (max-width:700px){.page-hero{justify-content:flex-end;background-size:auto 56%;background-position:68% 0;background-color:var(--ink)}.page-hero.texture{background-size:cover}.page-hero::before{background:linear-gradient(180deg,rgba(15,10,9,.1),rgba(15,10,9,.35) 34%,var(--ink) 56%)}.page-hero.texture::before{background:linear-gradient(180deg,rgba(15,10,9,.5),rgba(15,10,9,.85))}}
 .hero-in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(48px,6vw,80px) clamp(16px,4vw,40px) clamp(110px,13vw,180px)}
 .page-hero .hero-copy{max-width:640px}
 .zh-e{font:400 20px/1 var(--f-brush);letter-spacing:.2em;color:#e0574e;margin-right:14px;vertical-align:-2px;text-transform:none}

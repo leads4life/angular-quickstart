@@ -8,6 +8,10 @@ Every photo position on the site has its **own file name**. To replace a photo:
 
 Nothing else needs to change. The site picks a file up by its name.
 
+## Status (November 2026)
+All 13 slots now hold the owner-supplied images (AI-generated, fictional). Untouched originals are kept in `photo-originals/`; the site uses graded copies made by `work/grade_photos.py` (warmer, deeper, soft vignette to match the dark lacquer palette). To replace a photo later, drop the new file into `photo-originals/` with the same name, run `python3 work/grade_photos.py` then `python3 site.py`.
+Still worth replacing with real photos when available: `hero-contact.jpg` (your real entrance) and `about-story.jpg` (your own kitchen).
+
 ---
 
 ## The slot map

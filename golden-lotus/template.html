@@ -91,7 +91,7 @@ p{margin:0}
 
 /* ---------- home hero ---------- */
 .home-hero{position:relative;background:var(--ink)}
-.home-hero .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,8,7,.55),rgba(12,8,7,.2) 45%,rgba(12,8,7,0) 62%),url("img/home-hero.jpg") 62% 50%/cover no-repeat}
+.home-hero .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0 34%,rgba(15,10,9,.82) 44%,rgba(15,10,9,.25) 62%,rgba(15,10,9,0) 78%),url("img/home-hero.jpg") right center/auto 100% no-repeat,var(--ink)}
 .home-hero .hero-in{position:relative;z-index:1;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(120px,12vw,170px) clamp(16px,4vw,40px) clamp(110px,11vw,160px);min-height:max(520px,calc(100vh - var(--hh)));min-height:max(520px,calc(100svh - var(--hh)));display:flex;flex-direction:column;justify-content:center}
 .home-hero .wave{z-index:1}
 .eyebrow-wide{font:500 clamp(16px,1.7vw,22px)/1 var(--f-label);letter-spacing:.55em;color:var(--gold-2);text-transform:uppercase;padding-left:.3em}
@@ -100,7 +100,7 @@ p{margin:0}
 .brush{display:block;width:110px;height:12px;margin:8px 0 34px 110px;color:var(--red)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:20px}
 @media (max-width:700px){
-  .home-hero .hero-bg{background:linear-gradient(180deg,rgba(12,8,7,.3),rgba(12,8,7,.75) 55%,rgba(12,8,7,.9)),url("img/home-hero.jpg") 78% 0/auto 100% no-repeat}
+  .home-hero .hero-bg{background:linear-gradient(180deg,rgba(12,8,7,.25),rgba(12,8,7,.7) 52%,rgba(12,8,7,.92)),url("img/home-hero.jpg") 72% 0/auto 62% no-repeat,var(--ink)}
   .home-hero .hero-in{padding-top:150px;padding-bottom:80px;justify-content:flex-end}
   .brush{margin-left:60px}
 }
@@ -313,7 +313,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
     <img class="sig-bamboo" src="img/bamboo.png" width="362" height="280" alt="" aria-hidden="true">
     <div class="sig-in">
       <figure class="sig-photo">
-        <img src="img/home-signature.jpg" width="960" height="544" alt="General Tso's chicken with a sesame glaze and fresh scallions on a dark stoneware plate">
+        <img src="img/home-signature.jpg" width="1536" height="1024" alt="General Tso's chicken with dried red chilies, sesame and scallions on a dark stoneware plate">
       </figure>
       <div class="sig-body">
         <header class="sig-head">
@@ -343,7 +343,7 @@ table.hours tr.today th::before{content:"";display:inline-block;width:6px;height
       <path fill="#17100e" d="M0 0H1440V22C1150 18 950 78 640 70C380 64 170 30 0 52Z"/>
       <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 52C170 30 380 64 640 70C950 78 1150 18 1440 22"/>
     </svg>
-    <div class="ev-photo photo-band"><img src="img/home-private-dining.jpg" width="1224" height="468" alt="Private dining room with a round banquet table, red napkins, orchids and a plum-blossom moon window" loading="lazy"></div>
+    <div class="ev-photo photo-band"><img src="img/home-private-dining.jpg" width="1536" height="1024" alt="Private dining room: a round banquet table under a plum-blossom moon window, rosewood lattice and red lanterns" loading="lazy"></div>
     <div class="ev-copy">
       <p class="zh-v" lang="zh-Hant" aria-hidden="true"><span>宴</span><span>會</span></p>
       <h2 class="ev-h" id="evh">Private <span class="script">Events</span></h2>
