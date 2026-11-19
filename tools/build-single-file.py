@@ -32,5 +32,11 @@ def script(m):
     js = inline_assets((src / m.group(1)).read_text()).replace('</script', '<\\/script')
     return f'<script type="module">{js}</script>'
 html = re.sub(r'<script src="([^"]+\.js)" type="module"></script>', script, html)
+# textures used by CSS (masks, paper): embed each file ONCE as a custom property
+TEX = r'url\(["\']?([\w.-]+\.(?:webp|jpg|png|svg))["\']?\)'
+used = sorted({n for n in re.findall(TEX, html) if (src / n).exists()})
+html = re.sub(TEX, lambda m: f'var(--gw-{m.group(1).replace(".", "-")})' if m.group(1) in used else m.group(0), html)
+defs = ''.join(f'--gw-{n.replace(".", "-")}:url({data_uri(src / n)});' for n in used)
+html = html.replace('<head>', f'<head><style>:root{{{defs}}}</style>', 1)
 out.write_text(html)
 print(out, f'{out.stat().st_size / 1e6:.2f} MB')

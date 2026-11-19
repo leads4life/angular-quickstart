@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
 
-/** Dark cinematic hero used at the top of every page. Buttons are projected. */
+/** Dark cinematic hero; its lower edge bleeds into the rice paper. Buttons are projected. */
 @Component({
   selector: 'app-page-hero',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section class="hero" [class.hero--home]="large">
+    <section class="hero" [class.hero--home]="large" [class.hero--flush]="!bleed">
       <img class="hero-img" [src]="image" alt="" fetchpriority="high">
       <img *ngIf="blossom" class="hero-blossom" src="assets/img/blossom.svg" alt="">
       <div class="container hero-content">
@@ -14,8 +14,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
         <p class="lead" *ngIf="lead">{{ lead }}</p>
         <div class="hero-actions"><ng-content></ng-content></div>
       </div>
-    </section>
-    <app-wave *ngIf="wave"></app-wave>`,
+    </section>`,
 })
 export class PageHeroComponent {
   @Input() eyebrow = '';
@@ -25,6 +24,10 @@ export class PageHeroComponent {
   @Input() image = '';
   @Input() large = false;
   @Input() blossom = false;
-  /** Off when the footer follows directly (its own wave carries that seam). */
-  @Input() wave = true;
+  /** Off when the footer follows directly (its own ink edge carries that seam). */
+  @Input() bleed = true;
+
+  @HostBinding('class.flush') get flush(): boolean {
+    return !this.bleed;
+  }
 }

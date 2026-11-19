@@ -19,7 +19,6 @@ import { IconComponent } from './shared/icon.component';
 import { InquiryFormComponent } from './shared/inquiry-form.component';
 import { LogoComponent } from './shared/logo.component';
 import { PageHeroComponent } from './shared/page-hero.component';
-import { WaveComponent } from './shared/wave.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,6 @@ import { WaveComponent } from './shared/wave.component';
     HeaderComponent,
     FooterComponent,
     IconComponent,
-    WaveComponent,
     LogoComponent,
     PageHeroComponent,
     InquiryFormComponent,

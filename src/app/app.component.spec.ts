@@ -6,14 +6,13 @@ import { FooterComponent } from './layout/footer.component';
 import { HeaderComponent } from './layout/header.component';
 import { IconComponent } from './shared/icon.component';
 import { LogoComponent } from './shared/logo.component';
-import { WaveComponent } from './shared/wave.component';
 import { NAV } from './site.data';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [RouterTestingModule, FormsModule],
-      declarations: [AppComponent, HeaderComponent, FooterComponent, IconComponent, LogoComponent, WaveComponent],
+      declarations: [AppComponent, HeaderComponent, FooterComponent, IconComponent, LogoComponent],
     }).compileComponents();
   });
 

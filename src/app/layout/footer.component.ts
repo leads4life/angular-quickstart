@@ -5,7 +5,6 @@ import { NAV, SITE } from '../site.data';
   selector: 'app-footer',
   template: `
     <footer class="site-footer">
-      <app-wave fill="var(--burgundy)" variant="b"></app-wave>
       <div class="container footer-grid">
         <a routerLink="/" class="footer-logo" aria-label="Golden Wok home"><app-logo [stacked]="true"></app-logo></a>
 
