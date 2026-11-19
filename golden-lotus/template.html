@@ -1,0 +1,395 @@
+<title>Golden Lotus Chinese Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Golden Lotus Chinese Restaurant in Wellington, FL: traditional Chinese favorites, takeout and delivery, and a private dining room for celebrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&text=%E8%8F%AF%E5%BF%83%E6%B5%B7%E6%B9%AF%E7%89%9B%E7%94%9C%E7%B4%A0%E8%B1%AC%E9%9B%9E%E9%A3%AF%E9%AE%AE%E9%BA%B5%E9%BB%9E%E4%B8%AD&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a lacquered night-time dining room — near-black wood, gold leaf rules, cinnabar red seals; gold waves split each band. */
+:root{
+  color-scheme: light;
+  --ink:#0f0a09; --ink-2:#17100e; --ink-3:#221614;
+  --gold:#d8b468; --gold-2:#f0d898; --gold-deep:#a8823c;
+  --red:#b0141c; --red-deep:#6f0b10;
+  --text:#efe4d0; --muted:#bfae93;
+  /* shared component tokens */
+  --coral:var(--red); --coral-deep:var(--red-deep);
+  --green:var(--ink-3); --green-deep:var(--ink);
+  --cream:#f4e8cf; --cream-2:#e8d6b2; --peach:#ead2a6; --pink:#f1d6d0; --aqua:var(--gold);
+  --line:rgba(216,180,104,.32); --white:#fff;
+  --f-display:"Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --f-label:"Cinzel", "Trajan Pro", Georgia, serif;
+  --f-body:"EB Garamond", Garamond, Georgia, serif;
+  --f-script:"Great Vibes", "Snell Roundhand", "Brush Script MT", cursive;
+  --f-cjk:"Noto Serif SC", "Songti SC", "SimSun", serif;
+  --wrap:1180px;
+}
+[hidden]{display:none!important}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--ink);color:var(--text);font:400 18px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:2px}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ico{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ico.solid{fill:currentColor;stroke:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--gold);color:var(--ink);padding:8px 14px}
+.skip:focus{left:8px}
+
+/* ---------- header ---------- */
+.site-head{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(12,8,7,.97),rgba(12,8,7,.9));border-bottom:1px solid rgba(216,180,104,.18);backdrop-filter:blur(6px)}
+.head-in{max-width:1320px;margin:0 auto;padding:10px clamp(16px,3vw,36px);display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold-2);margin-right:auto}
+.brand .lotus{width:56px;height:36px;color:var(--gold)}
+.brand-txt{display:flex;flex-direction:column;line-height:1}
+.bt-1{font:500 30px/1 var(--f-label);letter-spacing:.02em;background:linear-gradient(180deg,#f7e3ad,#c99d4e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bt-2{font:500 11.5px/1 var(--f-label);letter-spacing:.42em;color:var(--text);margin-top:7px}
+.seal{display:inline-grid;place-items:center;width:44px;height:44px;background:var(--red);color:#f7d9a0;font:700 28px/1 var(--f-cjk);border-radius:3px;box-shadow:inset 0 0 0 2px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;gap:clamp(14px,1.8vw,26px)}
+.nav a{font-size:15.5px;text-decoration:none;color:var(--text);padding:6px 0;position:relative;white-space:nowrap}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--red);transform:scaleX(0);transition:transform .2s}
+.nav a:hover::after,.nav a[aria-current="page"]::after{transform:scaleX(1)}
+.nav a[aria-current="page"]{color:#fff}
+.phone-pill{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#c4161f,#8e0f15);color:#fff;text-decoration:none;font-size:15.5px;padding:8px 16px;border-radius:7px;box-shadow:0 0 0 1px rgba(240,216,152,.15),0 6px 16px rgba(176,20,28,.3);white-space:nowrap}
+.phone-pill .ico{font-size:16px}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-2);width:44px;height:44px;border-radius:6px;cursor:pointer;place-items:center}
+.menu-btn .ico{font-size:22px}
+@media (max-width:1080px){
+  .menu-btn{display:inline-grid}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:#120c0a;border-bottom:1px solid var(--line);padding:8px clamp(16px,4vw,40px) 16px}
+  .site-head.open .nav{display:flex}
+  .nav a{padding:12px 0;border-bottom:1px solid rgba(216,180,104,.12);font-size:17px}
+  .nav a::after{display:none}
+  .nav a[aria-current="page"]{color:var(--gold-2)}
+}
+@media (max-width:700px){
+  .head-in{gap:10px}
+  .brand .lotus{width:40px;height:26px}
+  .bt-1{font-size:21px}.bt-2{font-size:8.5px;letter-spacing:.3em;margin-top:5px}
+  .seal{width:32px;height:32px;font-size:20px}
+  .pp-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .phone-pill{padding:0;width:44px;height:44px;justify-content:center}
+}
+@media (max-width:380px){.brand .seal{display:none}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;font:500 18px/1 var(--f-body);text-decoration:none;padding:13px 24px;border-radius:7px;cursor:pointer;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn .ico{font-size:15px}
+.btn-red{background:linear-gradient(180deg,#c3161f,#8c0e14);color:#fff;border-color:rgba(240,216,152,.2);box-shadow:0 8px 22px rgba(140,14,20,.35)}
+.btn-gold{background:rgba(15,10,9,.35);color:var(--gold-2);border-color:var(--gold)}
+.btn-gold:hover,.btn-outline:hover{background:rgba(216,180,104,.12)}
+.btn-outline{background:transparent;color:var(--gold-2);border-color:var(--gold)}
+
+/* ---------- home hero ---------- */
+.home-hero{position:relative;background:var(--ink)}
+.home-hero .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,8,7,.55),rgba(12,8,7,.2) 45%,rgba(12,8,7,0) 62%),url("img/hero-general-tso.jpg") 62% 50%/cover no-repeat}
+.home-hero .hero-in{position:relative;max-width:1320px;margin:0 auto;padding:clamp(150px,15vw,200px) clamp(16px,6vw,76px) clamp(120px,12vw,170px);min-height:clamp(470px,40vw,600px)}
+.eyebrow-wide{font:500 clamp(16px,1.7vw,22px)/1 var(--f-label);letter-spacing:.55em;color:var(--gold-2);text-transform:uppercase;padding-left:.3em}
+.hh1{font:italic 500 clamp(54px,6.4vw,88px)/1.02 var(--f-display);margin:10px 0 14px;background:linear-gradient(180deg,#fbe9bb 15%,#d7ad5f 85%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hh-sub{font:italic 500 clamp(20px,2.1vw,27px)/1.25 var(--f-display);color:#fbf3e3}
+.brush{display:block;width:110px;height:12px;margin:8px 0 34px 110px;color:var(--red)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:20px}
+@media (max-width:700px){
+  .home-hero .hero-bg{background:linear-gradient(180deg,rgba(12,8,7,.3),rgba(12,8,7,.75) 55%,rgba(12,8,7,.9)),url("img/hero-general-tso.jpg") 78% 0/auto 100% no-repeat}
+  .home-hero .hero-in{padding-top:200px}
+  .brush{margin-left:60px}
+}
+
+/* ---------- waves ---------- */
+.wave{position:absolute;left:0;right:0;width:100%;display:block;pointer-events:none}
+.wave-cream{bottom:-1px;height:clamp(60px,9vw,130px)}
+.wave-top{top:-1px;height:clamp(40px,6vw,90px);z-index:2}
+.wave-bottom{bottom:-1px;height:clamp(40px,6vw,90px);z-index:2}
+
+/* ---------- signature ---------- */
+.signature{position:relative;background:radial-gradient(ellipse at 15% 20%,rgba(176,20,28,.18),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(216,180,104,.08),transparent 40%),var(--ink-2);padding:clamp(30px,4vw,48px) 0 clamp(60px,6vw,80px)}
+.sig-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,40px);padding-right:clamp(16px,5vw,60px)}
+.sig-photo{margin:0;position:relative}
+.sig-photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 75%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}
+.sig-head{text-align:center;margin-bottom:26px}
+.rule-eyebrow{display:flex;align-items:center;justify-content:center;gap:18px;font:500 17px/1 var(--f-label);letter-spacing:.4em;color:var(--text);text-transform:uppercase}
+.rule-eyebrow::before,.rule-eyebrow::after{content:"";height:1px;width:clamp(50px,12vw,170px);background:linear-gradient(90deg,transparent,var(--gold))}
+.rule-eyebrow::after{background:linear-gradient(270deg,transparent,var(--gold))}
+.script-h{font:italic 500 clamp(42px,4.8vw,62px)/1.1 var(--f-display);margin:8px 0 10px;background:linear-gradient(180deg,#fbe9bb,#d2a656);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sig-head p{font-size:17px;color:#e9dcc6}
+.sig-row{display:flex;align-items:center;justify-content:center;gap:clamp(24px,5vw,60px);flex-wrap:wrap}
+.dish-list{list-style:none;margin:0;padding:0;min-width:260px;flex:0 1 300px}
+.dish-list li{border-bottom:1px solid rgba(216,180,104,.3)}
+.dish-list li:last-child{border-bottom:0}
+.dish-list a{display:flex;align-items:center;gap:22px;padding:11px 0;text-decoration:none;font-size:19px;color:#f6ecdb}
+.dish-list a:hover{color:var(--gold-2)}
+.dish-list .ico{font-size:36px;color:var(--gold);stroke-width:1.3}
+.brush-badge{position:relative;display:grid;place-items:center;width:200px;height:190px;text-decoration:none;flex:none}
+.brush-badge svg.blob{position:absolute;inset:0;width:100%;height:100%}
+.brush-badge span{position:relative;font:italic 500 23px/1.12 var(--f-display);color:#fbefd7;text-align:left}
+.brush-badge .ico{font-size:14px;vertical-align:-1px;margin-left:4px}
+.brush-badge:hover span{color:#fff}
+@media (max-width:900px){
+  .sig-in{grid-template-columns:1fr;padding:0 clamp(16px,4vw,40px)}
+  .sig-photo{max-width:560px;margin:0 auto}
+  .sig-photo img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(180deg,transparent,#000 10%,#000 90%,transparent)}
+  .sig-body{order:-1}
+}
+
+/* ---------- events band ---------- */
+.events-band{position:relative;display:grid;grid-template-columns:57% 43%;background:var(--red-deep);overflow:hidden}
+.ev-photo{position:relative;min-height:clamp(320px,30vw,440px)}
+.ev-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ev-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 80%,rgba(111,11,16,.7))}
+.ev-copy{background:linear-gradient(120deg,rgba(150,15,22,.55),rgba(90,8,12,.35)),url("img/red-floral.jpg") center/cover;padding:clamp(70px,8vw,110px) clamp(20px,5vw,64px) clamp(70px,8vw,110px) clamp(20px,4vw,48px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:20px}
+.ev-h{font:500 clamp(40px,4.4vw,56px)/1 var(--f-display);color:#fbf1dd}
+.script{font:400 1.32em/1 var(--f-script);background:linear-gradient(180deg,#fbe5a8,#cf9f4c);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .12em}
+.ev-copy p{font-size:20px;line-height:1.35;color:#fbefdc;max-width:22em}
+@media (max-width:800px){
+  .events-band{grid-template-columns:1fr}
+  .ev-photo{min-height:300px}
+  .ev-photo::after{background:linear-gradient(180deg,transparent 75%,rgba(111,11,16,.8))}
+}
+
+/* ---------- footer ---------- */
+.site-foot{position:relative;background:radial-gradient(circle at 50% 100%,transparent 55%,rgba(216,180,104,.05) 56%,rgba(216,180,104,.05) 60%,transparent 61%) 0 0/44px 22px,linear-gradient(180deg,#0e0908,#140d0b);padding:44px 0 0;color:#efe4d0}
+.foot-grid{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px);display:grid;grid-template-columns:1.1fr 1.1fr 1.2fr 1fr;gap:0}
+.foot-grid>*{padding:6px clamp(14px,2.4vw,34px)}
+.foot-grid>*+*{border-left:1px solid rgba(216,180,104,.3)}
+.f-brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;color:var(--gold)}
+.f-brand .lotus{width:88px;height:56px}
+.f-brand .bt-1{font-size:24px;white-space:nowrap}
+.f-brand .bt-2{font-size:9.5px;letter-spacing:.32em;margin-top:6px;white-space:nowrap}
+.f-brand .seal{width:40px;height:40px;font-size:24px;margin-top:6px}
+.f-line{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.45;margin-bottom:18px}
+.f-line .ico{font-size:20px;color:var(--gold);margin-top:2px}
+.f-line.big{font-size:21px;align-items:center}
+.f-line a{text-decoration:none}
+.f-line a:hover,.f-h a:hover{color:var(--gold-2)}
+.f-h{display:flex;align-items:center;gap:10px;font:500 20px/1.2 var(--f-display);color:var(--gold-2);margin-bottom:10px}
+.f-h .ico{font-size:22px;color:var(--gold)}
+.f-h a{text-decoration:none}
+table.hours{border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.mini th{font-weight:400;text-align:left;color:var(--gold);padding:2px 22px 2px 0;font-size:14.5px;white-space:nowrap}
+table.mini td{font-size:14.5px;padding:2px 0;white-space:nowrap}
+table.hours tr.today th,table.hours tr.today td{color:#fff}
+table.hours tr.today th::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin:0 6px 2px -12px;box-shadow:0 0 0 2px rgba(176,20,28,.35)}
+.open-status{display:inline-block;margin-top:10px;font:500 12px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.open-status.is-open{color:#d9f2cf;border-color:rgba(160,210,140,.45)}
+.open-status.is-closed{color:#f3c2c2;border-color:rgba(220,120,120,.45)}
+.f-small{font-style:italic;font-size:14px;color:var(--text);margin:-4px 0 18px 32px}
+.socials{display:flex;gap:16px;margin-left:32px}
+.socials a{display:grid;place-items:center;width:36px;height:36px;color:#fff;border-radius:50%}
+.socials a:hover{color:var(--gold-2)}
+.socials .ico{font-size:26px}
+.foot-nav{max-width:840px;margin:34px auto 0;border-top:1px solid rgba(216,180,104,.3);padding:20px 16px 0;display:flex;flex-wrap:wrap;justify-content:center;row-gap:8px}
+.foot-nav a{font-size:15px;text-decoration:none;padding:0 18px;position:relative}
+.foot-nav a+a::before{content:"|";position:absolute;left:-3px;color:var(--gold-deep)}
+.foot-nav a:hover,.foot-nav a[aria-current="page"]{color:var(--gold-2)}
+.legal-row{text-align:center;font-size:13.5px;color:var(--muted);padding:14px 16px 26px}
+.legal-row a{color:var(--muted)}
+.legal-row a:hover,.legal-row a[aria-current="page"]{color:var(--gold-2)}
+.foot-glow{height:22px;background:radial-gradient(ellipse at 50% 100%,rgba(196,22,31,.9),rgba(110,10,14,.6) 45%,transparent 75%);border-top:1px solid rgba(216,180,104,.45)}
+@media (max-width:980px){
+  .foot-grid{grid-template-columns:1fr 1fr;row-gap:28px}
+  .foot-grid>:nth-child(3){border-left:0}
+}
+@media (max-width:560px){
+  .foot-grid{grid-template-columns:1fr}
+  .foot-grid>*+*{border-left:0;border-top:1px solid rgba(216,180,104,.2);padding-top:22px}
+  .foot-nav a{padding:0 10px}
+}
+</style>
+<!--DEFS-->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="16"/>
+    </filter>
+    <radialGradient id="blobfill" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#b8141d"/><stop offset=".75" stop-color="#8d0e15"/><stop offset="1" stop-color="#5e090d"/>
+    </radialGradient>
+    <linearGradient id="creamfill" x1="0" x2="1">
+      <stop offset="0" stop-color="#efdcb6"/><stop offset=".5" stop-color="#f8eedb"/><stop offset="1" stop-color="#ead2a2"/>
+    </linearGradient>
+    <linearGradient id="goldstroke" x1="0" x2="1">
+      <stop offset="0" stop-color="#9c7535"/><stop offset=".45" stop-color="#f3d991"/><stop offset="1" stop-color="#b48a41"/>
+    </linearGradient>
+  </defs>
+  <symbol id="i-lotus" viewBox="0 0 64 40"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M32 3C38 11 38 23 32 32C26 23 26 11 32 3Z"/><path d="M32 32C24 28 18 20 18 9C25 12 30 20 32 32Z"/><path d="M32 32C40 28 46 20 46 9C39 12 34 20 32 32Z"/><path d="M32 33C20 33 8 27 3 17C12 17 22 22 32 33Z"/><path d="M32 33C44 33 56 27 61 17C52 17 42 22 32 33Z"/><path d="M12 37H52" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9.5 13.5l1.8 1.8 3.4-3.6"/></symbol>
+  <symbol id="i-bowl" viewBox="0 0 48 32"><path d="M5 15h38c0 8-8 13-19 13S5 23 5 15z"/><path d="M17 28h14"/><path d="M12 15c2-4 6-6 12-6s10 2 12 6"/><path d="M27 10L44 2M30 11L46 5"/></symbol>
+  <symbol id="i-dumpling" viewBox="0 0 48 32"><path d="M4 24c0-9 9-16 20-16s20 7 20 16z"/><path d="M4 24h40"/><path d="M14 11c1 3 1 6 0 9M20 9c1 3 1 7 0 11M28 9c-1 3-1 7 0 11M34 11c-1 3-1 6 0 9"/></symbol>
+  <symbol id="i-noodles" viewBox="0 0 48 32"><path d="M5 16h38c0 7-8 12-19 12S5 23 5 16z"/><path d="M17 28h14"/><path d="M14 16c0-4 3-6 3-10M20 16c0-4 3-6 3-10M26 16c0-4 3-6 3-10"/><path d="M30 8L45 1M33 10L46 4"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 48 32"><path d="M10 28C10 14 20 4 40 3c0 18-12 26-24 25"/><path d="M10 28C16 20 22 15 31 10"/><path d="M19 21l-2-6M24 17l-1-6M24 17l6 1M19 21l7 1"/></symbol>
+  <symbol id="i-pepper" viewBox="0 0 24 24"><path d="M13 7c4 0 7 2 7 6 0 6-8 9-14 8 4-2 4-6 4-9s1-5 3-5z"/><path d="M13 7c0-2 1-3 3-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16V12l2-5h12l2 5v4z"/><path d="M4 12h16"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c3 0 5 2.2 5 5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-wok" viewBox="0 0 24 24"><path d="M3 11h15c0 4-3 7-7.5 7S3 15 3 11z"/><path d="M18 11l4-2"/><path d="M8 8c0-2 2-2 2-4M12 8c0-2 2-2 2-4"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-1.6 19.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 12 2z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="2"/><circle cx="12" cy="12" r="4.2" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-yelp" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="M10.5 2.4c.9-.3 2 .2 2 1.2v8.2c0 .9-1.1 1.3-1.7.6L6.3 6.4c-.5-.6-.3-1.5.4-1.9 1.1-.8 2.5-1.6 3.8-2.1z"/><path d="M14.4 13.3l4.9-1.6c.8-.3 1.6.3 1.6 1.2.1 1.3-.2 2.7-.7 3.9-.3.7-1.2 1-1.9.5l-4.2-2.6c-.7-.4-.5-1.2.3-1.4z"/><path d="M14.1 15.8l2.9 4.2c.4.7.1 1.6-.6 1.9-1.2.5-2.5.8-3.8.8-.8 0-1.4-.7-1.3-1.5l.8-5c.1-.8 1.1-1.1 2-.4z"/><path d="M10.9 15.5l-1.6 4.8c-.3.8-1.2 1.1-1.9.7-1.1-.7-2.1-1.6-2.8-2.7-.4-.7-.1-1.6.7-1.8l4.9-1.7c.6-.2 1 .2.7.7z"/><path d="M10 12.9l-5.1.2c-.8 0-1.4-.7-1.3-1.5.2-1.3.7-2.6 1.4-3.6.5-.7 1.5-.7 2 0l3.4 3.9c.5.5.3 1-.4 1z"/></g></symbol>
+</svg>
+<!--/DEFS-->
+<!--HEADER-->
+<a class="skip" href="#top">Skip to content</a>
+<header class="site-head" id="siteHead">
+  <div class="head-in">
+    <a class="brand" href="@@home@@" aria-label="Golden Lotus Chinese Restaurant, home">
+      <svg class="lotus" aria-hidden="true"><use href="#i-lotus"/></svg>
+      <span class="brand-txt" aria-hidden="true"><span class="bt-1">GOLDEN LOTUS</span><span class="bt-2">CHINESE RESTAURANT</span></span>
+      <span class="seal" lang="zh" aria-hidden="true">華</span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <a href="@@home@@">Home</a>
+      <a href="@@menu@@">Menu</a>
+      <a href="@@takeout@@">Takeout &amp; Delivery</a>
+      <a href="@@events@@">Private Events</a>
+      <a href="@@about@@">About</a>
+      <a href="@@contact@@">Contact</a>
+    </nav>
+    <a class="phone-pill" href="tel:+15615552688" aria-label="Call (561) 555-2688"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="pp-txt">(561) 555-2688</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+<!--/HEADER-->
+<main id="top">
+<!--HOME-->
+  <section class="home-hero" aria-labelledby="hh">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow-wide">Authentic</p>
+        <h1 class="hh1" id="hh">Chinese Cuisine</h1>
+        <p class="hh-sub">Traditional Favorites with a Modern Touch</p>
+        <svg class="brush" viewBox="0 0 120 12" aria-hidden="true"><path fill="currentColor" d="M2 9C30 3 80 1 118 3c-25 2-60 5-98 8-8 .6-17 0-18-2z"/></svg>
+        <div class="hero-ctas">
+          <a class="btn btn-red" href="@@menu@@">View Our Menu <svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></a>
+          <a class="btn btn-gold" href="@@takeout@@#order"><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg> Order Online</a>
+        </div>
+      </div>
+    </div>
+    <svg class="wave wave-cream" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="url(#creamfill)" d="M0 30C300 0 600 100 960 70C1150 55 1300 0 1440 10L1440 50C1320 40 1180 92 980 105C620 130 320 50 0 70Z"/>
+      <path fill="#17100e" d="M0 70C320 50 620 130 980 105C1180 92 1320 40 1440 50L1440 121L0 121Z"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 70C320 50 620 130 980 105C1180 92 1320 40 1440 50"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="2" d="M0 30C300 0 600 100 960 70C1150 55 1300 0 1440 10"/>
+    </svg>
+  </section>
+
+  <section class="signature" aria-labelledby="sigh">
+    <div class="sig-in">
+      <figure class="sig-photo">
+        <img src="img/signature-plate.jpg" width="960" height="544" alt="General Tso's chicken with a sesame glaze and fresh scallions on a dark stoneware plate">
+      </figure>
+      <div class="sig-body">
+        <header class="sig-head">
+          <p class="rule-eyebrow">Our</p>
+          <h2 class="script-h" id="sigh">Signature Dishes</h2>
+          <p>A selection of our most loved classics, freshly prepared with quality ingredients.</p>
+        </header>
+        <div class="sig-row">
+          <ul class="dish-list">
+            <li><a href="@@menu@@#chicken"><svg class="ico" aria-hidden="true"><use href="#i-bowl"/></svg>General Tso’s Chicken</a></li>
+            <li><a href="@@menu@@#appetizers"><svg class="ico" aria-hidden="true"><use href="#i-dumpling"/></svg>Pork Soup Dumplings</a></li>
+            <li><a href="@@menu@@#noodles"><svg class="ico" aria-hidden="true"><use href="#i-noodles"/></svg>Lo Mein</a></li>
+            <li><a href="@@menu@@#noodles"><svg class="ico" aria-hidden="true"><use href="#i-leaf"/></svg>Vegetable Fried Rice</a></li>
+          </ul>
+          <a class="brush-badge" href="@@menu@@">
+            <svg class="blob" viewBox="0 0 200 190" aria-hidden="true"><ellipse cx="100" cy="95" rx="84" ry="80" fill="url(#blobfill)" filter="url(#rough)"/></svg>
+            <span>Full Menu<br>of Traditional<br>Favorites <svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-band" aria-labelledby="evh">
+    <svg class="wave wave-top" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#17100e" d="M0 0H1440V22C1150 18 950 78 640 70C380 64 170 30 0 52Z"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 52C170 30 380 64 640 70C950 78 1150 18 1440 22"/>
+    </svg>
+    <div class="ev-photo"><img src="img/private-dining-room.jpg" width="1224" height="468" alt="Private dining room with a round banquet table, red napkins, orchids and a cherry-blossom moon window" loading="lazy"></div>
+    <div class="ev-copy">
+      <h2 class="ev-h" id="evh">Private <span class="script">Events</span></h2>
+      <p>The perfect setting for family gatherings, celebrations and special occasions.</p>
+      <a class="btn btn-outline" href="@@events@@">Learn More <svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></a>
+    </div>
+    <svg class="wave wave-bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#0e0908" d="M0 62C260 86 560 88 820 66C1060 46 1260 22 1440 30V91H0Z"/>
+      <path fill="none" stroke="url(#goldstroke)" stroke-width="3" d="M0 62C260 86 560 88 820 66C1060 46 1260 22 1440 30"/>
+    </svg>
+  </section>
+<!--/HOME-->
+</main>
+<!--FOOTER-->
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="f-brand">
+      <svg class="lotus" aria-hidden="true"><use href="#i-lotus"/></svg>
+      <div class="brand-txt"><span class="bt-1">GOLDEN LOTUS</span><span class="bt-2">CHINESE RESTAURANT</span></div>
+      <span class="seal" lang="zh" aria-hidden="true">華</span>
+    </div>
+    <div class="f-contact">
+      <p class="f-line"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>1236 Wellington Green Dr.<br>Wellington, FL 33414</span></p>
+      <p class="f-line big"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+15615552688">(561) 555-2688</a></p>
+    </div>
+    <div class="f-hours">
+      <h2 class="f-h"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Hours</h2>
+      <table class="hours mini">
+        <tr data-days="1 2 3 4" data-open="11:00" data-close="21:30"><th scope="row">Mon – Thu</th><td>11:00 AM – 9:30 PM</td></tr>
+        <tr data-days="5 6" data-open="11:00" data-close="22:00"><th scope="row">Fri – Sat</th><td>11:00 AM – 10:00 PM</td></tr>
+        <tr data-days="0" data-open="12:00" data-close="21:00"><th scope="row">Sun</th><td>12:00 PM – 9:00 PM</td></tr>
+      </table>
+      <span class="open-status" data-open-status hidden></span>
+    </div>
+    <div class="f-order">
+      <h2 class="f-h"><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg><a href="@@takeout@@#order">Order Online</a></h2>
+      <p class="f-small">Takeout • Delivery • Catering</p>
+      <div class="socials">
+        <a href="@@contact@@#follow" aria-label="Facebook"><svg class="ico solid" aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="@@contact@@#follow" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="@@contact@@#follow" aria-label="Yelp"><svg class="ico solid" aria-hidden="true"><use href="#i-yelp"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <nav class="foot-nav" aria-label="Footer">
+    <a href="@@home@@">Home</a>
+    <a href="@@menu@@">Menu</a>
+    <a href="@@takeout@@">Takeout &amp; Delivery</a>
+    <a href="@@events@@">Private Events</a>
+    <a href="@@about@@">About</a>
+    <a href="@@contact@@">Contact</a>
+  </nav>
+  <p class="legal-row">© <span data-year>2026</span> Golden Lotus Chinese Restaurant · <a href="@@privacy@@">Privacy</a> · <a href="@@accessibility@@">Accessibility</a></p>
+  <div class="foot-glow" aria-hidden="true"></div>
+</footer>
+<!--/FOOTER-->
+<!--SCRIPT-->
+<script>
+(function(){
+  var head=document.getElementById('siteHead'),btn=head&&head.querySelector('.menu-btn');
+  if(btn){
+    btn.addEventListener('click',function(){
+      var open=head.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+      btn.querySelector('use').setAttribute('href',open?'#i-close':'#i-menu');
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&head.classList.contains('open')){btn.click();btn.focus();}});
+  }
+  document.querySelectorAll('[data-year]').forEach(function(el){el.textContent=new Date().getFullYear();});
+})();
+</script>
+<!--/SCRIPT-->

@@ -1,0 +1,29 @@
+<section class="hero page-hero" style="background-image:url('img/signature-plate.jpg')">
+  <div class="hero-in"><div class="hero-copy">
+    <p class="eyebrow">Dine in · Takeout · Delivery</p>
+    <h1><span class="a">Our Menu of</span><span class="b">Traditional Favorites</span></h1>
+    <p class="hero-sub">Cantonese and Sichuan classics cooked to order over a roaring wok: dumplings, noodles, house specialties and plenty for vegetarians.</p>
+    <div class="hero-ctas btn-row">
+      <a class="btn btn-red" href="@@takeout@@#order"><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg> Order for Pickup</a>
+      <a class="btn btn-gold" href="tel:+15615552688"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg> (561) 555-2688</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="sec" aria-label="Full menu">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Filter dishes" data-target="#menuList" data-live="menuCount">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All dishes</button>
+      <button class="chip" type="button" data-filter="fav" aria-pressed="false">House favorites</button>
+      <button class="chip" type="button" data-filter="spicy" aria-pressed="false"><svg class="ico" aria-hidden="true"><use href="#i-pepper"/></svg>Spicy</button>
+      <button class="chip" type="button" data-filter="veg" aria-pressed="false">Vegetarian</button>
+    </div>
+    <p id="menuCount" class="note center" aria-live="polite" style="margin:-20px 0 22px"></p>
+    <nav class="menu-jump" aria-label="Menu sections"><!--@include work/menu_jump.html--></nav>
+    <div id="menuList">
+<!--@include work/menu_blocks.html-->
+      <p class="filter-empty" hidden>No dishes match this filter.</p>
+    </div>
+    <p class="note center">Prices shown are samples and may change. Please tell us about food allergies when you order. Our kitchen handles peanuts, tree nuts, shellfish, soy, wheat, egg and sesame.</p>
+  </div>
+</section>

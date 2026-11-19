@@ -1,0 +1,32 @@
+/* ---------- legal pages ---------- */
+.legal-wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.short{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:48px}
+.short div{padding:20px 22px;border:1px solid var(--line);border-radius:6px;background:var(--ink-3)}
+.short strong{display:block;font:600 20px/1.2 var(--f-display);color:var(--gold-2);margin-bottom:4px}
+.short p{font-size:16px;color:#e3d6bf}
+.legal-grid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.toc{position:sticky;top:100px;border-left:1px solid var(--line);padding-left:18px}
+.toc p{font:500 12px/1 var(--f-label);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+#toc{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+#toc a{text-decoration:none;color:var(--muted);font-size:15.5px;display:block;position:relative}
+#toc a:hover{color:var(--gold-2)}
+#toc a.active{color:#fff}
+#toc a.active::before{content:"";position:absolute;left:-20px;top:4px;bottom:4px;width:3px;background:var(--coral)}
+.policy{max-width:70ch}
+.policy section+section{margin-top:40px}
+.policy h2{display:flex;align-items:baseline;gap:14px;font:600 28px/1.2 var(--f-display);color:var(--gold-2);margin-bottom:12px}
+.policy h2 .num{font:600 14px/1 var(--f-label);color:var(--coral);letter-spacing:.1em;min-width:28px}
+.policy p,.policy li{color:#e8dcc7;font-size:17.5px}
+.policy p+p{margin-top:12px}
+.policy ul{padding-left:22px;margin:10px 0 0;display:grid;gap:6px}
+.callout{margin-top:18px;padding:18px 20px;border-left:3px solid var(--gold);background:rgba(216,180,104,.08);border-radius:0 6px 6px 0}
+.contact-card{margin-top:16px;padding:22px 24px;border:1px solid var(--line);border-radius:8px;background:var(--ink-3)}
+.contact-card .cc-title{font:600 22px/1.2 var(--f-display);color:var(--gold-2);margin-bottom:6px}
+.policy .contact-card p.cc-title{color:var(--gold-2);font-size:22px}
+.policy .updated{font-style:italic;color:var(--muted);font-size:15px;margin-bottom:28px}
+@media (max-width:860px){
+  .legal-grid{grid-template-columns:1fr}
+  .toc{position:static;border-left:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+  #toc{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  #toc a.active::before{display:none}
+}
