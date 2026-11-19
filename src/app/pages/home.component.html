@@ -1,0 +1,38 @@
+<app-page-hero eyebrow="Authentic Chinese Cuisine" title="Fresh Flavors," accent="Timeless Favorites"
+  lead="Classic Chinese dishes made with quality ingredients, served with warm hospitality."
+  image="assets/img/hero-chicken.jpg" [large]="true" [blossom]="true">
+  <a class="btn btn--red" routerLink="/menu">View Menu <app-icon name="arrow" size="18"></app-icon></a>
+  <a class="btn btn--outline" routerLink="/order-online">Order Online</a>
+</app-page-hero>
+
+<section class="section section--tight cream">
+  <div class="container features">
+    <a class="feature" *ngFor="let f of features" [routerLink]="f.link">
+      <app-icon [name]="f.icon" size="54" [stroke]="1.3"></app-icon>
+      <span><strong>{{ f.title }}</strong>{{ f.text }}</span>
+    </a>
+  </div>
+</section>
+
+<section class="section cream-deep">
+  <div class="container">
+    <h2 class="section-title"><span>Popular Favorites</span></h2>
+    <div class="dish-grid">
+      <figure class="dish" *ngFor="let d of popular">
+        <img [src]="d.image" [alt]="d.name" loading="lazy" width="700" height="388">
+        <figcaption>{{ d.name }}<small>{{ d.description }}</small></figcaption>
+      </figure>
+    </div>
+    <p class="center"><a class="btn btn--outline-red" routerLink="/menu">See the Full Menu <app-icon name="arrow" size="18"></app-icon></a></p>
+  </div>
+</section>
+
+<section class="split split--fade">
+  <div class="split-img"><img src="assets/img/dining-room.jpg" alt="Golden Wok dining room with orchids, lanterns and carved screens" loading="lazy"></div>
+  <div class="split-text">
+    <p class="eyebrow eyebrow--red">Our Restaurant</p>
+    <h2 class="script-title">Tradition Meets<br>Modern Dining</h2>
+    <p>A local favorite for authentic Chinese flavors, fresh ingredients and a welcoming atmosphere for family, friends and special gatherings.</p>
+    <a class="btn btn--outline-red" routerLink="/about">Our Story <app-icon name="arrow" size="18"></app-icon></a>
+  </div>
+</section>

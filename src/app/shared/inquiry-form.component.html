@@ -1,0 +1,62 @@
+<form class="form" #f="ngForm" (ngSubmit)="submit(f)" novalidate [attr.name]="formName">
+  <p class="visually-hidden">
+    <label>Leave this empty <input name="bot-field" ngModel tabindex="-1" autocomplete="off"></label>
+  </p>
+
+  <div class="form-grid">
+    <label class="field">
+      <span class="visually-hidden">Your Name</span>
+      <input name="name" ngModel required autocomplete="name" placeholder="Your Name" #name="ngModel">
+      <small class="field-error" *ngIf="name.invalid && name.touched">Please enter your name.</small>
+    </label>
+
+    <label class="field">
+      <span class="visually-hidden">Your Email</span>
+      <input name="email" type="email" ngModel required email autocomplete="email" placeholder="Your Email" #email="ngModel">
+      <small class="field-error" *ngIf="email.invalid && email.touched">Please enter a valid email.</small>
+    </label>
+
+    <label class="field">
+      <span class="visually-hidden">Phone</span>
+      <input name="phone" type="tel" ngModel autocomplete="tel" placeholder="Phone">
+    </label>
+
+    <label class="field" *ngIf="inquiryTypes.length">
+      <span class="visually-hidden">Inquiry Type</span>
+      <select name="inquiryType" ngModel>
+        <option value="">Inquiry Type</option>
+        <option *ngFor="let t of inquiryTypes" [value]="t">{{ t }}</option>
+      </select>
+    </label>
+
+    <ng-container *ngIf="eventFields">
+      <label class="field">
+        <span class="field-label">Event Date</span>
+        <input name="eventDate" type="date" ngModel [min]="today">
+      </label>
+      <label class="field">
+        <span class="field-label">Number of Guests</span>
+        <input name="guests" type="number" ngModel min="1" max="500" placeholder="e.g. 25" #guests="ngModel">
+        <small class="field-error" *ngIf="guests.invalid && guests.touched">Enter a number from 1 to 500.</small>
+      </label>
+    </ng-container>
+
+    <label class="field field--wide">
+      <span class="visually-hidden">Message</span>
+      <textarea name="message" ngModel required rows="5" [placeholder]="messagePlaceholder" #msg="ngModel"></textarea>
+      <small class="field-error" *ngIf="msg.invalid && msg.touched">Please add a short message.</small>
+    </label>
+  </div>
+
+  <button class="btn btn--red" type="submit" [disabled]="status === 'sending'">
+    {{ status === 'sending' ? 'Sending…' : submitLabel }} <app-icon name="arrow" size="18"></app-icon>
+  </button>
+
+  <p class="form-status form-status--ok" *ngIf="status === 'sent'" role="status">
+    Thank you! We received your message and will be in touch soon.
+  </p>
+  <p class="form-status form-status--err" *ngIf="status === 'error'" role="alert">
+    Sorry, your message couldn’t be sent. Please call us at
+    <a [href]="site.phoneHref">{{ site.phone }}</a>.
+  </p>
+</form>

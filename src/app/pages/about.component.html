@@ -1,0 +1,37 @@
+<app-page-hero title="About" accent="Golden Wok"
+  lead="A tradition of great food, family and hospitality." image="assets/img/about-hero.jpg">
+</app-page-hero>
+
+<section class="section cream">
+  <div class="container split-card">
+    <div>
+      <h2 class="script-title">Our Story</h2>
+      <p>Golden Wok was founded with a simple vision: to share the rich flavors of Chinese cuisine in a welcoming, modern setting.</p>
+      <p>We take pride in using fresh ingredients, time-honored recipes and a passion for great service. Every dish leaves our kitchen the way it has for years, cooked to order over a roaring wok.</p>
+    </div>
+    <img class="framed" src="assets/img/chef.jpg" alt="Our chef cooking over a flaming wok" loading="lazy">
+  </div>
+</section>
+
+<section class="section section--tight cream-deep">
+  <div class="container values">
+    <div class="value" *ngFor="let v of values">
+      <app-icon [name]="v.icon" size="52" [stroke]="1.3"></app-icon>
+      <h3>{{ v.title }}</h3>
+      <p>{{ v.text }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="split split--fade">
+  <div class="split-img"><img src="assets/img/dining-room.jpg" alt="Golden Wok dining room" loading="lazy"></div>
+  <div class="split-text">
+    <p class="eyebrow eyebrow--red">Visit Us</p>
+    <h2 class="script-title">A Table Is<br>Waiting for You</h2>
+    <p>Join us for lunch, dinner or a celebration. We look forward to welcoming you.</p>
+    <div class="btn-row">
+      <a class="btn btn--red" routerLink="/menu">View Menu <app-icon name="arrow" size="18"></app-icon></a>
+      <a class="btn btn--outline-red" routerLink="/contact">Contact Us</a>
+    </div>
+  </div>
+</section>

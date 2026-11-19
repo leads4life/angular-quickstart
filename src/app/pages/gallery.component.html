@@ -1,0 +1,21 @@
+<app-page-hero title="Gallery" lead="A look inside Golden Wok." image="assets/img/gallery-hero.jpg">
+</app-page-hero>
+
+<section class="section cream">
+  <div class="container gallery-grid">
+    <button type="button" class="gallery-item" *ngFor="let img of images; let i = index" (click)="open(i)"
+      [attr.aria-label]="'View larger: ' + img.alt">
+      <img [src]="img.src" [alt]="img.alt" loading="lazy">
+    </button>
+  </div>
+</section>
+
+<div class="lightbox" *ngIf="active !== null" role="dialog" aria-modal="true" [attr.aria-label]="images[active].alt" (click)="close()">
+  <figure (click)="$event.stopPropagation()">
+    <img [src]="images[active].src" [alt]="images[active].alt">
+    <figcaption>{{ images[active].alt }}</figcaption>
+  </figure>
+  <button type="button" class="lb-btn lb-close" (click)="close()" aria-label="Close"><app-icon name="close" size="28"></app-icon></button>
+  <button type="button" class="lb-btn lb-prev" (click)="$event.stopPropagation(); step(-1)" aria-label="Previous image"><app-icon name="prev" size="32"></app-icon></button>
+  <button type="button" class="lb-btn lb-next" (click)="$event.stopPropagation(); step(1)" aria-label="Next image"><app-icon name="next" size="32"></app-icon></button>
+</div>

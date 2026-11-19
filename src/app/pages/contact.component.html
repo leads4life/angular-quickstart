@@ -1,0 +1,34 @@
+<app-page-hero title="Contact" accent="Us" lead="We’d love to hear from you." image="assets/img/gallery-hero.jpg" [blossom]="true">
+</app-page-hero>
+
+<section class="section cream">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <a class="info-line" [href]="site.mapsUrl" target="_blank" rel="noopener">
+        <app-icon name="pin" size="28"></app-icon><span>{{ site.street }}<br>{{ site.cityLine }}</span>
+      </a>
+      <a class="info-line info-phone" [href]="site.phoneHref">
+        <app-icon name="phone" size="28"></app-icon><span>{{ site.phone }}</span>
+      </a>
+      <div class="info-line">
+        <app-icon name="clock" size="28"></app-icon>
+        <div>
+          <strong>Hours</strong>
+          <dl class="hours hours--dark">
+            <ng-container *ngFor="let h of site.hours"><dt>{{ h.days }}</dt><dd>{{ h.time }}</dd></ng-container>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <app-inquiry-form formName="contact" [inquiryTypes]="inquiryTypes"></app-inquiry-form>
+  </div>
+</section>
+
+<section class="visit">
+  <img src="assets/img/storefront.jpg" alt="Golden Wok restaurant storefront at dusk" loading="lazy">
+  <div class="visit-card">
+    <h2 class="script-title">Come Visit</h2>
+    <p>{{ site.street }}, {{ site.cityLine }}</p>
+    <a class="btn btn--red" [href]="site.mapsUrl" target="_blank" rel="noopener"><app-icon name="pin" size="18"></app-icon> Get Directions</a>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<app-page-hero title="Catering" lead="Authentic Chinese cuisine for any occasion." image="assets/img/catering-trays.jpg">
+</app-page-hero>
+
+<section class="section cream">
+  <div class="container split-card">
+    <div>
+      <h2 class="script-title">Perfect for<br>Any Event</h2>
+      <p>Bring the flavors of Golden Wok to your next gathering. Our catering options offer a variety of popular dishes, generous portions and the same great quality you enjoy in our restaurant.</p>
+      <a class="btn btn--red" routerLink="/catering" fragment="request">Request Catering Information <app-icon name="arrow" size="18"></app-icon></a>
+    </div>
+    <ul class="checklist checklist--lg"><li *ngFor="let e of events"><app-icon name="check" size="22" [stroke]="2.2"></app-icon>{{ e }}</li></ul>
+  </div>
+</section>
+
+<section class="section cream-deep" id="request">
+  <div class="container narrow">
+    <h2 class="section-title"><span>Request Catering</span></h2>
+    <p class="center">Share a few details and we’ll put together a menu and quote for your event.</p>
+    <app-inquiry-form formName="catering" submitLabel="Request Information" [eventFields]="true"
+      messagePlaceholder="Event type, dishes you’re interested in, pickup or delivery"></app-inquiry-form>
+  </div>
+</section>

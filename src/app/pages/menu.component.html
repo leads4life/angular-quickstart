@@ -1,0 +1,30 @@
+<app-page-hero eyebrow="Our Menu" title="Explore Our" accent="Menu"
+  lead="A delicious selection of classic favorites and chef-inspired specialties, prepared with fresh ingredients and authentic flavor."
+  image="assets/img/menu-hero.jpg" [blossom]="true">
+</app-page-hero>
+
+<section class="cream">
+  <nav class="container cat-nav" aria-label="Menu categories">
+    <a *ngFor="let s of menu" routerLink="/menu" [fragment]="s.id">
+      <app-icon [name]="s.icon" size="40" [stroke]="1.4"></app-icon><span>{{ s.title }}</span>
+    </a>
+  </nav>
+
+  <section class="menu-sec" *ngFor="let s of menu; let odd = odd" [id]="s.id" [class.menu-sec--rev]="odd">
+    <div class="menu-sec-img" *ngIf="s.image"><img [src]="s.image" [alt]="s.imageAlt" loading="lazy"></div>
+    <div class="menu-sec-body">
+      <h2 class="script-title script-title--rule">{{ s.title }}</h2>
+      <ul class="menu-list">
+        <li *ngFor="let item of s.items">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section center">
+    <a class="btn btn--red btn--lg" routerLink="/order-online"><app-icon name="bag" size="22"></app-icon> Order Online <app-icon name="arrow" size="20"></app-icon></a>
+    <p class="note">Please tell your server about any food allergies. Menu items and availability may change.</p>
+  </div>
+</section>

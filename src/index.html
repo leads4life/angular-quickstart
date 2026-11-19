@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angular Quickstart</title>
+  <title>Golden Wok Chinese Restaurant</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Golden Wok Chinese Restaurant: authentic Chinese cuisine, takeout, catering and private events.">
+  <meta name="theme-color" content="#1c110d">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
   <app-root></app-root>
+
+  <!-- Static copies of the site's forms so Netlify Forms detects them at deploy time. -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input name="bot-field"><input name="name"><input name="email"><input name="phone">
+    <input name="inquiryType"><textarea name="message"></textarea>
+  </form>
+  <form name="private-events" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input name="bot-field"><input name="name"><input name="email"><input name="phone">
+    <input name="eventDate"><input name="guests"><textarea name="message"></textarea>
+  </form>
+  <form name="catering" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input name="bot-field"><input name="name"><input name="email"><input name="phone">
+    <input name="eventDate"><input name="guests"><textarea name="message"></textarea>
+  </form>
 </body>
 </html>
