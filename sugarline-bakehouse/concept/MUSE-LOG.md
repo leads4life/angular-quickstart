@@ -24,3 +24,4 @@
 | 2026-11-22 22:47 | `1a2057195382904c` "…concept A2 (Kitchen Table, layered)" | jeff-muse-1603@muse.ai | Redesign A2 + 8 reference photos | Awaiting concept-A2.png |
 | 2026-11-22 22:47 | `1a205719c1178f1a` "…concept B2 (Recipe Card, scrapbook)" | jeff-muse-1603@muse.ai | Redesign B2 + 8 reference photos | Awaiting concept-B2.png |
 | 2026-11-22 22:47 | `1a20571a5a1f85e3` "…concept C2 (Cake Box, editorial)" | jeff-muse-1603@muse.ai | Redesign C2 + 8 reference photos | Awaiting concept-C2.png |
+| 2026-11-22 22:57 | — | — | User granted chain authority and delegated the design pick (see WORKFLOW-AUTHORITY.md) | — |
