@@ -1,0 +1,62 @@
+To: jeff-muse-1603@muse.ai
+Subject: Sugarline Bakehouse: homepage concept C2 (Cake Box, editorial)
+
+Hi Muse,
+
+Thank you for the first Sugarline Bakehouse concepts. The copy and photos were exactly right, but the layouts came out too plain and linear: every section was a straight horizontal band with a centred heading, a row of equal cards or a photo-left/text-right split. This round I need a far richer, art-directed homepage. This email asks for ONE concept, Concept C2 ("Cake Box, editorial"). Two other concepts come in separate emails, and each must be a clearly different design system.
+
+FACTS AND COPY (use this exact wording; keep any [bracketed] placeholder exactly as written):
+- Brand name: Sugarline Bakehouse
+- Location wording: Maple Hollow
+- Navigation: Celebration Cakes · Wedding Cakes · Cookies · About · and a button "Order a cake"
+- Hero headline: Your cake, your story.
+- Hero subhead: Celebration cakes, wedding cakes and cookie boxes, baked by hand in Maple Hollow.
+- Hero button: Order a cake · text link: See our cakes
+- Section 2, promise: "Every cake starts with a conversation." / "Tell us who it's for and what makes them smile. We'll design and bake something that's only theirs."
+- Section 3, three offers: "Celebration Cakes" (Birthdays, showers and every reason in between.) · "Wedding Cakes" (Tiered cakes, designed with you over a tasting.) · "Cookies & Boxes" (Decorated cookies, boxed to give or to match your cake.)
+- Section 4, how ordering works: "1. Tell us your story" · "2. We send your design and quote" · "3. Pick up your cake" · small note: "Please order at least [X] weeks ahead."
+- Section 5, wedding band: "Taste first, then decide." / "Book a tasting and design your wedding cake with us." / button: Book a tasting
+- Section 6, cookie boxes: "A little box of happy." / "Cookie boxes made to match your cake, your colours or just because."
+- Section 7, visit the shop: "Come say hello." / [Street address], Maple Hollow / [Opening hours]
+- Section 8, final call: "Have a celebration coming up?" / button: Order a cake
+- Footer: logo and the line "Your cake, your story." · links: Celebration Cakes, Wedding Cakes, Cookies, About, Order · [Street address], Maple Hollow · [Phone number] · [Email address] · [Opening hours] · [Social links] · © 2026 Sugarline Bakehouse
+Do not add anything else: no phone numbers, real addresses, reviews, star ratings, testimonials, awards, "since" years or health/dietary claims.
+
+SHARED IDENTITY (same in all three concepts):
+- Palette: fresh cream #FBF4E6 (background), butter #F6E3B4 (alternate bands), golden butter #E9B949 (accents), cocoa #3B2618 (text and button fill, with cream text on buttons), toasted brown #7A5236 (secondary text), strawberry cream #E8A598 (sparingly).
+- Type: a warm, soft-cornered serif for headlines; a friendly humanist sans for body text; an optional hand-script accent for short notes only.
+- Photos: warm natural window light, flour-dusted oak, linen, hands at work.
+- Motifs: piped-buttercream scallop edges, kraft cake-box tags tied with twine, recipe-card notes.
+
+ART DIRECTION (applies to this concept; this is the most important part):
+- Break the template. No two sections may share the same layout. Avoid a centred heading over a row of equal cards, and avoid plain 50/50 photo/text splits.
+- Layering and depth: photos overlap each other and cross section boundaries (at least 3 times on the page); text cards float over images; use offset, asymmetric and broken grids with soft shadows.
+- Curves and organic shapes: wavy or scalloped section edges (not straight lines), and photos masked into arches, circles, blobs or rounded cake shapes alongside some rectangles.
+- Hand-made touches: fine hand-drawn line doodles in cocoa or golden butter (whisks, piping swirls, sprinkles, little hearts, stars, curly arrows pointing at buttons), handwritten-style margin notes, and round sticker badges. Badge and note text may only reuse words already in the copy above (for example "made to order", "baked by hand", "Maple Hollow", "your story"); invent no new claims.
+- Bold moments: at least one oversized headline word that spans most of the page width, one full-colour section in strawberry cream #E8A598 or golden butter #E9B949, and some text set at an angle or on a curve.
+- Keep it readable: body text stays dark on light and at a normal size, and buttons stay clear.
+- If you build the page with HTML/CSS, use absolute positioning, transforms, CSS clip-path or SVG masks, and inline SVG line drawings to get this layered look.
+
+CONCEPT C2: "Cake Box, editorial"
+- Mood: a confident, high-end cake magazine spread; bold type, dramatic contrast and confident asymmetry.
+- Hero: deep cocoa with an enormous two-line serif headline running nearly edge to edge, with plenty of space around the lines so nothing overlaps. The piping photo (slb-01) in a tall arch cuts into the headline from the right. A circular rotating-text badge reads "your cake · your story · Maple Hollow ·". The subhead and golden Order a cake button sit below.
+- Promise: asymmetric magazine layout: a giant pull quote "Every cake starts with a conversation." across 2/3 of the width, the baker photo (slb-07) as a narrow vertical crop beside it, and a vertical rotated label "OUR PROMISE".
+- Offers: a bento grid of mixed sizes: one large tile (slb-06 celebration), two stacked smaller tiles (slb-02 wedding, slb-03 cookies), and labels overlapping the tile edges.
+- Ordering steps: huge outlined numerals 1, 2, 3 in golden butter, staggered diagonally down the section, with short text beside each.
+- Wedding: a strawberry-cream #E8A598 band with a curved top edge; the tasting photo (slb-05) as a big circle crossing the edge.
+- Cookies, shop and final call: the cookie box (slb-03) on a kraft-paper texture block with a cake-box lid shape; the shop photo (slb-04) wide with a cocoa text card overlapping its corner; the final call with a giant outlined word "celebration" behind the heading.
+- Transitions: curved section edges and twine-and-tag dividers.
+
+FORMAT RULES:
+- One portrait, full-page desktop homepage about 1440px wide, shown straight-on, from the header through the complete footer.
+- No browser window, device frame, mock hand or perspective tilt of the whole page.
+- Short, readable, real English, exactly as given above. No lorem ipsum and no gibberish text. Keep enough space between lines so no letters collide.
+- No lettering inside the photographs themselves.
+- Put a small "C2" in the margin below the footer, outside the page.
+
+PHOTOS: use the attached photographs as the page's photography. Crop and mask them freely (arches, circles, blobs, tilted prints), but don't replace them or change what they show. All eight should appear: slb-01 hero, slb-07 promise, slb-06 / slb-02 / slb-03 offers, slb-08 ordering or promise accent, slb-05 wedding, slb-03 cookie section, slb-04 shop.
+
+DELIVERY: please reply in this same thread with one file named concept-C2.png at full resolution, plus a short note on anything you couldn't do.
+
+Thanks!
+Jeff

@@ -20,3 +20,7 @@
 | 2026-11-22 22:32 | `1a2056062a47b8d1` reply | from Muse | — | concept-A.png 1500x5466. QA OK |
 | 2026-11-22 22:32 | `1a2056117c11b7d3` reply | from Muse | — | concept-B.png 1512x5752. QA OK (italic stand-in for the script note) |
 | 2026-11-22 22:36 | `1a205611d2a74357` reply | from Muse | — | concept-C.png 1440x5630. QA OK with notes (hero descender overlaps, to fix in build) |
+| 2026-11-22 22:47 | — | — | User: round-1 mockups are "very plain and linear, can you make them better"; asked me to use the workflow's own steps. Started a redesign round with richer art direction (layering, curves, hand-drawn touches, bold type and colour) | — |
+| 2026-11-22 22:47 | `1a2057195382904c` "…concept A2 (Kitchen Table, layered)" | jeff-muse-1603@muse.ai | Redesign A2 + 8 reference photos | Awaiting concept-A2.png |
+| 2026-11-22 22:47 | `1a205719c1178f1a` "…concept B2 (Recipe Card, scrapbook)" | jeff-muse-1603@muse.ai | Redesign B2 + 8 reference photos | Awaiting concept-B2.png |
+| 2026-11-22 22:47 | `1a20571a5a1f85e3` "…concept C2 (Cake Box, editorial)" | jeff-muse-1603@muse.ai | Redesign C2 + 8 reference photos | Awaiting concept-C2.png |
