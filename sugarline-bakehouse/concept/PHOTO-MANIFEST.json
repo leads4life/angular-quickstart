@@ -1,9 +1,7 @@
 {
   "project": "SLB-2026-11",
-  "status": "PHOTO_LIBRARY_PARTIAL",
-  "missing": [
-    "S03"
-  ],
+  "status": "PHOTO_LIBRARY_COMPLETE",
+  "missing": [],
   "photos": [
     {
       "id": "S01",
@@ -34,12 +32,12 @@
       "file": "slb-03-cookie-box-flatlay.jpg",
       "px": "2400x1350",
       "requested": "2400x1350",
-      "bytes": 683227,
-      "sha256": "c5ebea2999660f87661471171a8163fcfcd53eb68e9f76759e5069aee000fde2",
-      "status": "FAIL",
-      "notes": "Loose heart cookie has a bite taken out (off-brand for a product shot); twine not tied around box; left third crowded by linen, cookies and berries rather than mostly empty.",
-      "source": "Muse, thread 1a2054c5d510c3fd",
-      "attempt": 1
+      "bytes": 1133914,
+      "sha256": "ff3c3e08537c98053dcc3fc367b38741a62204f9159633e127deecdb3aa3dc87",
+      "status": "OK",
+      "notes": "Re-do: all cookies whole, twine bow tied on the lid, left ~45% empty flour-dusted oak. No text. v1 parked in photos/alt/.",
+      "source": "Muse, thread 1a20551b01dd1fcf (re-do 1)",
+      "attempt": 2
     },
     {
       "id": "S04",
