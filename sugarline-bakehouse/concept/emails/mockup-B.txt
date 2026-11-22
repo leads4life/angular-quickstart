@@ -1,0 +1,60 @@
+To: jeff-muse-1603@muse.ai
+Subject: Sugarline Bakehouse: homepage design concept B (Recipe Card)
+Attachments: 8 reference photos (~1.1 MB)
+
+Hi Muse,
+
+I need a desktop homepage design concept for Sugarline Bakehouse, a small, warm, homemade-style bakery with a walk-in shop and made-to-order cakes. This email asks for ONE concept, Concept B ("Recipe Card"). I'm sending the other two concepts as separate emails, and each one must look like a different design system.
+
+FACTS AND COPY (use this exact wording; keep any [bracketed] placeholder exactly as written):
+- Brand name: Sugarline Bakehouse
+- Location wording: Maple Hollow
+- Navigation: Celebration Cakes · Wedding Cakes · Cookies · About · and a button "Order a cake"
+- Hero headline: Your cake, your story.
+- Hero subhead: Celebration cakes, wedding cakes and cookie boxes, baked by hand in Maple Hollow.
+- Hero button: Order a cake · text link: See our cakes
+- Section 2, promise: "Every cake starts with a conversation." / "Tell us who it's for and what makes them smile. We'll design and bake something that's only theirs."
+- Section 3, three offers: "Celebration Cakes" (Birthdays, showers and every reason in between.) · "Wedding Cakes" (Tiered cakes, designed with you over a tasting.) · "Cookies & Boxes" (Decorated cookies, boxed to give or to match your cake.)
+- Section 4, how ordering works: "1. Tell us your story" · "2. We send your design and quote" · "3. Pick up your cake" · small note: "Please order at least [X] weeks ahead."
+- Section 5, wedding band: "Taste first, then decide." / "Book a tasting and design your wedding cake with us." / button: Book a tasting
+- Section 6, cookie boxes: "A little box of happy." / "Cookie boxes made to match your cake, your colours or just because."
+- Section 7, visit the shop: "Come say hello." / [Street address], Maple Hollow / [Opening hours]
+- Section 8, final call: "Have a celebration coming up?" / button: Order a cake
+- Footer: logo and the line "Your cake, your story." · links: Celebration Cakes, Wedding Cakes, Cookies, About, Order · [Street address], Maple Hollow · [Phone number] · [Email address] · [Opening hours] · [Social links] · © 2026 Sugarline Bakehouse
+Do not add anything else: no phone numbers, real addresses, reviews, star ratings, testimonials, awards, "since" years or health/dietary claims.
+
+SHARED IDENTITY (same in all three concepts):
+- Palette: fresh cream #FBF4E6 (background), butter #F6E3B4 (alternate bands), golden butter #E9B949 (accents), cocoa #3B2618 (text and button fill, with cream text on buttons), toasted brown #7A5236 (secondary text), strawberry cream #E8A598 (sparingly).
+- Type: a warm, soft-cornered serif for headlines; a friendly humanist sans for body text; an optional hand-script accent for short notes only.
+- Photos: warm natural window light, flour-dusted oak, linen, hands at work.
+- Motifs: piped-buttercream scallop edges, kraft cake-box tags tied with twine, recipe-card notes.
+
+CONCEPT B: "Recipe Card"
+- Hero geometry: a split hero. On the left, a cream "recipe card" panel (slightly lifted, with a soft shadow) holds the headline, subhead and button. On the right, the photo (slb-01) sits inside a tall arched window shape.
+- Image placement: photos inside arched or rounded-top frames, arranged in a tidy card grid (the three offers as three cards).
+- Type voice: rounded humanist type, with a short hand-script note beside the headline (for example "made just for you").
+- Palette emphasis: butter-yellow bands alternating with cream; golden-butter accents.
+- Section pacing: medium and lively, with grouped cards and the numbered steps shown as kraft tags tied with twine.
+- Transition motif: torn recipe-card paper edges between sections.
+
+FORMAT RULES:
+- One portrait, full-page desktop homepage about 1440px wide, shown straight-on, from the header through the complete footer.
+- No browser window, device frame, mock hand or perspective tilt.
+- Short, readable, real English, exactly as given above. No lorem ipsum and no gibberish text.
+- No lettering inside the photographs themselves.
+- Put a small letter "B" in the margin below the footer, outside the page.
+
+PHOTOS: use the attached photographs as the page's photography. Don't replace them with new photos or change their content:
+- slb-01-piping-celebration-cake.jpg: hero
+- slb-07-baker-at-work.jpg: promise section
+- slb-06-birthday-candles.jpg: Celebration Cakes offer
+- slb-02-wedding-cake-tiers.jpg: Wedding Cakes offer
+- slb-03-cookie-box-flatlay.jpg: Cookies offer and cookie box section
+- slb-05-wedding-tasting.jpg: wedding band
+- slb-04-shop-cake-case.jpg: visit the shop
+- slb-08-scratch-ingredients.jpg: background for the ordering steps
+
+DELIVERY: please reply in this same thread with one file named concept-B.png at full resolution, plus a short note on anything you couldn't do.
+
+Thanks!
+Jeff
