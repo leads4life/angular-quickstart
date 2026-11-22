@@ -1,0 +1,44 @@
+{
+  "project": "SLB-2026-11",
+  "stage": "AWAIT CHOICE",
+  "mockups": [
+    {
+      "concept": "A",
+      "file": "mockups/concept-A.png",
+      "px": "1500x5466",
+      "bytes": 3954658,
+      "sha256": "5596cc0994b8aba172b1c566dcd8f4f23fff4d2a8dee5f4e6218e8027bd94e5a",
+      "status": "OK",
+      "summary": "Kitchen Table: full-bleed hero with a cream panel, alternating rounded-photo rows, a butter band for the steps over slb-08, scallop seams. Copy and placeholders exact, nothing invented, 'A' below the footer.",
+      "notes": [
+        "The steps band has no heading (none was given)."
+      ]
+    },
+    {
+      "concept": "B",
+      "file": "mockups/concept-B.png",
+      "px": "1512x5752",
+      "bytes": 3130144,
+      "sha256": "1135a2d6b0ccb980b49d903cc7c76be625d38dd6cb9800c766dc476487e2bd9b",
+      "status": "OK",
+      "summary": "Recipe Card: split hero with a lifted card and arched photo, 'made just for you' note, arched offer cards, kraft-tag steps, butter/cream bands, torn-paper seams. Copy exact, 'B' below the footer.",
+      "notes": [
+        "The script note is set in italic serif (no script font available); the section order matches A."
+      ]
+    },
+    {
+      "concept": "C",
+      "file": "mockups/concept-C.png",
+      "px": "1440x5630",
+      "bytes": 3483408,
+      "sha256": "0b6cea0b253f01b3390a923761ec59f7c965f86bf0aabfd5e0fd4750b3534d67",
+      "status": "OK_WITH_NOTES",
+      "summary": "Cake Box: cocoa hero with an oversized centred serif, an offset 3-photo strip, small-caps labels, twine-and-tag dividers, alternating dark/cream sections. Copy exact, 'C' below the footer.",
+      "notes": [
+        "The headline's descenders ('y' in story) touch the subhead line, and the 'g' descender overlaps 'MAPLE HOLLOW' under the logo; fix spacing in the build.",
+        "Added design labels ('Maple Hollow \u00b7 Baked by hand', 'Our promise', etc.) are restatements of intake facts, not new claims.",
+        "Buttons on cocoa are golden butter with cocoa text."
+      ]
+    }
+  ]
+}

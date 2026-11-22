@@ -17,3 +17,6 @@
 | 2026-11-22 22:29 | `1a205611d2a74357` "…concept C (Cake Box)" | jeff-muse-1603@muse.ai | Mockup C + 8 reference photos. User approved 22:24 | Awaiting concept-C.png |
 | 2026-11-22 22:29 | note | — | S03 re-do 2 (`1a2055f51f344252`) is now redundant; a reply there will be parked in photos/alt/ | — |
 | 2026-11-22 22:29 | `1a2055f51f344252` reply | from Muse | — | Redundant S03 re-do 2 received. It also passes QA and is parked as photos/alt/slb-03-cookie-box-flatlay.redo2-alt.jpg (the locked S03 is unchanged) |
+| 2026-11-22 22:32 | `1a2056062a47b8d1` reply | from Muse | — | concept-A.png 1500x5466. QA OK |
+| 2026-11-22 22:32 | `1a2056117c11b7d3` reply | from Muse | — | concept-B.png 1512x5752. QA OK (italic stand-in for the script note) |
+| 2026-11-22 22:36 | `1a205611d2a74357` reply | from Muse | — | concept-C.png 1440x5630. QA OK with notes (hero descender overlaps, to fix in build) |
