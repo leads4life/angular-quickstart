@@ -1,0 +1,46 @@
+@@PAGEHERO:Order|Tell us|your story.|Share the date, the guests and your ideas. We'll reply with a design and a quote.|ingredients.jpg|Baking ingredients on a flour-dusted board: butter, eggs, flour, vanilla and strawberries|Start your order|order#form|How it works|order#next|made to order · your story ·@@
+
+<section class="sec butter edge-torn" id="form" aria-labelledby="h-form">
+  <div class="sec-in form-wrap">
+    <div class="card-paper lines-off form-card">
+      <span class="tape" aria-hidden="true" style="top:-14px;left:40px;transform:rotate(-4deg)"></span>
+      <p class="eyebrow">Order request</p>
+      <h2 id="h-form">Order a cake</h2>
+      <p class="note">Please order at least <mark>[X]</mark> weeks ahead.</p>
+      <form data-demo-form data-status="order-status" data-done="Thanks! This order form is a design preview and isn't connected yet, so nothing was sent." name="order" method="post" data-netlify="true">
+        <div class="form-grid">
+          <div class="field"><label for="o-name">Your name</label><input id="o-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="o-email">Email</label><input id="o-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="o-type">What would you like?</label><select id="o-type" name="type" required><option value="">Choose one</option><option>Celebration cake</option><option>Wedding cake</option><option>Cookie boxes</option><option>Cake and cookies</option></select></div>
+          <div class="field"><label for="o-date">Date needed</label><input id="o-date" name="date" type="date" required></div>
+          <div class="field"><label for="o-occ">Occasion <span class="opt">(optional)</span></label><input id="o-occ" name="occasion"></div>
+          <div class="field"><label for="o-serv">Servings or boxes <span class="opt">(approx.)</span></label><input id="o-serv" name="servings" inputmode="numeric"></div>
+          <div class="field full"><label for="o-story">Tell us the story</label><textarea id="o-story" name="story" required placeholder="Who is it for? Favourite colours, flavours, ideas or photos you love."></textarea></div>
+        </div>
+        <div class="btn-row"><button class="btn" type="submit">Send my request</button></div>
+        <p class="form-status" id="order-status" role="status" hidden></p>
+      </form>
+    </div>
+    <aside class="contact-card">
+      <h3>Prefer to talk?</h3>
+      <ul>
+        <li><mark>[Phone number]</mark></li>
+        <li><mark>[Email address]</mark></li>
+        <li><mark>[Street address]</mark>, Maple Hollow</li>
+        <li><mark>[Opening hours]</mark></li>
+      </ul>
+      <p style="margin:18px 0 0;font-size:15px;color:#EBDCC4">Allergies: <mark>[Allergen policy]</mark></p>
+    </aside>
+  </div>
+</section>
+
+<section class="sec cream edge-scallop" id="next" aria-labelledby="h-next">
+  <div class="sec-in">
+    <div class="sec-head center"><p class="eyebrow">What happens next</p><h2 id="h-next">Three little steps</h2></div>
+    <ol class="steps-tags">
+      <li><div class="tag-in"><h3>Tell us your story</h3><p>Send the form above, or call or visit the shop.</p></div></li>
+      <li><div class="tag-in"><h3>We send your design and quote</h3><p>A sketch and a clear price for your cake.</p></div></li>
+      <li><div class="tag-in"><h3>Pick up your cake</h3><p>Boxed, tied with twine and ready to celebrate.</p></div></li>
+    </ol>
+  </div>
+</section>
