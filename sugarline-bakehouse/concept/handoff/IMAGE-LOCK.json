@@ -1,0 +1,63 @@
+{
+  "project": "SLB-2026-11",
+  "locked": "2026-11-22",
+  "status": "LOCKED",
+  "photos": [
+    {
+      "id": "S01",
+      "file": "slb-01-piping-celebration-cake.jpg",
+      "px": "2400x1350",
+      "bytes": 449658,
+      "sha256": "4d3346873f1467b8889f863325b5673a2cbd2ddcb9d6e33e44e391c17c47dddd"
+    },
+    {
+      "id": "S02",
+      "file": "slb-02-wedding-cake-tiers.jpg",
+      "px": "1600x2000",
+      "bytes": 478182,
+      "sha256": "c4ebb3789b3b6fb69b9bc47110dd7ba6c41b4e6abc54fff093c6789182f3628b"
+    },
+    {
+      "id": "S03",
+      "file": "slb-03-cookie-box-flatlay.jpg",
+      "px": "2400x1350",
+      "bytes": 1133914,
+      "sha256": "ff3c3e08537c98053dcc3fc367b38741a62204f9159633e127deecdb3aa3dc87"
+    },
+    {
+      "id": "S04",
+      "file": "slb-04-shop-cake-case.jpg",
+      "px": "2400x1350",
+      "bytes": 550770,
+      "sha256": "6f925c1b5a8bf696244b62e1d355f21b9824c3584149f1fe791fb26d015e13e3"
+    },
+    {
+      "id": "S05",
+      "file": "slb-05-wedding-tasting.jpg",
+      "px": "2400x1350",
+      "bytes": 881530,
+      "sha256": "5e772ab02757a4b3d9b27ded5569ac36dbff0ea35e158cfd4d98c94c03927bb6"
+    },
+    {
+      "id": "S06",
+      "file": "slb-06-birthday-candles.jpg",
+      "px": "2400x1350",
+      "bytes": 765709,
+      "sha256": "5feb4a33ab73519e29036dc95de89cd90260fe192dcb7963689ab736551340f1"
+    },
+    {
+      "id": "S07",
+      "file": "slb-07-baker-at-work.jpg",
+      "px": "1600x2000",
+      "bytes": 917710,
+      "sha256": "1cc57a967fc7311735486a48dedc62f465fd4b4b675496fe84262f04bd966962"
+    },
+    {
+      "id": "S08",
+      "file": "slb-08-scratch-ingredients.jpg",
+      "px": "2000x2000",
+      "bytes": 1315666,
+      "sha256": "4f82639bf302940979dd9f807662cae81164c4bc75b5ec9afe7afc30d89dc8f2"
+    }
+  ]
+}
