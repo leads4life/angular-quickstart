@@ -25,3 +25,7 @@
 | 2026-11-22 22:47 | `1a205719c1178f1a` "…concept B2 (Recipe Card, scrapbook)" | jeff-muse-1603@muse.ai | Redesign B2 + 8 reference photos | Awaiting concept-B2.png |
 | 2026-11-22 22:47 | `1a20571a5a1f85e3` "…concept C2 (Cake Box, editorial)" | jeff-muse-1603@muse.ai | Redesign C2 + 8 reference photos | Awaiting concept-C2.png |
 | 2026-11-22 22:57 | — | — | User granted chain authority and delegated the design pick (see WORKFLOW-AUTHORITY.md) | — |
+| 2026-11-22 23:18 | — | — | No reply to A2/B2/C2 after about 30 min. Re-sent each in a new thread under standing approval | — |
+| 2026-11-22 23:18 | `1a2058d56cd18a20` "concept-A2.png request (re-send)" | jeff-muse-1603@muse.ai | A2 re-send + 8 refs | Awaiting |
+| 2026-11-22 23:18 | `1a2058d5d5e25b0d` "concept-B2.png request (re-send)" | jeff-muse-1603@muse.ai | B2 re-send + 8 refs | Awaiting |
+| 2026-11-22 23:18 | `1a2058d654d07f35` "concept-C2.png request (re-send)" | jeff-muse-1603@muse.ai | C2 re-send + 8 refs | Awaiting |
