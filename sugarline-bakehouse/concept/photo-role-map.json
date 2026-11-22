@@ -1,0 +1,35 @@
+{
+  "S01": [
+    "home: hero",
+    "celebration-cakes: hero"
+  ],
+  "S02": [
+    "home: offer card Wedding",
+    "weddings: hero"
+  ],
+  "S03": [
+    "home: offer card Cookies",
+    "home: cookie boxes section",
+    "cookies: hero"
+  ],
+  "S04": [
+    "home: visit the shop",
+    "about: the shop"
+  ],
+  "S05": [
+    "home: wedding tasting band",
+    "weddings: #tasting"
+  ],
+  "S06": [
+    "home: offer card Celebration",
+    "celebration-cakes: occasions"
+  ],
+  "S07": [
+    "about: hero",
+    "home: promise"
+  ],
+  "S08": [
+    "about: values",
+    "order: intro"
+  ]
+}

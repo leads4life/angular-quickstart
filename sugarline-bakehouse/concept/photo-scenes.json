@@ -1,0 +1,87 @@
+{
+  "project": "SLB-2026-11",
+  "business": "Sugarline Bakehouse",
+  "style": "warm & homemade",
+  "scenes": [
+    {
+      "id": "S01",
+      "file": "slb-01-piping-celebration-cake.jpg",
+      "size": "2400x1350 landscape (16:9)",
+      "subject": "A baker's hands piping cream buttercream rosettes around the top edge of a two-tier celebration cake decorated with soft butter-yellow and blush buttercream and a few fresh berries",
+      "setting": "Flour-dusted pale oak work counter in a small bakery; a turntable under the cake; a bowl of buttercream, an offset spatula and a linen towel nearby",
+      "camera": "35mm, eye level with the cake, f/2.8; soft natural window light from the right",
+      "composition": "Cake and hands in the right half; left 40% calm, softly blurred cream wall and counter",
+      "exclusions": "No visible face; no text on aprons, piping bags or tools"
+    },
+    {
+      "id": "S02",
+      "file": "slb-02-wedding-cake-tiers.jpg",
+      "size": "1600x2000 portrait (4:5)",
+      "subject": "A three-tier wedding cake in smooth ivory buttercream with a cascade of fresh garden roses and greenery down one side, on a simple wooden cake stand",
+      "setting": "Bright room with a cream linen backdrop and a pale wood side table",
+      "camera": "50mm, straight-on, f/4; large soft window light from the left, gentle shadow on the right",
+      "composition": "Cake centred in the lower two-thirds; top third calm linen",
+      "exclusions": "No toppers with names or initials; no people"
+    },
+    {
+      "id": "S03",
+      "file": "slb-03-cookie-box-flatlay.jpg",
+      "size": "2400x1350 landscape (16:9)",
+      "subject": "An open kraft-paper gift box filled with hand-decorated sugar cookies (flowers, hearts and scalloped rounds in cream, butter-yellow, blush and soft brown royal icing), tied with loose baker's twine",
+      "setting": "Flour-dusted oak board seen from above; a few loose cookies, a piping cone and a sprig of dried flowers beside the box",
+      "camera": "Overhead flat-lay, 50mm, f/5.6; soft daylight from the top left",
+      "composition": "Box in the right half; left third of the board mostly empty",
+      "exclusions": "No words, letters or numbers on cookies, box or tags"
+    },
+    {
+      "id": "S04",
+      "file": "slb-04-shop-cake-case.jpg",
+      "size": "2400x1350 landscape (16:9)",
+      "subject": "Interior of a small, cosy bakery shop: a glass cake case holding several whole decorated cakes and rows of cookies, a wooden counter, and shelves with stacked kraft cake boxes behind",
+      "setting": "Cream painted walls, warm oak shelves, a big front window letting in morning light, a jar of flowers on the counter",
+      "camera": "24mm, standing eye level, f/4; morning sun from the front window on the left",
+      "composition": "Case and counter across the lower half; upper third calm wall and soft light",
+      "exclusions": "No signs, chalkboards, menus, price tags or lettering anywhere; no people"
+    },
+    {
+      "id": "S05",
+      "file": "slb-05-wedding-tasting.jpg",
+      "size": "2400x1350 landscape (16:9)",
+      "subject": "A wedding cake tasting: two people's hands with small forks sampling three small slices of layer cake on a tasting plate, with two cups of coffee and a fresh flower",
+      "setting": "Small round wooden table by a window in the bakery, linen napkins",
+      "camera": "50mm, slightly above the table, f/2.2; window light from the left",
+      "composition": "Plate and hands in the right two-thirds; left third soft blurred window light",
+      "exclusions": "Hands and forearms only, no faces; one plain ring allowed; no text"
+    },
+    {
+      "id": "S06",
+      "file": "slb-06-birthday-candles.jpg",
+      "size": "2400x1350 landscape (16:9)",
+      "subject": "A homemade-looking celebration cake with lit thin candles on a family table, a child's hands reaching toward it in excitement; party plates and a few paper streamers",
+      "setting": "Warm home dining table, cream tablecloth, background people softly blurred",
+      "camera": "35mm, at table height, f/2; warm candle glow plus soft ambient light",
+      "composition": "Cake right of centre; left 35% dark, calm and softly out of focus",
+      "exclusions": "No faces in focus; no number candles, banners or writing on the cake"
+    },
+    {
+      "id": "S07",
+      "file": "slb-07-baker-at-work.jpg",
+      "size": "1600x2000 portrait (4:5)",
+      "subject": "A friendly baker in a plain cream apron smoothing buttercream on a tall cake with a bench scraper, focused and smiling slightly",
+      "setting": "The bakery work counter, oak shelves with mixing bowls behind, a dusting of flour in the air",
+      "camera": "50mm, waist-up, f/2.8; window light from the right",
+      "composition": "Baker in the right half; left side calm, blurred shelves",
+      "exclusions": "Not a real or famous person; no logo or text on the apron"
+    },
+    {
+      "id": "S08",
+      "file": "slb-08-scratch-ingredients.jpg",
+      "size": "2000x2000 square",
+      "subject": "Baking ingredients for a cake: a block of butter on paper, brown eggs in a bowl, flour in a ceramic bowl with a scoop, a vanilla pod, a whisk and a few strawberries",
+      "setting": "Flour-dusted oak counter with a linen towel",
+      "camera": "Overhead three-quarter view, 50mm, f/4; soft side light from the left",
+      "composition": "Ingredients loosely arranged around the edges; calm empty board in the centre-left",
+      "exclusions": "No packaging, labels or brand names"
+    }
+  ]
+}

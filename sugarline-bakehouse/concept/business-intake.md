@@ -6,7 +6,7 @@
 | Business | Sugarline Bakehouse |
 | Version | v1.0 |
 | Date | 2026-11-22 |
-| Status | **DRAFT** (awaiting owner approval) |
+| Status | **LOCKED** (approved by owner 2026-11-22) |
 | Base branch | `main` → working on `ccr-fbc5b48e-8u9dyt` |
 
 **Legend:** Owner-supplied · Verified (source) · Concept proposal · Unknown · **Fictional** (invented for this test business; never presented as real-world fact).
@@ -145,11 +145,12 @@ Research not performed: the business is fictional and has no real market. Everyt
 
 ## 10. Locked brief, concept summaries, QA status, revision log
 
-- **Locked brief:** pending owner approval of v1.0.
+- **Locked brief:** v1.0 locked 2026-11-22 by owner ("Lock it").
 - **Concept summaries:** pending (mockup round).
-- **QA status:** intake complete; photos not started.
+- **QA status:** intake locked; photo plan written; photo round not yet sent.
 - **Standing approval:** granted 2026-11-22 for Muse fix requests and follow-ups within an approved brief. New rounds and fact changes still need a yes.
 
 | Version | Date | Change |
 |---|---|---|
 | v1.0 | 2026-11-22 | First draft from discovery rounds A01–A03 |
+| v1.0 | 2026-11-22 | LOCKED by owner, no changes |
