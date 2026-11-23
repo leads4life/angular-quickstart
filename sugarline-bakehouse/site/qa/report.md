@@ -1,6 +1,6 @@
 # Site QA report: `dist`
 
-7 pages · widths 390, 768, 1024, 1440, 1920 · 2026-11-23 00:03 · strict
+7 pages · widths 390, 768, 1024, 1440, 1920 · 2026-11-23 00:50 · strict
 
 | | Check | Result |
 |---|---|---|

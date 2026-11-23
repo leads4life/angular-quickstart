@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sugarline Bakehouse: website proposal</title><meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0e0d;--ink:#f4efe8;--muted:#a89f94;--line:rgba(244,239,232,.14);--accent:#E9B949;--card:#181614;
+--display:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Avenir Next","Segoe UI",system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans)}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+section{padding:clamp(64px,8vw,112px) 0;border-top:1px solid var(--line)}
+.eyebrow{font:500 12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance}
+h1{font-size:clamp(44px,6vw,84px)}h2{font-size:clamp(32px,4vw,52px);margin-bottom:14px}
+.lead{color:var(--muted);max-width:44em;margin:0 0 36px;font-size:18px}
+.cover{border:0;padding-top:clamp(48px,7vw,96px)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;color:var(--muted);font-size:14px;letter-spacing:.04em;margin:22px 0 48px}
+.concept{display:inline-block;border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.devices{position:relative;display:grid;grid-template-columns:1fr;padding-right:clamp(40px,12vw,160px)}
+.laptop{background:#2a2725;border-radius:14px 14px 6px 6px;padding:12px 12px 22px;box-shadow:0 40px 80px -40px #000}
+.laptop img{border-radius:4px}
+.phone{position:absolute;right:0;bottom:-28px;width:clamp(120px,19vw,230px);background:#111;border-radius:30px;padding:10px;box-shadow:0 30px 60px -20px #000;border:1px solid #333}
+.phone img{border-radius:22px}
+.frame{background:#1d1b19;border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -36px #000;border:1px solid var(--line)}
+.frame .bar{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.frame .bar i{width:9px;height:9px;border-radius:50%;background:#3a3633}
+.folds{display:grid;gap:34px}
+.fold{display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start}
+.fold .n{font:400 40px/1 var(--display);color:var(--accent)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ba figure{margin:0}.ba figcaption{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.pages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.pages a{text-decoration:none}.pages h3{font:500 14px/1.3 var(--sans);letter-spacing:.06em;margin:12px 0 0}
+.pages small{color:var(--muted);font-size:12px}
+.phones{display:flex;gap:22px;overflow-x:auto;padding-bottom:16px;scroll-snap-type:x mandatory}
+.phones figure{flex:0 0 clamp(150px,18vw,210px);margin:0;scroll-snap-align:start}
+.phones .phone-s{background:#111;border-radius:26px;padding:8px;border:1px solid #333}.phones .phone-s img{border-radius:19px}
+.phones figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+.checks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.checks div{background:var(--card);padding:20px}.checks b{display:block;font:400 40px/1 var(--display);color:var(--ink)}.checks span{font-size:13px;color:var(--muted)}
+.needs{columns:2;column-gap:48px;padding:0;margin:0;list-style:none}.needs li{break-inside:avoid;padding:10px 0;border-bottom:1px dashed var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{background:var(--card);padding:26px;counter-increment:s}.steps li::before{content:counter(s,decimal-leading-zero);display:block;color:var(--accent);font-size:13px;letter-spacing:.2em;margin-bottom:10px}
+.steps h3{font:400 24px/1.2 var(--display);margin:0 0 8px}.steps p{margin:0;color:var(--muted);font-size:15px}
+mark{background:rgba(255,255,255,.08);color:var(--ink);border-bottom:1px dashed var(--accent);padding:0 .25em}
+footer{border-top:1px solid var(--line);padding:36px 0 60px;color:var(--muted);font-size:13px}
+@media (max-width:900px){.pages{grid-template-columns:repeat(2,minmax(0,1fr))}.checks{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr}.ba{grid-template-columns:1fr}.needs{columns:1}}
+@media (max-width:560px){.pages{grid-template-columns:1fr}.fold{grid-template-columns:1fr}.devices{padding-right:0}.phone{display:none}}
+</style></head><body><main><section class="cover"><div class="wrap">
+<p class="eyebrow">Website proposal</p>
+<h1>A new website for<br>Sugarline Bakehouse</h1>
+<div class="meta"><span>November 2026</span><span>6 pages · desktop, tablet and phone</span></div>
+<div class="devices"><div class="laptop"><img src="img/index-desk.jpg" alt="Sugarline Bakehouse home page on a laptop"></div>
+<div class="phone"><img src="img/index-phone.jpg" alt="Sugarline Bakehouse home page on a phone"></div></div>
+</div></section><section id="home"><div class="wrap"><p class="eyebrow">The home page</p><h2>Screen by screen</h2>
+<p class="lead">Each scroll stop shows one complete section, the way a guest moves through the page on a laptop.</p><div class="folds"><div class="fold"><div class="n">01</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-1.jpg" alt="Home page, screen 1" loading="lazy"></div></div><div class="fold"><div class="n">02</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-2.jpg" alt="Home page, screen 2" loading="lazy"></div></div><div class="fold"><div class="n">03</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-3.jpg" alt="Home page, screen 3" loading="lazy"></div></div><div class="fold"><div class="n">04</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-4.jpg" alt="Home page, screen 4" loading="lazy"></div></div><div class="fold"><div class="n">05</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-5.jpg" alt="Home page, screen 5" loading="lazy"></div></div><div class="fold"><div class="n">06</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-6.jpg" alt="Home page, screen 6" loading="lazy"></div></div><div class="fold"><div class="n">07</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-7.jpg" alt="Home page, screen 7" loading="lazy"></div></div><div class="fold"><div class="n">08</div><div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="img/fold-8.jpg" alt="Home page, screen 8" loading="lazy"></div></div></div></div></section><section id="pages"><div class="wrap"><p class="eyebrow">Every page</p><h2>6 pages, one consistent look</h2>
+<p class="lead">Click any page to see it from top to bottom.</p><div class="pages"><a href="img/index-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/index-desk.jpg" alt="Home" loading="lazy"></div><h3>Home</h3><small>Open the full page</small></a><a href="img/celebration-cakes-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/celebration-cakes-desk.jpg" alt="Celebration Cakes" loading="lazy"></div><h3>Celebration Cakes</h3><small>Open the full page</small></a><a href="img/weddings-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/weddings-desk.jpg" alt="Wedding Cakes" loading="lazy"></div><h3>Wedding Cakes</h3><small>Open the full page</small></a><a href="img/cookies-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/cookies-desk.jpg" alt="Cookies &amp; Boxes" loading="lazy"></div><h3>Cookies &amp; Boxes</h3><small>Open the full page</small></a><a href="img/about-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/about-desk.jpg" alt="About" loading="lazy"></div><h3>About</h3><small>Open the full page</small></a><a href="img/order-full.jpg" target="_blank" rel="noopener"><div class="frame"><img src="img/order-desk.jpg" alt="Order a Cake" loading="lazy"></div><h3>Order a Cake</h3><small>Open the full page</small></a></div></div></section><section id="phone"><div class="wrap"><p class="eyebrow">On a phone</p><h2>Built for the phone in every guest's hand</h2>
+<p class="lead">Swipe through every page as it appears on a phone.</p><div class="phones"><figure><div class="phone-s"><img src="img/index-phone.jpg" alt="Home on a phone" loading="lazy"></div><figcaption>Home</figcaption></figure><figure><div class="phone-s"><img src="img/celebration-cakes-phone.jpg" alt="Celebration Cakes on a phone" loading="lazy"></div><figcaption>Celebration Cakes</figcaption></figure><figure><div class="phone-s"><img src="img/weddings-phone.jpg" alt="Wedding Cakes on a phone" loading="lazy"></div><figcaption>Wedding Cakes</figcaption></figure><figure><div class="phone-s"><img src="img/cookies-phone.jpg" alt="Cookies &amp; Boxes on a phone" loading="lazy"></div><figcaption>Cookies &amp; Boxes</figcaption></figure><figure><div class="phone-s"><img src="img/about-phone.jpg" alt="About on a phone" loading="lazy"></div><figcaption>About</figcaption></figure><figure><div class="phone-s"><img src="img/order-phone.jpg" alt="Order a Cake on a phone" loading="lazy"></div><figcaption>Order a Cake</figcaption></figure></div></div></section><section id="checked"><div class="wrap"><p class="eyebrow">Checked</p><h2>Inspected and passing</h2>
+<p class="lead">Every page was opened in a real browser at 5 screen sizes, from phones to wide monitors, and checked for broken links, layout problems, readability and leftovers.</p>
+<div class="checks"><div><b>7</b><span>pages inspected</span></div><div><b>5</b><span>screen sizes</span></div><div><b>12</b><span>automatic checks</span></div><div><b>0</b><span>problems remaining</span></div></div></div></section><section id="needs"><div class="wrap"><p class="eyebrow">What we need from you</p><h2>To finish, we just need your details</h2>
+<p class="lead">These spots are marked on the site and fill in as soon as we have them, along with your own photography.</p><ul class="needs"><li><mark>[Street address]</mark> <small style="color:var(--muted)">· Home</small></li><li><mark>[Opening hours]</mark> <small style="color:var(--muted)">· Home</small></li><li><mark>[Phone number]</mark> <small style="color:var(--muted)">· Home</small></li><li><mark>[Email address]</mark> <small style="color:var(--muted)">· Home</small></li><li><mark>[Social links]</mark> <small style="color:var(--muted)">· Home</small></li><li><mark>[Allergen policy]</mark> <small style="color:var(--muted)">· Celebration Cakes</small></li><li><mark>[Delivery and set-up details]</mark> <small style="color:var(--muted)">· Wedding Cakes</small></li><li><mark>[$ per serving]</mark> <small style="color:var(--muted)">· Wedding Cakes</small></li><li><mark>[Deposit terms]</mark> <small style="color:var(--muted)">· Wedding Cakes</small></li><li><mark>[Box prices]</mark> <small style="color:var(--muted)">· Cookies &amp; Boxes</small></li><li><mark>[Baker&#x27;s name]</mark> <small style="color:var(--muted)">· About</small></li><li><mark>[Founding story, in the baker&#x27;s own words]</mark> <small style="color:var(--muted)">· About</small></li><li><mark>[X] weeks</mark> order lead time <small style="color:var(--muted)">· Home, Order</small></li><li><mark>[servings]</mark> and <mark>[$]</mark> for each cake size <small style="color:var(--muted)">· Celebration Cakes</small></li><li>Your flavour list (the site shows a sample) <small style="color:var(--muted)">· Celebration Cakes</small></li></ul></div></section><section id="next"><div class="wrap"><p class="eyebrow">Next steps</p><h2>From concept to launch</h2><ol class="steps">
+<li><h3>Review</h3><p>Walk through the concept and tell us what you'd change.</p></li>
+<li><h3>Your details</h3><p>Send the facts above and your photos; we fill them in and refine the design.</p></li>
+<li><h3>Launch</h3><p>We connect your domain, booking and forms, and go live. Timeline and investment: <mark>to be agreed</mark></p></li></ol></div></section></main>
+<footer><div class="wrap">Sugarline Bakehouse website proposal</div></footer></body></html>
