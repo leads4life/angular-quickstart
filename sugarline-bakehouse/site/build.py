@@ -54,6 +54,9 @@ def cta(m):
   </div>
 </section>'''
 
+JSONLD = """<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Bakery","name":"Sugarline Bakehouse","slogan":"Your cake, your story.","description":"Celebration cakes, wedding cakes and cookie boxes, baked by hand in Maple Hollow.","address":{"@type":"PostalAddress","addressLocality":"Maple Hollow"}},{"@type":"WebSite","name":"Sugarline Bakehouse"}]}</script>
+"""
+
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir()
@@ -65,10 +68,13 @@ def build():
         b = re.sub(r"@@PAGEHERO:(.*?)@@", pagehero, b, flags=re.S)
         b = re.sub(r"@@CTA:(.*?)@@", cta, b, flags=re.S)
         b = re.sub(r"@@STICKER:([^|@]*)\|([^@]*)@@", lambda m: sticker(m.group(1), m.group(2)), b)
+        import itertools
+        cyc = itertools.islice(itertools.cycle("abc"), list(PAGES).index(key), None)
+        b = re.sub(r'<div class="(rounded|blob)"', lambda m: f'<div class="{m.group(1)}" data-shape="{next(cyc)}"', b)
         hd, ft = HEADER, FOOTER
         hd = hd.replace(f'href="@@{key}@@"', f'href="@@{key}@@" aria-current="page"')
         ft = ft.replace(f'href="@@{key}@@"', f'href="@@{key}@@" aria-current="page"')
-        head = HEAD.replace("@@TITLE@@", html.escape(title)).replace("@@DESC@@", html.escape(desc))
+        head = HEAD.replace("@@TITLE@@", html.escape(title)).replace("@@DESC@@", html.escape(desc)) + (JSONLD if key == "home" else "")
         doc = f'<!DOCTYPE html>\n<html lang="en">\n<head>\n{head}</head>\n<body>\n{SPRITE}{hd}<main id="top">\n{b}\n</main>\n{ft}{SCRIPT}</body>\n</html>\n'
         doc = re.sub(r"@@(\w+)@@", lambda m: files[m.group(1)], doc)
         assert "@@" not in doc, (fn, re.findall(r"@@[^@]{0,30}", doc)[:3])

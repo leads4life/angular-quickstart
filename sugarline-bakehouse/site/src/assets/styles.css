@@ -394,3 +394,38 @@ main{display:block}
   .hero-card h1{font-size:clamp(40px,4.6vw,66px)}
   .page-hero .hero-card h1{font-size:clamp(38px,4vw,58px)}
 }
+
+/* ===== Polish pass (website-polish-plus-v2) ===== */
+:root{--blob-a:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M99.09,37.60 C99.15,49.37 98.14,76.26 96.28,85.84 C94.42,95.41 98.13,92.93 87.93,95.03 C77.72,97.13 47.60,98.36 35.05,98.44 C22.50,98.53 17.81,97.59 12.63,95.52 C7.44,93.46 5.90,91.37 3.95,86.06 C2.00,80.74 0.90,75.38 0.92,63.62 C0.94,51.86 1.61,25.44 4.06,15.49 C6.51,5.53 5.77,6.30 15.61,3.88 C25.45,1.47 51.51,0.98 63.10,1.00 C74.69,1.01 79.67,1.60 85.14,3.97 C90.61,6.33 93.59,9.59 95.91,15.19 C98.24,20.80 99.03,25.82 99.09,37.60 Z%22 fill=%22%23000%22/%3E%3C/svg%3E");--blob-b:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M98.62,45.56 C98.45,57.53 97.52,78.79 95.78,87.02 C94.04,95.25 93.88,93.02 88.16,94.93 C82.44,96.84 73.94,98.40 61.45,98.47 C48.95,98.54 22.72,97.48 13.19,95.36 C3.65,93.23 6.22,90.93 4.23,85.71 C2.23,80.49 1.27,75.68 1.22,64.02 C1.18,52.35 2.10,25.50 3.95,15.72 C5.80,5.93 7.17,7.71 12.33,5.33 C17.49,2.95 22.72,1.71 34.90,1.46 C47.08,1.21 75.09,1.54 85.41,3.83 C95.73,6.11 94.60,8.23 96.80,15.18 C99.00,22.14 98.79,33.59 98.62,45.56 Z%22 fill=%22%23000%22/%3E%3C/svg%3E");--blob-c:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M98.57,59.56 C98.35,71.55 96.97,82.31 95.14,88.16 C93.32,94.01 93.48,92.90 87.64,94.68 C81.80,96.46 72.66,98.73 60.11,98.86 C47.57,98.99 21.84,97.90 12.40,95.45 C2.96,93.01 5.28,89.26 3.49,84.20 C1.70,79.14 1.58,76.90 1.66,65.09 C1.75,53.28 1.66,23.54 3.99,13.34 C6.31,3.13 6.00,5.83 15.64,3.84 C25.27,1.85 49.65,1.24 61.79,1.40 C73.92,1.55 82.64,2.31 88.43,4.78 C94.21,7.25 94.79,7.08 96.49,16.21 C98.18,25.34 98.80,47.56 98.57,59.56 Z%22 fill=%22%23000%22/%3E%3C/svg%3E");--rule:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%2216%22 viewBox=%220 0 256 16%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0,8.0 H22.0 M42.0,8.0 H64%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 stroke-dasharray=%223 3%22 opacity=%220.55%22/%3E%3Cg transform=%22translate%2827.5,3.0%29%22 fill=%22%23C99A2E%22 opacity=%220.85%22%3E%3Cpath d=%22M4.5 10V3%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 fill=%22none%22/%3E%3Cellipse cx=%223%22 cy=%223%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%28-25 3 3%29%22/%3E%3Cellipse cx=%226%22 cy=%223%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%2825 6 3%29%22/%3E%3Cellipse cx=%223%22 cy=%226%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%28-25 3 6%29%22/%3E%3Cellipse cx=%226%22 cy=%226%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%2825 6 6%29%22/%3E%3Cellipse cx=%224.5%22 cy=%221.4%22 rx=%221%22 ry=%221.6%22/%3E%3C/g%3E%3Cpath d=%22M64,8.0 H86.0 M106.0,8.0 H128%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 stroke-dasharray=%223 3%22 opacity=%220.55%22/%3E%3Cg transform=%22translate%2891.5,3.0%29%22 fill=%22%23C99A2E%22 opacity=%220.85%22%3E%3Cpath d=%22M4.5 9.2C4.5 9.2 0 6 0 3.1 0 1.4 1.2.3 2.5.3c1 0 1.7.6 2 1.4.3-.8 1-1.4 2-1.4C7.8.3 9 1.4 9 3.1 9 6 4.5 9.2 4.5 9.2z%22/%3E%3C/g%3E%3Cpath d=%22M128,8.0 H150.0 M170.0,8.0 H192%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 stroke-dasharray=%223 3%22 opacity=%220.55%22/%3E%3Cg transform=%22translate%28155.5,3.0%29%22 fill=%22%23C99A2E%22 opacity=%220.85%22%3E%3Cpath d=%22M4.5 10V3%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 fill=%22none%22/%3E%3Cellipse cx=%223%22 cy=%223%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%28-25 3 3%29%22/%3E%3Cellipse cx=%226%22 cy=%223%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%2825 6 3%29%22/%3E%3Cellipse cx=%223%22 cy=%226%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%28-25 3 6%29%22/%3E%3Cellipse cx=%226%22 cy=%226%22 rx=%221.2%22 ry=%222%22 transform=%22rotate%2825 6 6%29%22/%3E%3Cellipse cx=%224.5%22 cy=%221.4%22 rx=%221%22 ry=%221.6%22/%3E%3C/g%3E%3Cpath d=%22M192,8.0 H214.0 M234.0,8.0 H256%22 stroke=%22%23C99A2E%22 stroke-width=%22.9%22 stroke-dasharray=%223 3%22 opacity=%220.55%22/%3E%3Cg transform=%22translate%28219.5,3.0%29%22 fill=%22%23C99A2E%22 opacity=%220.85%22%3E%3Cpath d=%22M4.5 0l1.3 3.2 3.2.3-2.4 2.2.8 3.3-2.9-1.8-2.9 1.8.8-3.3L0 3.5l3.2-.3z%22/%3E%3C/g%3E%3C/svg%3E");--bead:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%229%22 viewBox=%220 0 24 9%22%3E%3Cpath d=%22M0 0H24V1.5C24 6 18 8.5 12 8.5S0 6 0 1.5Z%22 fill=%22%23FBF4E6%22/%3E%3Cpath d=%22M3 2.4C6 6.6 18 6.6 21 2.4%22 fill=%22none%22 stroke=%22%23E9C77A%22 stroke-width=%22.9%22 opacity=%22.7%22/%3E%3C/svg%3E")}
+/* header: piped-bead edge instead of a hairline */
+.site-head{border-bottom:0}
+.site-head::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:9px;background:var(--bead) 0 0/24px 9px round;pointer-events:none;filter:drop-shadow(0 2px 1.5px rgba(59,38,24,.12))}
+/* footer divider: dashed rule broken by wheat ears, hearts and stars */
+.foot-base{border-top:0;position:relative}
+.foot-base::before{content:"";position:absolute;left:0;right:0;top:-8px;height:16px;background:var(--rule) 0 0/256px 16px round}
+/* feature photos: generated soft squircles, shadow follows the outline from the wrapper */
+.rounded,.blob{border-radius:0;overflow:visible;box-shadow:none;filter:drop-shadow(0 18px 22px rgba(59,38,24,.28)) drop-shadow(0 3px 5px rgba(59,38,24,.15))}
+.rounded img,.blob img{-webkit-mask:var(--blob-a) center/100% 100% no-repeat;mask:var(--blob-a) center/100% 100% no-repeat}
+[data-shape="b"] img{-webkit-mask-image:var(--blob-b);mask-image:var(--blob-b)}
+[data-shape="c"] img{-webkit-mask-image:var(--blob-c);mask-image:var(--blob-c)}
+.sec.berry .rounded,.sec.berry .blob{filter:drop-shadow(0 18px 22px rgba(120,40,30,.3))}
+/* cards: gently asymmetric corners that alternate along a row */
+.rcard{border-radius:22px 14px} .cell:nth-child(even) > .rcard{border-radius:14px 22px}
+.offer{border-radius:16px 10px} .cell:nth-child(even) > .offer{border-radius:10px 16px}
+.sizes{border-radius:20px} .contact-card{border-radius:22px 14px}
+/* type: designed wraps */
+h1,h2,h3,.giant{text-wrap:balance} p,li{text-wrap:pretty}
+.hero-card h1{max-width:9.5em}
+/* one orchestrated moment: the hero assembles */
+@media (prefers-reduced-motion:no-preference){
+  .hero-card{animation:cardIn .8s cubic-bezier(.2,.8,.2,1) both}
+  .hero-art .arch,.ph-art .arch{animation:rise .9s .12s cubic-bezier(.2,.8,.2,1) both}
+  .hero-art .p1{animation:dropL .7s .45s cubic-bezier(.2,.9,.3,1.2) both}
+  .hero-art .p2{animation:dropR .7s .6s cubic-bezier(.2,.9,.3,1.2) both}
+  .hero-art .sticker,.ph-art .sticker{animation:pop .5s .85s cubic-bezier(.2,.9,.3,1.4) both}
+}
+@keyframes cardIn{from{opacity:0;transform:translateY(24px) rotate(-5deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}}
+@keyframes dropL{from{opacity:0;transform:translateY(-40px) rotate(-16deg)}}
+@keyframes dropR{from{opacity:0;transform:translateY(-40px) rotate(14deg)}}
+@keyframes pop{from{opacity:0;transform:scale(.4) rotate(-40deg)}}

@@ -1,0 +1,127 @@
+{
+ "site": "/home/user/angular-quickstart/sugarline-bakehouse/site/qa/before",
+ "pages": [
+  "404.html",
+  "about.html",
+  "celebration-cakes.html",
+  "cookies.html",
+  "index.html",
+  "order.html",
+  "weddings.html"
+ ],
+ "widths": [
+  390,
+  768,
+  1024,
+  1440,
+  1920
+ ],
+ "fails": 0,
+ "findings": [
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "404.html",
+   "width": null,
+   "msg": "5 [bracketed] blanks, 5 <mark> highlights: [Email address], [Opening hours], [Phone number], [Social links], [Street address]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "404.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "about.html",
+   "width": null,
+   "msg": "10 [bracketed] blanks, 10 <mark> highlights: [Baker's name], [Email address], [Founding story, in the baker's own words], [Opening hours], [Phone number], [Social links]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "about.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "celebration-cakes.html",
+   "width": null,
+   "msg": "6 [bracketed] blanks, 12 <mark> highlights: [Allergen policy], [Email address], [Opening hours], [Phone number], [Social links], [Street address]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "celebration-cakes.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "cookies.html",
+   "width": null,
+   "msg": "6 [bracketed] blanks, 7 <mark> highlights: [Box prices], [Email address], [Opening hours], [Phone number], [Social links], [Street address]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "cookies.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "index.html",
+   "width": null,
+   "msg": "7 [bracketed] blanks, 8 <mark> highlights: [Email address], [Opening hours], [Phone number], [Social links], [Street address]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "index.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "order.html",
+   "width": null,
+   "msg": "10 [bracketed] blanks, 11 <mark> highlights: [Allergen policy], [Email address], [Opening hours], [Phone number], [Social links], [Street address]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "order.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "placeholders",
+   "level": "INFO",
+   "page": "weddings.html",
+   "width": null,
+   "msg": "8 [bracketed] blanks, 10 <mark> highlights: [$ per serving], [Delivery and set-up details], [Deposit terms], [Email address], [Opening hours], [Phone number]"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "weddings.html",
+   "width": null,
+   "msg": "page has noindex (fine for a concept/preview, remove at launch)"
+  },
+  {
+   "check": "indexing",
+   "level": "INFO",
+   "page": "robots.txt",
+   "width": null,
+   "msg": "robots.txt blocks all crawlers (remove at launch)"
+  }
+ ]
+}
