@@ -30,3 +30,5 @@
 | 2026-11-22 23:18 | `1a2058d5d5e25b0d` "concept-B2.png request (re-send)" | jeff-muse-1603@muse.ai | B2 re-send + 8 refs | Awaiting |
 | 2026-11-22 23:18 | `1a2058d654d07f35` "concept-C2.png request (re-send)" | jeff-muse-1603@muse.ai | C2 re-send + 8 refs | Awaiting |
 | 2026-11-22 23:38 | — | — | Muse silent since 22:36. User chose to build from round-1 B. HANDOFF complete | — |
+| 2026-11-23 00:15 | `1a205c2175355b6b` "photos 9-11 of 13" | jeff-muse-1603@muse.ai | site-images: celebration-trio, wedding-reception-cake, cookie-decorating (user approved) | Awaiting |
+| 2026-11-23 00:15 | `1a205c219b3ac867` "photos 12-13 of 13" | jeff-muse-1603@muse.ai | site-images: matching-favours, shop-front-window (user approved) | Awaiting |

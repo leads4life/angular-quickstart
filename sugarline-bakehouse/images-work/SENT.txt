@@ -1,0 +1,3 @@
+2026-11-23 00:15 UTC  to jeff-muse-1603@muse.ai  thread 1a205c2175355b6b  "Sugarline Bakehouse: photos 9-11 of 13"  (celebration-trio, wedding-reception-cake, cookie-decorating)
+2026-11-23 00:15 UTC  to jeff-muse-1603@muse.ai  thread 1a205c219b3ac867  "Sugarline Bakehouse: photos 12-13 of 13"  (matching-favours, shop-front-window)
+Slots: celebration hero <- slb-09; weddings hero <- slb-10; cookies hero <- slb-11; cookies "matched" blob <- slb-12; about shop postcard <- slb-13

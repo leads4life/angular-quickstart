@@ -1,0 +1,229 @@
+[
+ {
+  "file": "img/cookie-box.jpg",
+  "pages": [
+   "cookies.html",
+   "index.html"
+  ],
+  "max_w": 643,
+  "max_h": 560,
+  "roles": [
+   "inline",
+   "feature",
+   "band",
+   "product"
+  ],
+  "text_side": "",
+  "alt": "An open kraft gift box of hand-decorated flower, heart and scalloped cookies tied with twine",
+  "number": 1,
+  "have": [
+   1800,
+   1013
+  ],
+  "need": [
+   1286,
+   1120
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "feature"
+ },
+ {
+  "file": "img/shop-case.jpg",
+  "pages": [
+   "about.html",
+   "index.html"
+  ],
+  "max_w": 597,
+  "max_h": 382,
+  "roles": [
+   "inline"
+  ],
+  "text_side": "",
+  "alt": "The bakery's glass cake case, cookies and stacked kraft boxes",
+  "number": 2,
+  "have": [
+   1800,
+   1013
+  ],
+  "need": [
+   1194,
+   764
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "inline"
+ },
+ {
+  "file": "img/piping-cake.jpg",
+  "pages": [
+   "cookies.html",
+   "index.html"
+  ],
+  "max_w": 520,
+  "max_h": 589,
+  "roles": [
+   "product",
+   "inline"
+  ],
+  "text_side": "",
+  "alt": "Buttercream rosettes being piped onto a celebration cake",
+  "number": 3,
+  "have": [
+   1800,
+   1013
+  ],
+  "need": [
+   1040,
+   1178
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "product"
+ },
+ {
+  "file": "img/baker.jpg",
+  "pages": [
+   "about.html",
+   "celebration-cakes.html",
+   "index.html"
+  ],
+  "max_w": 466,
+  "max_h": 600,
+  "roles": [
+   "inline",
+   "band"
+  ],
+  "text_side": "",
+  "alt": "A smiling baker in a cream apron finishing a berry layer cake",
+  "number": 4,
+  "have": [
+   1440,
+   1800
+  ],
+  "need": [
+   932,
+   1200
+  ],
+  "detail_w": 1440,
+  "sharp": true,
+  "reused": true,
+  "role": "band"
+ },
+ {
+  "file": "img/ingredients.jpg",
+  "pages": [
+   "about.html",
+   "index.html",
+   "order.html"
+  ],
+  "max_w": 436,
+  "max_h": 560,
+  "roles": [
+   "product",
+   "inline"
+  ],
+  "text_side": "",
+  "alt": "Butter, eggs, flour and a vanilla pod on a flour-dusted oak board",
+  "number": 5,
+  "have": [
+   1800,
+   1800
+  ],
+  "need": [
+   872,
+   1120
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "product"
+ },
+ {
+  "file": "img/tasting.jpg",
+  "pages": [
+   "index.html",
+   "weddings.html"
+  ],
+  "max_w": 416,
+  "max_h": 416,
+  "roles": [
+   "product"
+  ],
+  "text_side": "",
+  "alt": "Two people tasting slices of vanilla and chocolate layer cake with coffee",
+  "number": 6,
+  "have": [
+   1800,
+   1013
+  ],
+  "need": [
+   832,
+   832
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "product"
+ },
+ {
+  "file": "img/birthday-candles.jpg",
+  "pages": [
+   "celebration-cakes.html",
+   "index.html"
+  ],
+  "max_w": 379,
+  "max_h": 560,
+  "roles": [
+   "inline",
+   "product"
+  ],
+  "text_side": "",
+  "alt": "A buttercream celebration cake with lit candles on a party table",
+  "number": 7,
+  "have": [
+   1800,
+   1013
+  ],
+  "need": [
+   758,
+   1120
+  ],
+  "detail_w": 1800,
+  "sharp": true,
+  "reused": true,
+  "role": "product"
+ },
+ {
+  "file": "img/wedding-tiers.jpg",
+  "pages": [
+   "index.html",
+   "weddings.html"
+  ],
+  "max_w": 379,
+  "max_h": 560,
+  "roles": [
+   "feature",
+   "inline",
+   "product"
+  ],
+  "text_side": "",
+  "alt": "Three-tier ivory wedding cake with a cascade of pink roses",
+  "number": 8,
+  "have": [
+   1440,
+   1800
+  ],
+  "need": [
+   758,
+   1120
+  ],
+  "detail_w": 1440,
+  "sharp": true,
+  "reused": true,
+  "role": "feature"
+ }
+]
