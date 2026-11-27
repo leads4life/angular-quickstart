@@ -12,5 +12,5 @@ Recipient: jeff-muse-1603@muse.ai (found in the user's sent mail)
 | 2026-11-27T06:56Z | 1a21bca12fa49d8d | Briar & Beach Landscaping: homepage design concept B (Fieldstone) | Mockup B, 8 ref photos attached | waiting |
 | 2026-11-27T06:56Z | 1a21bcac3d84c85c | Briar & Beach Landscaping: homepage design concept C (Garden Plan) | Mockup C, 8 ref photos attached | waiting |
 | 2026-11-27T15:53Z | 1a21db672c7ba915 | Briar & Beach Landscaping: homepage concept A (Shoreline), concept-A.png | Re-send of A alone, 4 lighter refs (~0.5 MB); A/B/C originals had no reply after 9 h | 16:01Z concept-A.png 1440x6944 (8 min). QA: PASS. sha256 67e80781… |
-| 2026-11-27T16:04Z | 1a21dbfef068cf21 | Briar & Beach Landscaping: homepage concept B (Fieldstone), concept-B.png | Re-send of B alone, 4 lighter refs (user approved) | waiting |
-| 2026-11-27T16:04Z | 1a21dc0908809a8e | Briar & Beach Landscaping: homepage concept C (Garden Plan), concept-C.png | Re-send of C alone, 4 lighter refs (user approved) | waiting |
+| 2026-11-27T16:04Z | 1a21dbfef068cf21 | Briar & Beach Landscaping: homepage concept B (Fieldstone), concept-B.png | Re-send of B alone, 4 lighter refs (user approved) | 16:25Z concept-B.png 1440x5282. QA: PASS |
+| 2026-11-27T16:04Z | 1a21dc0908809a8e | Briar & Beach Landscaping: homepage concept C (Garden Plan), concept-C.png | Re-send of C alone, 4 lighter refs (user approved) | 16:25Z concept-C.png 1440x5914. QA: PASS. Originals of A/B/C (06:55) never answered |
