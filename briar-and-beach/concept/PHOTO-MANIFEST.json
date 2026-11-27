@@ -1,0 +1,54 @@
+{
+  "project": "BB-LAND-2026-01",
+  "source_thread": "1a21bb97089f7811",
+  "scenes": {
+    "P01": {
+      "file": "bb-01-coastal-garden-wide.jpg",
+      "px": "1920x1200",
+      "bytes": 662086,
+      "sha256": "34889ae2c0893c2e734407593904c97464876b58dfc44453b64c6b954e55dee2",
+      "status": "OK",
+      "note": "Right scene, calm sky left for headline. Delivered 1920x1200, not 2400x1500 (same 16:10 shape); good enough for the concept, flag for site-images."
+    },
+    "P02": {
+      "file": "bb-02-design-walkthrough.jpg",
+      "px": "1920x1280",
+      "bytes": 565163,
+      "sha256": "db0b177b4b73fd9c3ca8c757ac6ba4c27e573ea3bc90b9cb71879a0ec8d16003",
+      "status": "OK",
+      "note": "Designer, couple and clipboard back only; no text; people right two-thirds."
+    },
+    "P03": {
+      "file": "bb-03-stone-wall-hands.jpg",
+      "px": "1900x1260",
+      "bytes": 583435,
+      "sha256": "28615290cfe862dc7c6054c4814b99f4685db697624602d386ebcac265775341",
+      "status": "OK",
+      "note": "Thin dark frame (about 8 px) trimmed 10 px each side; original in photos/_original/. Hands, stone and hammer believable."
+    },
+    "P04": {
+      "file": "bb-04-bluestone-patio-dusk.jpg",
+      "px": "1920x1280",
+      "bytes": 776224,
+      "sha256": "462a40e2606969bd25a43bc576ecd5377ba32df72debc67727f923d298727553",
+      "status": "OK",
+      "note": "Patio, fire pit, teak chairs, seat wall, lights, lit house; no text."
+    },
+    "P05": {
+      "status": "PENDING",
+      "note": "Not in Part 1; requested in a new thread"
+    },
+    "P06": {
+      "status": "PENDING",
+      "note": "Not in Part 1; requested in a new thread"
+    },
+    "P07": {
+      "status": "PENDING",
+      "note": "Not in Part 1; requested in a new thread"
+    },
+    "P08": {
+      "status": "PENDING",
+      "note": "Not in Part 1; requested in a new thread"
+    }
+  }
+}
