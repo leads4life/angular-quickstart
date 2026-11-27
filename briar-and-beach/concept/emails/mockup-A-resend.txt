@@ -1,0 +1,89 @@
+Hi Muse,
+
+(Re-sending this as a single, lighter request in case the first one didn't come through.)
+
+Please design one desktop homepage concept for Briar & Beach Landscaping, a family-run landscaping company on the Massachusetts South Shore and Cape Cod (design, stonework, estate care, lighting and irrigation for coastal homes). This is Concept A: "Shoreline", one of three separate concepts I'm requesting in separate emails, each a different design system with the same brand, copy and photos.
+
+Concept A: Shoreline (the design system)
+
+Hero: full-bleed photograph bb-01-coastal-garden-wide.jpg across the whole width, about 90% of the first screen tall. The headline, subhead and two buttons sit on the calm sky on the left, in harbor ink. The header is transparent over the photo.
+
+Image placement: big, edge-to-edge photographs alternate with airy shell-white text sections. Photos are wide and generous, never small thumbnails.
+
+Type voice: light, open, soft serif headings at a large size; relaxed line spacing.
+
+Palette emphasis: sea glass and shell white lead; sand for quiet bands; deep sea glass buttons.
+
+Section pacing: slow and airy; lots of white space; one idea per section.
+
+Transition motif: gentle wavy shoreline curves between sections (like a tide line), with small dune-grass sprigs drawn in fine line at a few section edges.
+
+Shared brand identity
+
+Palette: sea glass #7FA99B, deep sea glass #3F7366 (buttons and links), sand #E8DCC5, shell white #FAF7F1, harbor ink #1E2B36 (text), driftwood #A3876A (accent).
+
+Type: a soft, friendly serif for headings and a warm humanist sans for body text; sentence case.
+
+Feel: family-owned and friendly, quietly premium, relaxed New England coast.
+
+Motifs available across the brand: dry-stone wall edges, dune grass and shoreline curves, hand-drawn garden plans, weathered shingle texture.
+
+Page content, top to bottom (use this copy exactly)
+
+1. Header: Logo text "Briar & Beach" with a small line "Landscaping · Est. 1998". Nav: Services, Our Work, Our Family, Contact. Phone (781) 555-0142. Button: Request a Quote.
+
+2. Hero: Headline: "Gardens that belong to the coast." Subhead: "Family-run landscape design, stonework and estate care for South Shore and Cape Cod homes since 1998." Buttons: Request a Quote (primary) and See Our Work (secondary).
+
+3. Trust strip: Family-owned since 1998 · Two generations, one standard · South Shore & Cape Cod · [Licensing and insurance details]
+
+4. Services: Headline: "Everything your property needs, from first sketch to fall cleanup." Four items: Landscape Design & Install ("Plans drawn for salt air, sandy soil and the way you live outside."), Hardscape & Stonework ("Bluestone patios and dry-stone walls built to outlast us."), Seasonal Estate Care ("The same crew, every season, whether you're home or not."), Lighting & Irrigation ("Gardens that glow at dusk and water themselves.").
+
+5. Featured project: Headline: "A Cohasset garden, rebuilt for the wind." One short line and a link: See the project.
+
+6. How we work: Four steps: 1 Walk the property · 2 Draw the plan · 3 Build it right · 4 Care for it every season.
+
+7. Our family: Headline: "Walt built walls. Maureen planted gardens. We still do both." Two short lines and a link: Meet the family.
+
+8. Seasonal care band: Headline: "Away for the winter? We've got the property." Button: Ask about seasonal care.
+
+9. What clients say: Two or three quote cards that show only the placeholder "[Client testimonial]" and "[Client name, Town]". No invented quotes, names or star ratings.
+
+10. Service area: Headline: "Rooted on the South Shore." Towns: Hingham, Cohasset, Scituate, Duxbury, Plymouth, Sandwich, Falmouth.
+
+11. Final call to action: Headline: "Let's walk your property." Line: "Tell us a little about your project. We'll call within one business day." Button: Request a Quote, plus the phone number.
+
+12. Footer: Logo, one-line description, nav links, services list, phone (781) 555-0142, hello@briarandbeach.example, [Street address], Hingham, MA, hours Mon–Fri 7:00–5:00, [Licensing and insurance details], © 2026 Briar & Beach Landscaping.
+
+Photographs (attached)
+
+Four of these photographs are attached (bb-01, bb-04, bb-05 and bb-07); use them as the page's photography. For the other sections, use a photo in the same style that matches the description:
+
+bb-01-coastal-garden-wide.jpg: hero (A and C) or a wide band
+bb-02-design-walkthrough.jpg: How we work
+bb-03-stone-wall-hands.jpg: Hardscape & Stonework
+bb-04-bluestone-patio-dusk.jpg: Featured project (and the hero in B)
+bb-05-estate-care-pruning.jpg: Seasonal Estate Care and the seasonal care band
+bb-06-path-lighting.jpg: Lighting & Irrigation
+bb-07-family-nursery.jpg: Our family
+bb-08-coastal-planting.jpg: Landscape Design & Install, or a small detail
+
+Format rules
+
+One portrait full-page desktop homepage, about 1440 px wide, shown straight-on from the header to the complete footer. Show the whole page; do not crop it.
+
+No browser window, device frame, hands, desk or perspective.
+
+Short, readable, real English, using the copy above exactly. Where a fact is unknown, show the placeholder in square brackets as written. Never invent phone numbers, addresses, reviews, ratings or awards.
+
+No lettering inside the photographs themselves.
+
+Put a small letter A in the margin below the footer, outside the page.
+
+Delivery
+
+Reply in this same thread with one image named exactly concept-A.png, at full resolution.
+
+If anything couldn't be done as described, say what and why.
+
+Thank you!
+Jeff
