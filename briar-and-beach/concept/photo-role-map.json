@@ -1,0 +1,10 @@
+{
+  "P01": ["home hero", "services/landscape-design hero"],
+  "P02": ["home process section", "services/landscape-design approach"],
+  "P03": ["home services card: hardscape", "services/hardscape hero"],
+  "P04": ["home featured project", "our-work featured story", "services/hardscape gallery"],
+  "P05": ["home services card: estate care", "home seasonal care band", "services/estate-care hero"],
+  "P06": ["home services card: lighting & irrigation", "services/lighting-irrigation hero"],
+  "P07": ["home our-family section", "about hero"],
+  "P08": ["home services card: design", "contact hero", "decorative detail"]
+}
