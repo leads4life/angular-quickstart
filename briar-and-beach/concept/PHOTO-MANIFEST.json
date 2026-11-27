@@ -35,20 +35,37 @@
       "note": "Patio, fire pit, teak chairs, seat wall, lights, lit house; no text."
     },
     "P05": {
-      "status": "PENDING",
-      "note": "Not in Part 1; requested in a new thread"
+      "file": "bb-05-estate-care-pruning.jpg",
+      "px": "1920x1280",
+      "bytes": 710355,
+      "sha256": "077125efc02d40fe188be85804c1f334771425c8a4189646dcaa4d4cd73b857f",
+      "status": "OK",
+      "note": "Crew member pruning hydrangeas with secateurs, second worker raking, misty sea; subject left, open lawn right."
     },
     "P06": {
-      "status": "PENDING",
-      "note": "Not in Part 1; requested in a new thread"
+      "file": "bb-06-path-lighting.jpg",
+      "px": "1408x1760",
+      "bytes": 754847,
+      "sha256": "60bd323847e1d6ea561b4c25b02b8da6505fbadda20bc427d512c62155299ddf",
+      "status": "OK",
+      "note": "Stone path through grasses and lavender, path lights, lit doorway; dusk sky in the top third. The path is rounded beach cobbles rather than flat fieldstone; it reads as coastal, so accepted."
     },
     "P07": {
-      "status": "PENDING",
-      "note": "Not in Part 1; requested in a new thread"
+      "file": "bb-07-family-nursery.jpg",
+      "px": "1920x1280",
+      "bytes": 581180,
+      "sha256": "4f87f5dbdb3296ac3ed383781d466720e98ee64444555492e88fcdc52f67aa17",
+      "status": "OK",
+      "note": "Father and adult son and daughter laughing at a nursery; plain white truck with no lettering; family centre-right."
     },
     "P08": {
-      "status": "PENDING",
-      "note": "Not in Part 1; requested in a new thread"
+      "file": "bb-08-coastal-planting.jpg",
+      "px": "1408x1760",
+      "bytes": 840505,
+      "sha256": "ae390c6fb3429429e4c863a0c9430b15c2c5d602889a17b4a984a3e4fa696aaa",
+      "status": "OK",
+      "note": "Dune grass, sea lavender and roses in front of weathered shingles. The roses are double garden roses, not the single five-petal beach rose (Rosa rugosa); accepted for the concept, can be redone."
     }
-  }
+  },
+  "scenes_source_part2_thread": "1a21bc0a31b5e999"
 }

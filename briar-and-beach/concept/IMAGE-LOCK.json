@@ -1,0 +1,47 @@
+{
+  "project": "BB-LAND-2026-01",
+  "locked": "2026-11-27T06:55Z",
+  "status": "PHOTOS LOCKED",
+  "photos": {
+    "P01": {
+      "file": "bb-01-coastal-garden-wide.jpg",
+      "px": "1920x1200",
+      "sha256": "34889ae2c0893c2e734407593904c97464876b58dfc44453b64c6b954e55dee2"
+    },
+    "P02": {
+      "file": "bb-02-design-walkthrough.jpg",
+      "px": "1920x1280",
+      "sha256": "db0b177b4b73fd9c3ca8c757ac6ba4c27e573ea3bc90b9cb71879a0ec8d16003"
+    },
+    "P03": {
+      "file": "bb-03-stone-wall-hands.jpg",
+      "px": "1900x1260",
+      "sha256": "28615290cfe862dc7c6054c4814b99f4685db697624602d386ebcac265775341"
+    },
+    "P04": {
+      "file": "bb-04-bluestone-patio-dusk.jpg",
+      "px": "1920x1280",
+      "sha256": "462a40e2606969bd25a43bc576ecd5377ba32df72debc67727f923d298727553"
+    },
+    "P05": {
+      "file": "bb-05-estate-care-pruning.jpg",
+      "px": "1920x1280",
+      "sha256": "077125efc02d40fe188be85804c1f334771425c8a4189646dcaa4d4cd73b857f"
+    },
+    "P06": {
+      "file": "bb-06-path-lighting.jpg",
+      "px": "1408x1760",
+      "sha256": "60bd323847e1d6ea561b4c25b02b8da6505fbadda20bc427d512c62155299ddf"
+    },
+    "P07": {
+      "file": "bb-07-family-nursery.jpg",
+      "px": "1920x1280",
+      "sha256": "4f87f5dbdb3296ac3ed383781d466720e98ee64444555492e88fcdc52f67aa17"
+    },
+    "P08": {
+      "file": "bb-08-coastal-planting.jpg",
+      "px": "1408x1760",
+      "sha256": "ae390c6fb3429429e4c863a0c9430b15c2c5d602889a17b4a984a3e4fa696aaa"
+    }
+  }
+}

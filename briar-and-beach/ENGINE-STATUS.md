@@ -1,6 +1,6 @@
 # Website engine status: Briar & Beach Landscaping
 Updated: 2026-11-27
-Current stage: 1 Concept, in progress (intake LOCKED; photos P01–P04 OK; P05–P08 requested in thread 1a21bc0a31b5e999)
+Current stage: 1 Concept, in progress (intake LOCKED; PHOTOS LOCKED (8/8, IMAGE-LOCK.json); next: A/B/C mockup round (needs user yes))
 Autopilot: off
 
 | Stage | Status | Output |
