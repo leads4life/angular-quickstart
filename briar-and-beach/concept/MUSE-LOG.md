@@ -11,4 +11,4 @@ Recipient: jeff-muse-1603@muse.ai (found in the user's sent mail)
 | 2026-11-27T06:56Z | 1a21bc9633e6c234 | Briar & Beach Landscaping: homepage design concept A (Shoreline) | Mockup A, 8 ref photos attached (user approved round) | waiting |
 | 2026-11-27T06:56Z | 1a21bca12fa49d8d | Briar & Beach Landscaping: homepage design concept B (Fieldstone) | Mockup B, 8 ref photos attached | waiting |
 | 2026-11-27T06:56Z | 1a21bcac3d84c85c | Briar & Beach Landscaping: homepage design concept C (Garden Plan) | Mockup C, 8 ref photos attached | waiting |
-| 2026-11-27T15:53Z | 1a21db672c7ba915 | Briar & Beach Landscaping: homepage concept A (Shoreline), concept-A.png | Re-send of A alone, 4 lighter refs (~0.5 MB); A/B/C originals had no reply after 9 h | waiting |
+| 2026-11-27T15:53Z | 1a21db672c7ba915 | Briar & Beach Landscaping: homepage concept A (Shoreline), concept-A.png | Re-send of A alone, 4 lighter refs (~0.5 MB); A/B/C originals had no reply after 9 h | 16:01Z concept-A.png 1440x6944 (8 min). QA: PASS. sha256 67e80781… |
